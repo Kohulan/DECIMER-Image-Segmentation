@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 from scipy.ndimage.filters import gaussian_filter
 
-from skimage.transform import downscale_local_mean, rescale
 from skimage.color import rgb2gray
 from skimage.filters import threshold_otsu
-from skimage.morphology import binary_erosion, square
 from skimage import img_as_float
 
 from imantics import Mask, Polygons
@@ -104,9 +102,9 @@ def expand_bounding_box(bounding_box, nodes_to_be_changed, step_factor, shape, i
 	return bounding_box
 
 
-def set_x_diff_range(x_diff, euklidian_distance):
+def set_x_diff_range(x_diff, euklidian_distance, image_array):
 	'''This function takes the amount of steps on an edge and returns the corresponding list of steps in random order'''
-	blur_factor = int(image.shape[1]/400) if image.shape[1]/400 >= 1 else 1
+	blur_factor = int(image_array.shape[1]/400) if image_array.shape[1]/400 >= 1 else 1
 	if x_diff > 0:
 		x_diff_range = np.arange(0, x_diff, blur_factor/euklidian_distance) 
 	else:
@@ -200,12 +198,12 @@ def bb_expansion_algorithm(image_array, original_bounding_box, debug = False, pa
 				if x_diff == 0:
 					bounding_box = adapt_x_values(bounding_box = bounding_box, node_index = node_index, image_shape = image_array.shape)
 				x_diff = bounding_box[node_index][0] - bounding_box[node_index-1][0] # Define amount of steps we have to go in x-direction to get from node 1 to node 2
-				x_diff_range = set_x_diff_range(x_diff, euklidian_distance(bounding_box[node_index], bounding_box[node_index-1]))
+				x_diff_range = set_x_diff_range(x_diff, euklidian_distance(bounding_box[node_index], bounding_box[node_index-1]), image_array)
 				#Go down the edge and check if there is something that is not white. If something was found, the corresponding nodes are saved.
 				for step in x_diff_range:
 					x,y = define_next_pixel_to_check(bounding_box, node_index, step, image_shape = image_array.shape)
 					# If there is something that is not white	
-					if sum(image_array[y, x]) < 2.9: 
+					if image_array[y, x] < 0.90: 
 						nodes_to_be_changed.append(node_index)
 						nodes_to_be_changed.append(node_index-1)
 						break
@@ -231,16 +229,34 @@ def binarize_image(image_array):
 	'''This function takes a Numpy array that represents an RGB image and returns the binarized form of that image
 	by applying the otsu threshold.'''
 	grayscale = rgb2gray(image_array)
-	threshold = threshold_otsu(image)
-	binarized_image_array = image > threshold
+	threshold = threshold_otsu(grayscale)
+	binarized_image_array = grayscale > threshold
 	return binarized_image_array
 
 def new_polygon_2_mask(new_polygon):
+	'''This function takes the imantics Polygon object and returns the corresponding Mask object.'''
 	new_polygon = Polygons(Polygons(new_polygon).segmentation) # I know it looks ridiculous, but otherwise, it does not work.
 	width, height = new_polygon.bbox().max_point 
 	width += 1
 	height += 1
 	return new_polygon.mask(height = height, width = width)[:,:,None]
+
+def define_relevant_polygons(polygons):
+	'''Sometimes, the mask R CNN model produces a weird output with one big masks and some small irrelevant islands.
+	This function takes the imantics Polygon object and returns the Polygon object that only contains the biggest 
+	bounding box (which is defined by the biggest variance in y-direction).'''
+	modified_polygons = []
+	for polygon in polygons:
+		if len(polygon) == 2: 
+			modified_polygons.append(polygon)
+		else:
+			y_variance = [] # list<tuple<box_index, y-variance>>
+			for box in polygon[:-1]:
+				y_values = np.array([value[1] for value in box])
+				y_variance.append(max(y_values)-min(y_values))
+			modified_polygons.append([polygon[y_variance.index(max(y_variance))], polygon[-1]])
+	return modified_polygons
+
 
 def complete_structure_mask(image_array, mask_array, debug = False):
 	'''This funtion takes an image (array) and an array containing the masks (shape: x,y,n where n is the amount of masks and x and y are the pixel coordinates).
@@ -249,7 +265,10 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 
 	if mask_array.size != 0:
 		# Turn masks into list of polygon bounding boxes
-		polygons = mask_2_polygons(mask_array)    
+		polygons = mask_2_polygons(mask_array)
+        
+		#Throw out small 'mask islands' if necessary
+		polygons = define_relevant_polygons(polygons) 
     
 		# Reduce number of nodes of polygon
 		polygons = reduce_polygon_nodes(polygons, number = 10)
@@ -268,23 +287,19 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 			plot_it_multiple(image_array = img_as_float(binarized_image_array), bounding_boxes = polygons) 
 
 		# Apply gaussian filter to the image
-		blur_factor = int(image.shape[1]/400) if image.shape[1]/400 >= 1 else 1
+		blur_factor = int(image_array.shape[1]/400) if image_array.shape[1]/400 >= 1 else 1
 		blurred_image_array = gaussian_filter(img_as_float(binarized_image_array).copy(), sigma=blur_factor)
-		print("BLUR")
-		print(blur_factor)
-		#blurred_image_array = binary_erosion(binarized_image_array) #selem=square(width = 100))
-    
 		#plot it (in debug-mode)
 		if debug:
-			print('Image after the application of a gaussian blurr')
+			print('Image after the application of a gaussian blurr.')
 			plot_it_multiple(image_array = blurred_image_array, bounding_boxes = polygons)
     
-		#parameter_combinations: list<tuple<step_factor, step_limit, local_center_rat	io
+		#parameter_combinations: list<tuple<step_factor, step_limit, local_center_ratio
 		parameter_combinations = [(100, 25, False), (100, 25, 8), (100, 25, 4), (200, 50, False), (200, 50, 8), (200, 50, 4), (500, 120, False), (500, 120, 8), (500, 120, 4)]    
 		#Apply bounding box expansion algorithm to the polygons
 		expanded_masks = []
 		for polygon in polygons:
-			new_polygon = polygon.copy()
+			new_polygon = polygon.copy()           
 			bounding_box = factor_fold_nodes(polygon[0], factor = 10)
 			new_polygon[0] = bb_expansion_algorithm(image_array = blurred_image_array, original_bounding_box = bounding_box, debug = debug, parameter_combinations = parameter_combinations)
 			#Recreate the mask from polygon bounding box
