@@ -12,7 +12,6 @@ import skimage.io
 import matplotlib
 import matplotlib.pyplot as plt
 import cv2
-import imutils
 from PIL import Image
 import argparse
 
