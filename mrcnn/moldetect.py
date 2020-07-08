@@ -6,6 +6,8 @@ Copyright (c) 2018 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
 
+Modified on 2020 July by : Kohulan Rajan 
+
 ------------------------------------------------------------
 
 Usage: import the module (see Jupyter notebooks for examples), or run from
