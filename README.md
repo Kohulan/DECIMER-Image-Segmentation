@@ -7,7 +7,7 @@ Initial work was done using training the Mask R-CNN network with our data and de
 
 ## Usage
 
--  In order to use the scripts clone the repository to your local disk. Mask-RCNN runs on a GOU enabled PC, so please do make sure you have all the necessary drivers installed.
+-  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU enabled PC, so please do make sure you have all the necessary drivers installed.
 
 ```
 $ git clone ..
