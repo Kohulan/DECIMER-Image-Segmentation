@@ -13,7 +13,7 @@ Initial work was done training the Mask R-CNN network with our data and deployin
 $ git clone ..
 $ cd DECIMER-Image-Segmentation
 ```
-- Create a python virual environment. (We recommend conda environment)
+- Create a python virtual environment. (We recommend having a conda environment)
 ```
 $conda activate
 $conda install pip
