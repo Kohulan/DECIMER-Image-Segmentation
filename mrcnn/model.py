@@ -5,6 +5,9 @@ The main Mask R-CNN model implementation.
 Copyright (c) 2017 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
+
+Modified on 2020 July by : Kohulan Rajan 
+
 """
 
 import os
@@ -23,7 +26,7 @@ import keras.layers as KL
 import keras.engine as KE
 import keras.models as KM
 
-import utils
+from mrcnn import utils
 
 # Requires TensorFlow 1.3+ and Keras 2.0.8+.
 from distutils.version import LooseVersion

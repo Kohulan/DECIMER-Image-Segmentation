@@ -1,0 +1,9 @@
+tensorflow-gpu==1.15
+tensorflow==1.15
+pillow
+opencv-python
+matplotlib
+scikit-image
+keras==2.3.1
+imantics
+IPython

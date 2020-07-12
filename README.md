@@ -1,9 +1,9 @@
 # DECIMER-Image-Segmentation
 Image segmentation initial works by Kohulan Rajan and Otto Brinkhaus
 
-Using Mask R-CNN we are trying to segment the chemical structures from published literature. The mask R-CNN's superior algorithm can easily segment an Image upon training it widely with a mixed set of Data, Includes the Images of published literature with text and corresponding manually annotated data regarding the position of the images.
+Using Mask R-CNN, we are trying to recognize and segment depictions of chemical structures from the published literature. The superiour algorith of the mask R-CNN model can easily segment an Image after being trained with a mixed set of data, including a manually annotated set of pages from the published literature.
 
-Initial work was done using training the Mask R-CNN network with our data and deploying on a completely new set of data to see the segmentation accuracy. Later we are working on a cleaning up procedure on the segmented images to fit the Image detection algorithm.
+Initial work was done training the Mask R-CNN network with our data and deploying it on a completely new set of data to examine the segmentation accuracy. There is a post-processing procedure Additionally, we are working on a post-processing procedure for the segmented images to make them suitable for the image detection algorithm. 
 
 ## Usage
 
@@ -12,7 +12,12 @@ Initial work was done using training the Mask R-CNN network with our data and de
 ```
 $ git clone ..
 $ cd DECIMER-Image-Segmentation
-$ pip3 install tensorflow-gpu==1.15 pillow opencv-python matplotlib scikit-image
+```
+- Create a python virual environment. (We recommend conda environment)
+```
+$conda activate
+$conda install pip
+$pip install tensorflow-gpu==1.15 pillow opencv-python matplotlib scikit-image keras==2.3.1 imantics IPython #Install tensorflow==1.15 if you do not have a nVidia GPU
 $ python3 Detect_and_save_segmentation.py --input path/to/input/Image
 ```
 - Segmented images will be saved inside the output folder

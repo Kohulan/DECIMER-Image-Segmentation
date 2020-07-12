@@ -57,7 +57,7 @@ def get_masks(IMAGE_PATH):
 	MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 	# Local path to trained weights file
-	COCO_MODEL_PATH = os.path.join("model_trained//mask_rcnn_molecule_0045.h5")
+	COCO_MODEL_PATH = os.path.join("model_trained/mask_rcnn_molecule.h5")
 
 	# Download COCO trained weights from Releases if needed
 	if not os.path.exists(COCO_MODEL_PATH):
