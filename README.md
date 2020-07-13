@@ -15,7 +15,8 @@ $ cd DECIMER-Image-Segmentation
 ```
 - Create a python virtual environment. (We recommend having a conda environment)
 ```
-$ conda activate
+$ conda create --name DECIMER_IMGSEG python=3.7
+$ conda activate DECIMER_IMGSEG
 $ conda install pip
 $ pip install tensorflow-gpu==1.15 pillow opencv-python matplotlib scikit-image keras==2.3.1 imantics IPython #Install tensorflow==1.15 if you do not have a nVidia GPU
 $ python3 Detect_and_save_segmentation.py --input path/to/input/Image
