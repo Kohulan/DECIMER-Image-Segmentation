@@ -7,8 +7,13 @@ Initial work was done training the Mask R-CNN network with our data and deployin
 
 ## Usage
 
--  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU enabled PC, so please do make sure you have all the necessary drivers installed.
+-  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU enabled PC or simply on CPU, so please do make sure you have all the necessary drivers installed if you are using GPU.
+- Install Git LFS.
 
+```
+sudo apt-get install -y git-lfs
+```
+- Now enter the following commands.
 ```
 $ git clone ..
 $ cd DECIMER-Image-Segmentation
