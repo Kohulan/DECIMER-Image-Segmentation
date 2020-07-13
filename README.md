@@ -7,17 +7,23 @@ Initial work was done training the Mask R-CNN network with our data and deployin
 
 ## Usage
 
--  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU enabled PC, so please do make sure you have all the necessary drivers installed.
+-  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU enabled PC or simply on CPU, so please do make sure you have all the necessary drivers installed if you are using GPU.
+- Install Git LFS.
 
+```
+sudo apt-get install -y git-lfs
+```
+- Now enter the following commands.
 ```
 $ git clone ..
 $ cd DECIMER-Image-Segmentation
 ```
-- Create a python virual environment. (We recommend conda environment)
+- Create a python virtual environment. (We recommend having a conda environment)
 ```
-$conda activate
-$conda install pip
-$pip install tensorflow-gpu==1.15 pillow opencv-python matplotlib scikit-image keras==2.3.1 imantics IPython #Install tensorflow==1.15 if you do not have a nVidia GPU
+$ conda create --name DECIMER_IMGSEG python=3.7
+$ conda activate DECIMER_IMGSEG
+$ conda install pip
+$ pip install tensorflow-gpu==1.15 pillow opencv-python matplotlib scikit-image keras==2.3.1 imantics IPython #Install tensorflow==1.15 if you do not have a nVidia GPU
 $ python3 Detect_and_save_segmentation.py --input path/to/input/Image
 ```
 - Segmented images will be saved inside the output folder
