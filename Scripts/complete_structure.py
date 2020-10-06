@@ -36,6 +36,15 @@ def plot_it(image_array, bounding_box):
 	plt.show()
 	return
 
+def define_bounding_box_center(bounding_box):
+	'''This function return the center np.array([x,y]) of a given bounding box np.array([[x1, y1], [x2, y2],...,[x_n, y_n]])'''
+	x_values = np.array([])
+	y_values = np.array([])
+	for node in bounding_box:
+		x_values = np.append(x_values, node[0])
+		y_values = np.append(y_values, node[1])
+	return np.array([np.mean(x_values), np.mean(y_values)])
+
 def define_edge_line(node_1, node_2):
 	'''This function returns a linear function between two given points in a 2-dimensional space'''
 	#if node_1[0]-node_2[0] != 0:
