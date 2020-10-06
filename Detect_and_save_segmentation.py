@@ -57,11 +57,11 @@ def get_masks(IMAGE_PATH):
 	MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 	# Local path to trained weights file
-	COCO_MODEL_PATH = os.path.join("model_trained/mask_rcnn_molecule.h5")
+	TRAINED_MODEL_PATH = os.path.join("model_trained/mask_rcnn_molecule.h5")
 
 	# Download COCO trained weights from Releases if needed
-	if not os.path.exists(COCO_MODEL_PATH):
-		utils.download_trained_weights(COCO_MODEL_PATH)
+	if not os.path.exists(TRAINED_MODEL_PATH):
+		utils.download_trained_weights(TRAINED_MODEL_PATH)
 
 	# Image Path
 	#IMAGE_DIR = os.path.join("/media/data_drive/Kohulan/After-Meeting_20190522/MaskRCNN/Test")
@@ -82,7 +82,7 @@ def get_masks(IMAGE_PATH):
 	model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
 
 	# Load weights trained on MS-COCO
-	model.load_weights(COCO_MODEL_PATH, by_name=True)
+	model.load_weights(TRAINED_MODEL_PATH, by_name=True)
 
 	class_names=['BG', 'Molecule']
 
@@ -130,11 +130,15 @@ def save_segments(expanded_masks,IMAGE_PATH):
 		new_img = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
 
 		#save segments
+		if os.path.exists("output"):
+			pass
+		else:
+			os.system("mkdir output")
 		filename = "output/segment_%d.png"%i
 		cv2.imwrite(filename,new_img)
 		
 
-	return "Completed, Segments saved inside the ouput folder!"
+	return "Completed, Segments saved inside the output folder!"
 
 
 if __name__ == '__main__':
