@@ -14,7 +14,6 @@ import sys
 import random
 import itertools
 import colorsys
-import cv2
 
 import numpy as np
 from skimage.measure import find_contours
@@ -22,8 +21,6 @@ import matplotlib.pyplot as plt
 from matplotlib import patches,  lines
 from matplotlib.patches import Polygon
 import IPython.display
-import os
-from PIL import Image, ImageDraw, ImageFont
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
@@ -84,25 +81,6 @@ def apply_mask(image, mask, color, alpha=0.5):
                                   image[:, :, c])
     return image
 
-def color_map(N=256, normalized=False):
-        def bitget(byteval, idx):
-            return ((byteval & (1 << idx)) != 0)
-
-        dtype = 'float32' if normalized else 'uint8'
-        cmap = np.zeros((N, 3), dtype=dtype)
-        for i in range(N):
-            r = g = b = 0
-            c = i
-            for j in range(8):
-                r = r | (bitget(c, 0) << 7 - j)
-                g = g | (bitget(c, 1) << 7 - j)
-                b = b | (bitget(c, 2) << 7 - j)
-                c = c >> 3
-
-            cmap[i] = np.array([r, g, b])
-
-        cmap = cmap / 255 if normalized else cmap
-        return cmap
 
 def display_instances(image, boxes, masks, class_ids, class_names,
                       scores=None, title="",
@@ -145,7 +123,6 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     ax.set_title(title)
 
     masked_image = image.astype(np.uint32).copy()
-
     for i in range(N):
         color = colors[i]
 
@@ -191,144 +168,6 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     if auto_show:
         plt.show()
 
-def display_results(image, boxes, masks, class_ids, class_names, scores=None,
-                        show_mask=True, show_bbox=True, display_img=True,
-                        save_img=True, save_dir=None, img_name=None):
-        """
-        boxes: [num_instance, (y1, x1, y2, x2, class_id)] in image coordinates.
-        masks: [height, width, num_instances]
-        class_ids: [num_instances]
-        class_names: list of class names of the dataset (Without Background)
-        scores: (optional) confidence scores for each box
-        show_mask, show_bbox: To show masks and bounding boxes or not
-        display_img: To display the image in popup
-        save_img: To save the predict image
-        save_dir: If save_img is True, the directory where you want to save the predict image
-        img_name: If save_img is True, the name of the predict image
-
-        """
-        n_instances = boxes.shape[0]
-        colors = color_map()
-        for k in range(n_instances):
-            color = colors[class_ids[k]].astype(np.int)
-            if show_bbox:
-                box = boxes[k]
-                cls = class_names[class_ids[k]-1]  # Skip the Background
-                score = scores[k]
-                cv2.rectangle(image, (box[1], box[0]), (box[3], box[2]), color.tolist(), 1)
-                font = cv2.FONT_HERSHEY_SIMPLEX
-                cv2.putText(image, '{}: {:.3f}'.format(cls, score), (box[1], box[0]),
-                            font, 0.4, (0, 255, 255), 1, cv2.LINE_AA)
-
-            if show_mask:
-                mask = masks[:, :, k]
-                color_mask = np.zeros((mask.shape[0], mask.shape[1], 3), dtype=np.int)
-                color_mask[mask] = color
-                image = cv2.addWeighted(color_mask, 0.5, image.astype(np.int), 1, 0)
-
-        if display_img:
-            plt.imshow(image)
-            plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
-            plt.show()
-        if save_img:
-            cv2.imwrite(os.path.join(save_dir, img_name), image)
-
-        return None
-
-
-
-def save_image(image, image_name, boxes, masks, class_ids, scores, class_names, filter_classs_names=None,
-               scores_thresh=0.1, save_dir=None, mode=0):
-    """
-        image: image array
-        image_name: image name
-        boxes: [num_instance, (y1, x1, y2, x2, class_id)] in image coordinates.
-        masks: [num_instances, height, width]
-        class_ids: [num_instances]
-        scores: confidence scores for each box
-        class_names: list of class names of the dataset
-        filter_classs_names: (optional) list of class names we want to draw
-        scores_thresh: (optional) threshold of confidence scores
-        save_dir: (optional) the path to store image
-        mode: (optional) select the result which you want
-                mode = 0 , save image with bbox,class_name,score and mask;
-                mode = 1 , save image with bbox,class_name and score;
-                mode = 2 , save image with class_name,score and mask;
-                mode = 3 , save mask with black background;
-    """
-    mode_list = [0, 1, 2, 3]
-    assert mode in mode_list, "mode's value should in mode_list %s" % str(mode_list)
-
-    if save_dir is None:
-        save_dir = os.path.join(os.getcwd(), "output")
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
-
-    useful_mask_indices = []
-
-    N = boxes.shape[0]
-    if not N:
-        print("\n*** No instances in image %s to draw *** \n" % (image_name))
-        return
-    else:
-        assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
-
-    for i in range(N):
-        # filter
-        class_id = class_ids[i]
-        score = scores[i] if scores is not None else None
-        if score is None or score < scores_thresh:
-            continue
-
-        label = class_names[class_id]
-        if (filter_classs_names is not None) and (label not in filter_classs_names):
-            continue
-
-        if not np.any(boxes[i]):
-            # Skip this instance. Has no bbox. Likely lost in image cropping.
-            continue
-
-        useful_mask_indices.append(i)
-
-    if len(useful_mask_indices) == 0:
-        print("\n*** No instances in image %s to draw *** \n" % (image_name))
-        return
-
-    colors = random_colors(len(useful_mask_indices))
-
-    if mode != 3:
-        masked_image = image.astype(np.uint8).copy()
-    else:
-        masked_image = np.zeros(image.shape).astype(np.uint8)
-
-    if mode != 1:
-        for index, value in enumerate(useful_mask_indices):
-            masked_image = apply_mask(masked_image, masks[:, :, value], colors[index])
-
-    masked_image = Image.fromarray(masked_image)
-
-    if mode == 3:
-        masked_image.save(os.path.join(save_dir, '%s.jpg' % (image_name)))
-        return
-
-    draw = ImageDraw.Draw(masked_image)
-    colors = np.array(colors).astype(int) * 255
-
-    for index, value in enumerate(useful_mask_indices):
-        class_id = class_ids[value]
-        score = scores[value]
-        label = class_names[class_id]
-
-        y1, x1, y2, x2 = boxes[value]
-        if mode != 2:
-            color = tuple(colors[index])
-            draw.rectangle((x1, y1, x2, y2), outline=color)
-
-        # Label
-        font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 15)
-        draw.text((x1, y1), "%s %f" % (label, score), (255, 255, 255), font)
-
-    masked_image.save(os.path.join(save_dir, '%s.jpg' % (image_name)))
 
 def display_differences(image,
                         gt_box, gt_class_id, gt_mask,
