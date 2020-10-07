@@ -63,10 +63,12 @@ def set_x_diff_range(x_diff, euklidian_distance, image_array):
 	'''This function takes the amount of steps on an edge and returns the corresponding list of steps in random order'''
 	blur_factor = int(image_array.shape[1]/500) if image_array.shape[1]/500 >= 1 else 1
 	if x_diff > 0:
-		x_diff_range = np.arange(0, x_diff, blur_factor/euklidian_distance) 
+		x_diff_range = np.arange(0, x_diff, blur_factor/euklidian_distance)
+		#x_diff_range = np.arange(0, x_diff, 00.1) 
 		
 	else:
 		x_diff_range = np.arange(0, x_diff, -blur_factor/euklidian_distance)
+		#x_diff_range = np.arange(0, x_diff, -00.1)
 		
 	np.random.shuffle(x_diff_range)
 	return x_diff_range
@@ -156,7 +158,7 @@ def find_seeds(image_array, bounding_box):
 		for step in x_diff_range:
 			x,y = define_next_pixel_to_check(bounding_box, node_index, step, image_shape = image_array.shape)
 			# If there is something that is not white	
-			if image_array[y, x] < 0.90: 
+			if image_array[y, x] < 0.9: 
 				seed_pixels.append((x,y))
 				#break
 	return seed_pixels
@@ -186,7 +188,7 @@ def expand_masks(image_array, seed_pixels, mask_array, mask_index):
 		for neighbour_pixel in neighbour_pixels:
 			x,y = neighbour_pixel
 			if not mask_array[y, x, mask_index]:
-				if image_array[y, x] < 0.90:
+				if image_array[y, x] < 0.95:
 					mask_array[y, x, mask_index] = True
 					seed_pixels.append((x,y))
 	return mask_array
@@ -200,6 +202,8 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 		# Turn masks into list of polygon bounding boxes
 		polygons = mask_2_polygons(mask_array)
 
+		polygons = define_relevant_polygons(polygons)
+
 		#Binarization of input image
 		binarized_image_array = binarize_image(image_array)
 
@@ -209,12 +213,13 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 		blurred_image_array = gaussian_filter(img_as_float(binarized_image_array).copy(), sigma=blur_factor)
 
 		for polygon_index in range(len(polygons)): 
-			# Ten-fold nodes
+		# Ten-fold nodes
+			print("POLYGON-INDEX: " + str(polygon_index))
 			bounding_box = polygons[polygon_index][0]
-			#bounding_box = factor_fold_nodes(polygons[polygon_index][0], factor = 4)
 
 			# Find seed pixels for expansion
 			seed_pixels = find_seeds(blurred_image_array, bounding_box)
+			print(len(seed_pixels))
 			mask_array = expand_masks(blurred_image_array, seed_pixels, mask_array, mask_index = polygon_index)
 
 	else: 
