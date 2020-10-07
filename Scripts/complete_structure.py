@@ -214,12 +214,10 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 
 		for polygon_index in range(len(polygons)): 
 		# Ten-fold nodes
-			print("POLYGON-INDEX: " + str(polygon_index))
 			bounding_box = polygons[polygon_index][0]
 
 			# Find seed pixels for expansion
 			seed_pixels = find_seeds(blurred_image_array, bounding_box)
-			print(len(seed_pixels))
 			mask_array = expand_masks(blurred_image_array, seed_pixels, mask_array, mask_index = polygon_index)
 
 	else: 
