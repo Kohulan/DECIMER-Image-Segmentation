@@ -39,10 +39,7 @@ $python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 
 ## Project page
 
-![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-to-SMILES/blob/master/assets/DECIMER_logo.png?raw=true)
-
-- [DECIMER](https://kohulan.github.io/Decimer-Official-Site/)
-
+[![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-to-SMILES/blob/master/assets/DECIMER_logo.png?raw=true)](https://kohulan.github.io/Decimer-Official-Site/)
 ## More information about our research group
 
 [![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-to-SMILES/blob/master/assets/CheminfGit.png?raw=true)](https://cheminf.uni-jena.de)
