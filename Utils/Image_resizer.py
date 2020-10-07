@@ -7,34 +7,40 @@ from PIL import Image, ImageOps, ImageEnhance
 import numpy as np
 from matplotlib import pyplot as plt
 import cv2
-from get_skeleton import get_skeleton_and_thin
+
+from Utils.get_skeleton import get_skeleton_and_thin
 
 def main():
 	
-	im_pth = "segment_1.png"
+	im_pth = "segment.png"
 
-	im = get_bnw_image(im_pth)
-	image = Image.open(im)
+	get_clean_segments(im_pth)
 
-	#Size parameter
-	desired_size = 299
+	print("Process Completed")
+
+
+	
+def get_clean_segments(IMAGE_PATH,desired_size=299):
+	
+	bnw_img = get_bnw_image(IMAGE_PATH)
+	image = Image.open(bnw_img)
 
 	#Resize image
-	resize_image(image,desired_size,get_skeleton=False)
+	resize_image(IMAGE_PATH,image,desired_size,get_skeleton=False)
 
 def get_bnw_image(im_pth):
 	original_img = cv2.imread(im_pth)
 	grayscale = cv2.cvtColor(original_img, cv2.COLOR_BGR2GRAY)
 	#_,thresholded = cv2.threshold(grayscale,0,255,cv2.THRESH_OTSU)
 	(thresh, im_bw) = cv2.threshold(grayscale, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
-	cv2.imwrite("black_and_white.png", im_bw)
+	cv2.imwrite(im_pth[:-4]+"_bnw.png", im_bw)
 	#image_new.save()
-	return "black_and_white.png"
+	return im_pth[:-4]+"_bnw.png"
 
-def resize_image(im,desired_size,get_skeleton=False):
+def resize_image(IMAGE_PATH,im,desired_size,get_skeleton=False):
 	old_size = im.size  # old_size[0] is in (width, height) format
 	greyscale_image = im.convert('L')
-	print(len(greyscale_image.split()))
+	#print(len(greyscale_image.split()))
 
 	enhancer = ImageEnhance.Contrast(greyscale_image)
 
@@ -51,10 +57,10 @@ def resize_image(im,desired_size,get_skeleton=False):
 	blank_image.paste(greyscale_image, ((desired_size-new_size[0])//2,
 	                    (desired_size-new_size[1])//2))
 
-	blank_image.save('output_image.png')
+	blank_image.save(IMAGE_PATH[:-4]+'_clean.png')
 
 	if get_skeleton:
-		out_skeletonize,out_thin = get_skeleton_and_thin('output_image.png')
+		out_skeletonize,out_thin = get_skeleton_and_thin(IMAGE_PATH[:-4]+'_skeleton.png')
 
 	#blank_image.show()
 

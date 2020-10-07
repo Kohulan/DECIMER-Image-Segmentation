@@ -4,13 +4,8 @@
  * Written by ©Kohulan Rajan 2020
 '''
 import os
-import sys
-import random
-import math
 import numpy as np
 import skimage.io
-import matplotlib
-import matplotlib.pyplot as plt
 import cv2
 from PIL import Image
 import argparse
@@ -41,14 +36,26 @@ def main():
 	args = parser.parse_args()
 	
 	IMAGE_PATH = (args.input)
+	output_directory = 'output'
+
+	if os.path.exists(output_directory):
+		pass
+	else:
+		os.system("mkdir "+output_directory)
+
+	directory,info = get_segments(IMAGE_PATH,output_directory)
+
+	print(directory,info)
+
+def get_segments(IMAGE_PATH,output_directory):
 	r = get_masks(IMAGE_PATH)
 
 	#Expand Masks
 	image = skimage.io.imread(IMAGE_PATH)
 	expanded_masks = complete_structure.complete_structure_mask(image_array = image, mask_array = r['masks'], debug = False)
-	final_seg = save_segments(expanded_masks,IMAGE_PATH)
+	segmented_img = save_segments(expanded_masks,IMAGE_PATH,output_directory)
 
-	print(final_seg)
+	return segmented_img
 
 
 
@@ -76,7 +83,7 @@ def get_masks(IMAGE_PATH):
 		IMAGES_PER_GPU = 1
 
 	config = InferenceConfig()
-	config.display()
+	#config.display()
 
 	# Create model object in inference mode.
 	model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
@@ -93,7 +100,7 @@ def get_masks(IMAGE_PATH):
 
 	return r
 
-def save_segments(expanded_masks,IMAGE_PATH):
+def save_segments(expanded_masks,IMAGE_PATH,output_directory):
 	mask = expanded_masks
 
 	for i in range(mask.shape[2]):
@@ -130,15 +137,23 @@ def save_segments(expanded_masks,IMAGE_PATH):
 		new_img = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
 
 		#save segments
-		if os.path.exists("output"):
+		#Making directory for saving the segments
+		if os.path.exists(output_directory+"/segments"):
 			pass
 		else:
-			os.system("mkdir output")
-		filename = "output/segment_%d.png"%i
+			os.system("mkdir "+output_directory+"/segments")
+
+		#Defining the correct path to save the segments
+
+		if len(IMAGE_PATH.split("/")) == 2:
+			filename = output_directory+"/segments/"+IMAGE_PATH.split("/")[1][:-4]+"_%d.png"%i
+		else:
+			filename = output_directory+"/segments/"+IMAGE_PATH[:-4]+"_%d.png"%i
+		print(filename)
 		cv2.imwrite(filename,new_img)
 		
 
-	return "Completed, Segments saved inside the output folder!"
+	return output_directory+"/segments/","Completed, Segments saved inside the output folder!"
 
 
 if __name__ == '__main__':
