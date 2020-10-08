@@ -188,7 +188,7 @@ def expand_masks(image_array, seed_pixels, mask_array, mask_index):
 		for neighbour_pixel in neighbour_pixels:
 			x,y = neighbour_pixel
 			if not mask_array[y, x, mask_index]:
-				if image_array[y, x] < 0.95:
+				if image_array[y, x] < 0.90:
 					mask_array[y, x, mask_index] = True
 					seed_pixels.append((x,y))
 	return mask_array
