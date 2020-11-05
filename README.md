@@ -26,7 +26,7 @@ $ cd DECIMER-Image-Segmentation
 $ conda create --name DECIMER_IMGSEG python=3.7
 $ conda activate DECIMER_IMGSEG
 $ conda install pip
-$ pip install tensorflow-gpu==2.3.0 pillow opencv-python matplotlib scikit-image imantics IPython #Install tensorflow==2.3.0 if you do not have a nVidia GPU
+$ pip install tensorflow-gpu==2.3.0 pillow opencv-python matplotlib scikit-image imantics IPython pdf2image #Install tensorflow==2.3.0 if you do not have a nVidia GPU
 $ python3 DECIMER_segmentation.py pdf_file_name 
 
 $python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
