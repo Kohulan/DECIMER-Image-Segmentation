@@ -19,7 +19,7 @@ sudo apt-get install -y git-lfs
 $ git clone ..
 $ cd DECIMER-Image-Segmentation
 ```
-- Download the [trained model](https://storage.cloud.google.com/mrcnn-weights/mask_rcnn_molecule.h5)
+- Download the [trained model](https://storage.googleapis.com/mrcnn-weights/mask_rcnn_molecule.h5)
 - Copy the model to DECIMER-Image-Segmentation/model_trained/
 - Create a python virtual environment. (We recommend having a conda environment)
 ```
