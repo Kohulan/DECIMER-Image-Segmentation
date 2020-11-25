@@ -1,8 +1,10 @@
 import sys
-from PIL import Image
 import numpy as np
 import copy
 import matplotlib.pyplot as plt
+import itertools
+
+from PIL import Image
 from matplotlib.patches import Polygon
 from scipy.ndimage.filters import gaussian_filter
 from scipy import ndimage
@@ -12,6 +14,9 @@ from skimage.filters import threshold_otsu
 from skimage import img_as_float, img_as_int
 
 from imantics import Mask, Polygons
+from typing import Dict, List, Tuple
+
+from multiprocessing import Pool
 
 
 def plot_it_multiple(image_array, bounding_boxes):
@@ -175,7 +180,7 @@ def determine_neighbour_pixels(seed_pixel, image_shape):
 						neighbour_pixels.append((new_x, new_y))
 	return neighbour_pixels
 
-def expand_masks(image_array, seed_pixels, mask_array, mask_index):
+def expand_masks(image_array, seed_pixels, mask_array):
 	'''This function takes...
 	image_array - Numpy array that represents an image (float)
 	mask_array - Numpy array containing binary matrices that define masks (y, x, mask_index)
@@ -187,13 +192,21 @@ def expand_masks(image_array, seed_pixels, mask_array, mask_index):
 		neighbour_pixels = determine_neighbour_pixels(seed_pixel, image_array.shape)
 		for neighbour_pixel in neighbour_pixels:
 			x,y = neighbour_pixel
-			if not mask_array[y, x, mask_index]:
+			if not mask_array[y, x]:
 				if image_array[y, x] < 0.90:
-					mask_array[y, x, mask_index] = True
+					mask_array[y, x] = True
 					seed_pixels.append((x,y))
 	return mask_array
 
-def complete_structure_mask(image_array, mask_array, debug = False):
+def expansion_coordination(mask_bounding_box_tuple: Tuple[np.array, np.array], image_array: np.array) -> np.array:
+	'''This function takes a tuple containing a bounding box, a single mask and an image (all three: np.array) and coordinates
+	the mask expansion. It returns the expanded mask'''
+	mask_array, bounding_box = mask_bounding_box_tuple
+	seed_pixels = find_seeds(image_array, bounding_box)
+	mask_array = expand_masks(image_array, seed_pixels, mask_array)
+	return mask_array
+
+def complete_structure_mask(image_array: np.array, mask_array: np.array, debug = False) -> np.array:
 	'''This funtion takes an image (array) and an array containing the masks (shape: x,y,n where n is the amount of masks and x and y are the pixel coordinates).
 	It detects objects on the contours of the mask and expands it until it frames the complete object in the image. 
 	It returns the expanded mask array'''
@@ -212,13 +225,27 @@ def complete_structure_mask(image_array, mask_array, debug = False):
 		
 		blurred_image_array = gaussian_filter(img_as_float(binarized_image_array).copy(), sigma=blur_factor)
 
-		for polygon_index in range(len(polygons)): 
-		# Ten-fold nodes
-			bounding_box = polygons[polygon_index][0]
+		# Create list tuples of masks and corresponding bounding_box
+		mask_bounding_box_tuples = [(mask_array[:,:,index], polygons[index][0]) for index in range(len(polygons))]
+		
+		# Run expansion using Multiprocessing
+		image_repeat = itertools.repeat(blurred_image_array, len(mask_bounding_box_tuples)) # Why does this not work?
+		#image_repeat = [copy.deepcopy(blurred_image_array) for _ in range(len(mask_bounding_box_tuples))]
+
+		#expanded_split_mask_arrays = map(expansion_coordination, mask_bounding_box_tuples, image_repeat)
+		with Pool(20) as p:
+			expanded_split_mask_arrays = p.starmap(expansion_coordination, zip(mask_bounding_box_tuples, image_repeat))
+
+		# Stack mask arrays to give the desired output format
+		mask_array = np.stack(expanded_split_mask_arrays, -1)
+
+		#for polygon_index in range(len(polygons)): 
+
+		#	bounding_box = polygons[polygon_index][0]
 
 			# Find seed pixels for expansion
-			seed_pixels = find_seeds(blurred_image_array, bounding_box)
-			mask_array = expand_masks(blurred_image_array, seed_pixels, mask_array, mask_index = polygon_index)
+		#	seed_pixels = find_seeds(blurred_image_array, bounding_box)
+		#	mask_array = expand_masks(blurred_image_array, seed_pixels, mask_array, mask_index = polygon_index)
 
 	else: 
 		print("No masks found.")
