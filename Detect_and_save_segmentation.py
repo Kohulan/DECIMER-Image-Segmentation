@@ -9,6 +9,7 @@ import skimage.io
 import cv2
 from PIL import Image
 import argparse
+import tensorflow as tf
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -18,7 +19,6 @@ from mrcnn import model as modellib
 from mrcnn import visualize
 from mrcnn import moldetect
 from Scripts import complete_structure 
-
 
 # Root directory of the project
 ROOT_DIR = os.path.dirname(os.path.dirname(os.getcwd()))
@@ -43,17 +43,22 @@ def main():
 	else:
 		os.system("mkdir "+output_directory)
 
-	directory,info = get_segments(IMAGE_PATH,output_directory)
+	zipper = get_segments(IMAGE_PATH,output_directory)
 
-	print(directory,info)
+	segmented_img = save_segments(zipper)
 
-def get_segments(IMAGE_PATH,output_directory):
+	print("Segmented Images can be found on: ", segmented_img)
+
+def get_segments(output_directory,IMAGE_PATH):
 	r = get_masks(IMAGE_PATH)
 
 	#Expand Masks
 	image = skimage.io.imread(IMAGE_PATH)
 	expanded_masks = complete_structure.complete_structure_mask(image_array = image, mask_array = r['masks'], debug = False)
-	segmented_img = save_segments(expanded_masks,IMAGE_PATH,output_directory)
+	
+	zipper = (expanded_masks,IMAGE_PATH,output_directory)
+	
+	segmented_img = save_segments(zipper)
 
 	return segmented_img
 
@@ -100,7 +105,8 @@ def get_masks(IMAGE_PATH):
 
 	return r
 
-def save_segments(expanded_masks,IMAGE_PATH,output_directory):
+def save_segments(zipper):
+	expanded_masks,IMAGE_PATH,output_directory = zipper
 	mask = expanded_masks
 
 	for i in range(mask.shape[2]):
@@ -153,7 +159,7 @@ def save_segments(expanded_masks,IMAGE_PATH,output_directory):
 		cv2.imwrite(filename,new_img)
 		
 
-	return output_directory+"/segments/","Completed, Segments saved inside the output folder!"
+	return output_directory+"/segments/"
 
 
 if __name__ == '__main__':
