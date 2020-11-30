@@ -229,4 +229,8 @@ def complete_structure_mask(image_array: np.array, mask_array: np.array, debug =
 
 	else: 
 		print("No masks found.")
+<<<<<<< HEAD
 		return mask_array
+=======
+		return mask_array
+>>>>>>> 4513f5186de3f8baf313ca076e057040b12fb7c9
