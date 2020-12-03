@@ -18,6 +18,7 @@ def convert2(outputpath, pages, file):
 
 def convert(path):
 	'''Takes all files from a given directory with pdf files and turns them into jpg files. filename.pdf leads to filename_1.jpg, filename_2.png jpg.'''
+	
 	outputpath = path+'_output'
 	if os.path.exists(outputpath):
 		pass
@@ -25,8 +26,9 @@ def convert(path):
 		os.system("mkdir "+ outputpath)
 
 	pages = convert_from_path(str(path), 500)
-	convert2(outputpath, pages, path)
-	report(outputpath, path)
+	dir_path, filename = os.path.split(path)
+	convert2(outputpath, pages, filename)
+	report(outputpath, filename)
 
 	#print("All files are converted!")
 	return outputpath
