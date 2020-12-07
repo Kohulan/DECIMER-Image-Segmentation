@@ -106,36 +106,6 @@ def main():
 #expanded_masks, input_dir, filename, output_dir, mask_expansion = True
 def get_masks(input_dir, filename, model):
 	'''This function applies the Mask R CNN model on a given input image and returns the masks of the detected structures '''
-	MODEL_DIR = os.path.join(ROOT_DIR, "logs")
-
-	# Local path to trained weights file
-	COCO_MODEL_PATH = os.path.join("model_trained/mask_rcnn_molecule.h5")
-
-	# Download COCO trained weights from Releases if needed
-	if not os.path.exists(COCO_MODEL_PATH):
-		utils.download_trained_weights(COCO_MODEL_PATH)
-
-	# Image Path
-	#IMAGE_DIR = os.path.join("/media/data_drive/Kohulan/After-Meeting_20190522/MaskRCNN/Test")
-	config = moldetect.MolDetectConfig()
-
-	# Override the training configurations with a few
-	# changes for inferencing.
-	class InferenceConfig(config.__class__):
-		# Run detection on one image at a time
-		GPU_COUNT = 1
-		IMAGES_PER_GPU = 1
-
-	config = InferenceConfig()
-	config.display()
-
-	# Create model object in inference mode.
-	model = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config)
-
-	# Load weights trained on MS-COCO
-	model.load_weights(COCO_MODEL_PATH, by_name=True)
-
-	class_names=['BG', 'Molecule']
 
 	IMAGE_PATH = input_dir + "/" + filename
 
