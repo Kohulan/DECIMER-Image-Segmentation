@@ -45,26 +45,9 @@ def main():
 
 	zipper = get_segments(IMAGE_PATH,output_directory)
 
-	segmented_img = save_segments(zipper)
+	print("Segmented Images can be found on: ", zipper)
 
-	print("Segmented Images can be found on: ", segmented_img)
-
-def get_segments(output_directory,IMAGE_PATH):
-	r = get_masks(IMAGE_PATH)
-
-	#Expand Masks
-	image = skimage.io.imread(IMAGE_PATH)
-	expanded_masks = complete_structure.complete_structure_mask(image_array = image, mask_array = r['masks'], debug = False)
-	
-	zipper = (expanded_masks,IMAGE_PATH,output_directory)
-	
-	segmented_img = save_segments(zipper)
-
-	return segmented_img
-
-
-
-def get_masks(IMAGE_PATH):
+def load_model():
 	# Directory to save logs and trained model
 	MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
@@ -75,9 +58,6 @@ def get_masks(IMAGE_PATH):
 	if not os.path.exists(TRAINED_MODEL_PATH):
 		utils.download_trained_weights(TRAINED_MODEL_PATH)
 
-	# Image Path
-	#IMAGE_DIR = os.path.join("/media/data_drive/Kohulan/After-Meeting_20190522/MaskRCNN/Test")
-	image = skimage.io.imread(IMAGE_PATH)
 	config = moldetect.MolDetectConfig()
 
 	# Override the training configurations with a few
@@ -96,7 +76,29 @@ def get_masks(IMAGE_PATH):
 	# Load weights trained on MS-COCO
 	model.load_weights(TRAINED_MODEL_PATH, by_name=True)
 
-	class_names=['BG', 'Molecule']
+	#class_names=['BG', 'Molecule']
+
+	return model
+
+
+def get_segments(output_directory,IMAGE_PATH):
+	model = load_model()
+	r = get_masks(IMAGE_PATH,model)
+
+	#Expand Masks
+	image = skimage.io.imread(IMAGE_PATH)
+	expanded_masks = complete_structure.complete_structure_mask(image_array = image, mask_array = r['masks'], debug = False)
+	
+	zipper = (expanded_masks,IMAGE_PATH,output_directory)
+	
+	segmented_img = save_segments(zipper)
+
+	return segmented_img
+
+def get_masks(IMAGE_PATH,model):
+
+	# Image Path
+	image = skimage.io.imread(IMAGE_PATH)
 
 	# Run detection
 	results = model.detect([image], verbose=1)
@@ -150,7 +152,6 @@ def save_segments(zipper):
 			os.system("mkdir "+output_directory+"/segments")
 
 		#Defining the correct path to save the segments
-
 		if len(IMAGE_PATH.split("/")) == 2:
 			filename = output_directory+"/segments/"+IMAGE_PATH.split("/")[1][:-4]+"_%d.png"%i
 		else:
@@ -164,4 +165,3 @@ def save_segments(zipper):
 
 if __name__ == '__main__':
     main()
-

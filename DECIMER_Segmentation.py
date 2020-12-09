@@ -25,10 +25,9 @@ def main():
 	if len(sys.argv) == 2:
 		output_directory = pdf_2_img_Convert.convert(sys.argv[1])
 		converted_images = glob.glob(output_directory+"/*.png") # Get all images converted into JPEGs
-		
 		pool = mp.Pool(4)
 
-		Pool_function = partial(Detect_and_save_segmentation.get_segments, output_directory)
+		Pool_function = partial(Detect_and_save_segmentation.get_segments,output_directory)
 
 		expanded_masks = pool.map(Pool_function,converted_images)
 
