@@ -35,6 +35,10 @@ $python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 
 - A web application implementation is available at [decimer.ai](https://decimer.naturalproducts.net), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
 
+## Citation
+
+- to do
+
 ## Project page
 
 [![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-to-SMILES/raw/master/assets/DECIMER.gif)](https://kohulan.github.io/Decimer-Official-Site/)
