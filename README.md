@@ -1,10 +1,8 @@
 # DECIMER-Image-Segmentation
 
-Image segmentation initial works by Kohulan Rajan and Otto Brinkhaus
+Deep learning-based image segmentation work by Kohulan Rajan and Otto Brinkhaus
 
-Using Mask R-CNN, we are trying to recognize and segment depictions of chemical structures from the published literature. The superiour algorith of the mask R-CNN model can easily segment an Image after being trained with a mixed set of data, including a manually annotated set of pages from the published literature.
-
-Initial work was done training the Mask R-CNN network with our data and deploying it on a completely new set of data to examine the segmentation accuracy. There is a post-processing procedure additionally where we incorporated a mask expansion algorithm to segement complete chemical structures. later on the complete segmented structures will under go a cleaning up process and the results will be given back to the user. 
+We are using Mask R-CNN to recognize and segment depictions of chemical structures from the published literature. Mask R-CNN can easily detect chemical image depiction after being trained on data annotated from previously published literature. After detection, a Mask expansion algorithm will go through the detected structures for its completeness. Finally, the Segmentation algorithm segments out the chemical image depictions into individual image files.
 
 ## Usage
 
@@ -32,6 +30,10 @@ $python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 ## Authors 
 - [Kohulan](github.com/Kohulan)
 - [Otto Brinkhaus](github.com/OBrink)
+
+## decimer.ai
+
+- A web application implementation is available at [decimer.ai](https://decimer.naturalproducts.net), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
 
 ## Project page
 
