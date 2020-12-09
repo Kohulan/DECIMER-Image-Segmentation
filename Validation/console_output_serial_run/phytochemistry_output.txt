@@ -1,0 +1,1130 @@
+S0031942214002271.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002271.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002271.pdf_output/S0031942214002271.pdf_2_0.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	0m53.148s
+user	8m10.476s
+sys	2m13.332s
+S0031942214002532.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m22.635s
+user	13m56.591s
+sys	2m20.745s
+S003194221400257X.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400257X.pdf_output/S003194221400257X.pdf_2_9.png
+No masks found.
+Cleaning up images
+
+real	1m32.535s
+user	8m36.227s
+sys	1m41.125s
+S0031942214002817.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_5_1.png
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214002817.pdf_output/S0031942214002817.pdf_3_11.png
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m42.640s
+user	14m20.173s
+sys	2m54.763s
+S0031942214003185.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003185.pdf_output/S0031942214003185.pdf_2_5.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m12.018s
+user	11m0.870s
+sys	2m2.837s
+S0031942214003276.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003276.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003276.pdf_output/S0031942214003276.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003276.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003276.pdf_output/S0031942214003276.pdf_2_1.png
+Cleaning up images
+
+real	0m46.053s
+user	6m33.702s
+sys	1m22.843s
+S0031942214003343.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_13.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_3_14.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_6_0.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214003343.pdf_output/S0031942214003343.pdf_9_5.png
+Cleaning up images
+
+real	2m14.084s
+user	18m48.887s
+sys	3m47.520s
+S0031942214004117.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_3_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_13.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_14.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_15.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_16.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_17.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_18.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942214004117.pdf_output/S0031942214004117.pdf_7_19.png
+Cleaning up images
+
+real	2m3.483s
+user	17m39.779s
+sys	3m26.714s
+S003194221400541X.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S003194221400541X.pdf_output/S003194221400541X.pdf_5_9.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m12.884s
+user	10m57.450s
+sys	2m6.132s
+S0031942215000436.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/S0031942215000436.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/S0031942215000436.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/S0031942215000436.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215000436.pdf_output/S0031942215000436.pdf_3_3.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m22.270s
+user	13m18.411s
+sys	3m10.372s
+S0031942215001739.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215001739.pdf_output/S0031942215001739.pdf_3_5.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m4.398s
+user	9m38.649s
+sys	2m1.104s
+S0031942215300388.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/S0031942215300388.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/S0031942215300388.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/S0031942215300388.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/S0031942215300388.pdf_4_3.png
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942215300388.pdf_output/S0031942215300388.pdf_6_0.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m47.485s
+user	16m0.947s
+sys	2m38.293s
+S0031942215300972.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m13.647s
+user	11m26.476s
+sys	1m51.723s
+S0031942216300061.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_6_9.png
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300061.pdf_output/S0031942216300061.pdf_7_5.png
+Cleaning up images
+
+real	2m24.106s
+user	16m36.744s
+sys	3m49.178s
+S0031942216300085.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300085.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300085.pdf_output/S0031942216300085.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300085.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300085.pdf_output/S0031942216300085.pdf_3_1.png
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m9.474s
+user	10m26.786s
+sys	2m14.755s
+S0031942216300334.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300334.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300334.pdf_output/S0031942216300334.pdf_4_0.png
+No masks found.
+Cleaning up images
+
+real	1m2.248s
+user	7m46.305s
+sys	1m42.459s
+S0031942216300486.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_6_3.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_4_0.png
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942216300486.pdf_output/S0031942216300486.pdf_2_3.png
+Cleaning up images
+
+real	1m43.344s
+user	14m4.497s
+sys	3m16.961s
+S0031942217300973.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/S0031942217300973.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/S0031942217300973.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/S0031942217300973.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217300973.pdf_output/S0031942217300973.pdf_2_3.png
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m24.411s
+user	14m29.062s
+sys	2m46.491s
+S0031942217301590.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m13.175s
+user	11m21.782s
+sys	2m8.652s
+S0031942217301693.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/S0031942217301693.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/S0031942217301693.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217301693.pdf_output/S0031942217301693.pdf_2_2.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m41.043s
+user	17m4.640s
+sys	3m2.990s
+S0031942217302546.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/S0031942217302546.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/S0031942217302546.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/S0031942217302546.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302546.pdf_output/S0031942217302546.pdf_6_3.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m15.409s
+user	11m48.623s
+sys	2m18.556s
+S0031942217302583.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/S0031942217302583.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/S0031942217302583.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/S0031942217302583.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/S0031942217302583.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302583.pdf_output/S0031942217302583.pdf_2_4.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m22.831s
+user	12m15.489s
+sys	3m18.517s
+S0031942217302649.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942217302649.pdf_output/S0031942217302649.pdf_2_6.png
+Cleaning up images
+
+real	1m2.380s
+user	8m19.782s
+sys	1m34.910s
+S0031942218300359.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m24.807s
+user	13m59.370s
+sys	2m37.907s
+S0031942218300566.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/phytochemistry_validation_data/pdf/S0031942218300566.pdf_output/S0031942218300566.pdf_6_13.png
+Cleaning up images
+
+real	1m26.163s
+user	11m22.936s
+sys	2m19.874s

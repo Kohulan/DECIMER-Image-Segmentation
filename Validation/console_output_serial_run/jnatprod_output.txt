@@ -1,0 +1,1187 @@
+acs.jnatprod.6b00305.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00305.pdf_output/acs.jnatprod.6b00305.pdf_1_5.png
+Cleaning up images
+
+real	2m48.379s
+user	9m40.408s
+sys	2m50.642s
+acs.jnatprod.6b00491.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_2_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_1_3.png
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00491.pdf_output/acs.jnatprod.6b00491.pdf_4_8.png
+Cleaning up images
+
+real	2m59.743s
+user	16m51.954s
+sys	4m35.121s
+acs.jnatprod.6b00748.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_2_1.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b00748.pdf_output/acs.jnatprod.6b00748.pdf_5_3.png
+Cleaning up images
+
+real	1m40.052s
+user	10m43.152s
+sys	2m21.676s
+acs.jnatprod.6b01051.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_1_0.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01051.pdf_output/acs.jnatprod.6b01051.pdf_2_4.png
+Cleaning up images
+
+real	1m0.180s
+user	5m57.339s
+sys	1m23.638s
+acs.jnatprod.6b01196.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_1_2.png
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.6b01196.pdf_output/acs.jnatprod.6b01196.pdf_2_7.png
+Cleaning up images
+
+real	1m15.439s
+user	10m24.332s
+sys	2m3.970s
+acs.jnatprod.7b00043.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_6_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_5_10.png
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00043.pdf_output/acs.jnatprod.7b00043.pdf_2_0.png
+Cleaning up images
+
+real	1m42.017s
+user	14m52.112s
+sys	3m32.040s
+acs.jnatprod.7b00328.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/acs.jnatprod.7b00328.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/acs.jnatprod.7b00328.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/acs.jnatprod.7b00328.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00328.pdf_output/acs.jnatprod.7b00328.pdf_1_0.png
+Cleaning up images
+
+real	1m16.197s
+user	7m37.824s
+sys	1m49.197s
+acs.jnatprod.7b00476.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_1_1.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00476.pdf_output/acs.jnatprod.7b00476.pdf_2_7.png
+Cleaning up images
+
+real	1m59.571s
+user	19m14.753s
+sys	3m53.778s
+acs.jnatprod.7b00648.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_2_8.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00648.pdf_output/acs.jnatprod.7b00648.pdf_1_0.png
+No masks found.
+Cleaning up images
+
+real	1m45.060s
+user	17m22.952s
+sys	3m59.048s
+acs.jnatprod.7b00703.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_6_1.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00703.pdf_output/acs.jnatprod.7b00703.pdf_2_4.png
+Cleaning up images
+
+real	1m39.528s
+user	17m43.479s
+sys	3m58.455s
+acs.jnatprod.7b00762.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_13.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_14.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_15.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_16.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_2_17.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_1_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_8_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_8_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_8_2.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_13.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_4_14.png
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00762.pdf_output/acs.jnatprod.7b00762.pdf_5_7.png
+Cleaning up images
+
+real	3m48.330s
+user	25m6.893s
+sys	7m16.391s
+acs.jnatprod.7b00838.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_3_6.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00838.pdf_output/acs.jnatprod.7b00838.pdf_1_2.png
+Cleaning up images
+
+real	2m20.386s
+user	19m18.330s
+sys	4m24.277s
+acs.jnatprod.7b00867.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.7b00867.pdf_output/acs.jnatprod.7b00867.pdf_1_10.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	2m1.227s
+user	19m16.048s
+sys	3m54.962s
+acs.jnatprod.8b00209.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_1_0.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00209.pdf_output/acs.jnatprod.8b00209.pdf_2_7.png
+Cleaning up images
+
+real	1m57.362s
+user	18m56.724s
+sys	3m52.905s
+acs.jnatprod.8b00335.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_13.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_14.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_15.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_16.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_17.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_18.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_19.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_20.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_2_21.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00335.pdf_output/acs.jnatprod.8b00335.pdf_1_9.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	2m16.414s
+user	11m24.408s
+sys	2m56.503s
+acs.jnatprod.8b00544.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00544.pdf_output/acs.jnatprod.8b00544.pdf_2_8.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m27.063s
+user	11m17.081s
+sys	2m58.185s
+acs.jnatprod.8b00728.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/acs.jnatprod.8b00728.pdf_output/acs.jnatprod.8b00728.pdf_2_7.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m41.351s
+user	18m36.921s
+sys	3m46.149s
+np300428r.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_1_6.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300428r.pdf_output/np300428r.pdf_3_3.png
+No masks found.
+Cleaning up images
+
+real	1m5.769s
+user	9m16.070s
+sys	2m25.114s
+np300490v.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np300490v.pdf_output/np300490v.pdf_1_0.png
+No masks found.
+Cleaning up images
+
+real	1m49.672s
+user	16m43.102s
+sys	3m32.984s
+np400071c.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400071c.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400071c.pdf_output/np400071c.pdf_2_0.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400071c.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400071c.pdf_output/np400071c.pdf_1_0.png
+Cleaning up images
+
+real	1m14.919s
+user	12m11.928s
+sys	3m48.974s
+np400188m.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/np400188m.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/np400188m.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/np400188m.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/np400188m.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400188m.pdf_output/np400188m.pdf_2_4.png
+Cleaning up images
+
+real	1m42.291s
+user	16m37.407s
+sys	3m14.736s
+np400234u.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_2_6.png
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400234u.pdf_output/np400234u.pdf_1_1.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m17.884s
+user	12m47.169s
+sys	3m34.970s
+np400304q.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_3_0.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_1_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_1_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400304q.pdf_output/np400304q.pdf_6_2.png
+Cleaning up images
+
+real	1m52.870s
+user	19m3.836s
+sys	4m7.427s
+np400326e.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400326e.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400326e.pdf_output/np400326e.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400326e.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400326e.pdf_output/np400326e.pdf_1_1.png
+No masks found.
+Cleaning up images
+
+real	0m49.119s
+user	8m26.526s
+sys	1m54.420s
+np400817j.pdf has been converted.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Use fn_output_signature instead
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
+Instructions for updating:
+This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/jnatprod_segmentation_pdf_input_25/np400817j.pdf_output/np400817j.pdf_2_13.png
+No masks found.
+No masks found.
+Cleaning up images
+
+real	1m58.768s
+user	17m16.636s
+sys	3m38.562s
