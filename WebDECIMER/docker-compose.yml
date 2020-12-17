@@ -1,0 +1,25 @@
+version: '3.2'
+
+
+services:  
+  decimer-segmentation:
+    container_name: decimer-segmentation-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./media_root:/WebDECIMER/media_root
+    environment:
+      VIRTUAL_HOST: decimer.naturalproducts.net
+      VIRTUAL_PORT: 8000
+      LETSENCRYPT_HOST: decimer.naturalproducts.net
+      LETSENCRYPT_EMAIL: maria.ssorokina@gmail.com
+      
+
+  
+networks:
+  default:
+    external:
+      name: nginx-proxy

@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84c2c5c9-17fc-4519-8866-767bc4111e30" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/decimer-venv/lib/python3.7/site-packages/matplotlib/backends/web_backend/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/code-frame/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/compat-data/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/core/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/core/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/generator/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/generator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-annotate-as-pure/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-builder-binary-assignment-operator-visitor/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-builder-react-jsx-experimental/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-builder-react-jsx/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-compilation-targets/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-create-class-features-plugin/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-create-regexp-features-plugin/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-define-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-explode-assignable-expression/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-function-name/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-get-function-arity/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-hoist-variables/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-member-expression-to-functions/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-module-imports/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-module-transforms/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-optimise-call-expression/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-plugin-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-remap-async-to-generator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-replace-supers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-simple-access/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-skip-transparent-expression-wrappers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-split-export-declaration/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-validator-identifier/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-validator-option/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helper-wrap-function/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/helpers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/highlight/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-async-generator-functions/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-class-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-dynamic-import/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-export-namespace-from/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-json-strings/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-logical-assignment-operators/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-numeric-separator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-optional-catch-binding/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-optional-chaining/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-private-methods/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-proposal-unicode-property-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-async-generators/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-class-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-dynamic-import/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-export-namespace-from/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-json-strings/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-jsx/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-logical-assignment-operators/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-nullish-coalescing-operator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-numeric-separator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-object-rest-spread/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-optional-catch-binding/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-optional-chaining/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-syntax-top-level-await/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-arrow-functions/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-async-to-generator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-block-scoped-functions/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-block-scoping/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-classes/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-computed-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-destructuring/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-dotall-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-duplicate-keys/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-exponentiation-operator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-for-of/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-function-name/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-literals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-member-expression-literals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-modules-amd/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-modules-commonjs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-modules-systemjs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-modules-umd/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-named-capturing-groups-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-new-target/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-object-super/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-parameters/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-property-literals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-display-name/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-jsx-development/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-jsx-self/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-jsx-source/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-jsx/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-react-pure-annotations/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-regenerator/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-reserved-words/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-shorthand-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-spread/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-sticky-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-template-literals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-typeof-symbol/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-unicode-escapes/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/plugin-transform-unicode-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/preset-env/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/preset-modules/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/preset-react/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/runtime/helpers/esm/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/runtime/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/template/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/traverse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@babel/types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/fontawesome-common-types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/fontawesome-svg-core/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/free-brands-svg-icons/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/free-regular-svg-icons/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/free-solid-svg-icons/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@fortawesome/react-fontawesome/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@popperjs/core/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/context/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useAnimationFrame/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useBreakpoint/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useCallbackRef/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useCommittedRef/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useCustomEffect/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useEventCallback/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useEventListener/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useFocusManager/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useForceUpdate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useGlobalListener/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useImage/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useImmediateUpdateEffect/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useIntersectionObserver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useInterval/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useIsomorphicEffect/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMap/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMediaQuery/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMergeState/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMergeStateFromProps/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMergedRefs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMountEffect/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMounted/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useMutationObserver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/usePrevious/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useRafInterval/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useRefWithInitialValueFactory/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useResizeObserver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useSafeState/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useSet/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useStableMemo/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useStateAsync/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useThrottledEventHandler/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useTimeout/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useUpdateEffect/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useUpdatedRef/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@restart/hooks/useWillUnmount/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/classnames/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/eslint/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/estree/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/invariant/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/json-schema/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/node/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/react-transition-group/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/react/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@types/warning/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/ast/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/floating-point-hex-parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-api-error/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-buffer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-code-frame/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-fsm/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-module-context/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-wasm-bytecode/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/helper-wasm-section/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/leb128/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/utf8/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wasm-edit/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wasm-gen/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wasm-opt/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wasm-parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wast-parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webassemblyjs/wast-printer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webpack-cli/info/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@webpack-cli/serve/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@xtuc/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/@xtuc/long/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/ansi-colors/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/array-back/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/attr-accept/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/autoprefixer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/axios-retry/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/axios/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/babel-loader/node_modules/schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/babel-loader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/babel-plugin-dynamic-import-node/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/big.js/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/browserslist/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/buffer-from/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/call-bind/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/callsites/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/caniuse-lite/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/chalk/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/chalk/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/chrome-trace-event/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/classnames/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/colorette/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/command-line-usage/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/commondir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/convert-source-map/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/convert-source-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/core-js-compat/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/core-js-compat/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/cosmiconfig/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/css-loader/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/css-loader/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/css-loader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/cssesc/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/csstype/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/define-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/activeElement/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/addClass/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/addEventListener/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/animate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/animationFrame/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/camelize/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/camelizeStyle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/canUseDOM/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/closest/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/contains/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/css/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/filterEventHandler/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/getComputedStyle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/getScrollAccessor/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/hasClass/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/height/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/hyphenate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/hyphenateStyle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/isDocument/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/isTransform/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/isWindow/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/listen/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/matches/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/offset/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/offsetParent/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/ownerDocument/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/ownerWindow/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/position/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/querySelectorAll/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/removeClass/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/removeEventListener/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/scrollLeft/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/scrollParent/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/scrollTo/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/scrollTop/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/scrollbarSize/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/toggleClass/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/transitionEnd/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/dom-helpers/width/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/electron-to-chromium/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/emitter-component/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/emojis-list/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/end-of-stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/enhanced-resolve/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/enquirer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/envinfo/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/error-ex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/escalade/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/esrecurse/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/esrecurse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/events/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/file-saver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/file-selector/node_modules/tslib/modules/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/file-selector/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/file-selector/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/node_modules/pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-cache-dir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/follow-redirects/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/font-awesome/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/function-bind/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/gensync/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/get-intrinsic/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/glob-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/has-symbols/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/has/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/history/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/hoist-non-react-statics/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/human-signals/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/icss-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/immediate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/import-fresh/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/import-fresh/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/import-local/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/indexes-of/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/interpret/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/invariant/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/is-core-module/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/is-retry-allowed/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/jest-worker/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/json-parse-better-errors/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/json-parse-even-better-errors/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/jszip-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/jszip/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/klona/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/leven/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/lie/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/line-column/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/lines-and-columns/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/loader-runner/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/loader-utils/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/lodash-es/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/loose-envify/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/make-dir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/merge-stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/mini-create-react-context/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/nanoid/async/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/nanoid/non-secure/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/nanoid/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/nanoid/url-alphabet/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/neo-async/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/node-releases/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/normalize-range/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/num2fraction/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/object-keys/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/object.assign/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/pako/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/parent-module/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-parse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-to-regexp/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-loader/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-loader/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-loader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-modules-extract-imports/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-modules-local-by-default/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-modules-scope/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-modules-values/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-selector-parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss-value-parser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/postcss/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/prop-types-extra/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/randombytes/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/AbstractNav/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/AbstractNavItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Accordion/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/AccordionCollapse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/AccordionContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/AccordionToggle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Alert/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Badge/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/BootstrapModalManager/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Breadcrumb/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/BreadcrumbItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Button/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ButtonGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ButtonToolbar/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Card/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CardColumns/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CardContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CardDeck/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CardGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CardImg/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Carousel/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CarouselCaption/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CarouselItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/CloseButton/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Col/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Collapse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Container/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Dropdown/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/DropdownButton/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/DropdownItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/DropdownMenu/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/DropdownToggle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ElementChildren/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Fade/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Feedback/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Figure/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FigureCaption/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FigureImage/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Form/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormCheck/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormCheckInput/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormCheckLabel/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormControl/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormFile/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormFileInput/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormFileLabel/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormLabel/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/FormText/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Image/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/InputGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Jumbotron/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ListGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ListGroupItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Media/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Modal/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalBody/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalDialog/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalFooter/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalHeader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ModalTitle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Nav/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavDropdown/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavLink/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Navbar/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavbarBrand/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavbarCollapse/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavbarContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/NavbarToggle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Overlay/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/OverlayTrigger/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/PageItem/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Pagination/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Popover/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/PopoverContent/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/PopoverTitle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ProgressBar/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ResponsiveEmbed/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Row/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/SafeAnchor/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/SelectableContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Spinner/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/SplitButton/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Switch/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Tab/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/TabContainer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/TabContent/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/TabContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/TabPane/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Table/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Tabs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ThemeProvider/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Toast/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ToastBody/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ToastContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ToastHeader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ToggleButton/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/ToggleButtonGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/Tooltip/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/createChainedFunction/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/createWithBsPrefix/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/divWithClassName/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/helpers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/triggerBrowserReflow/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/types/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/usePopperMarginModifiers/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-bootstrap/useWrappedRefWithWarning/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-dom/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-dropzone/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-fontawesome/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-is/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-lifecycles-compat/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/Dropdown/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/DropdownContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/DropdownMenu/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/DropdownToggle/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/Modal/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/ModalManager/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/Overlay/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/Portal/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/isOverflowing/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/manageAriaHidden/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/mergeOptionsWithPopperConfig/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/ownerDocument/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/popper/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/safeFindDOMNode/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/usePopper/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/useRootClose/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-overlays/useWaitForDOMRef/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-router-dom/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-router/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-sticky-footer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/CSSTransition/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/ReplaceTransition/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/SwitchTransition/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/Transition/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/TransitionGroup/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/TransitionGroupContext/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/config/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react-transition-group/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/react/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/readable-stream/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/rechoir/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/reduce-flatten/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regenerate-unicode-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regenerate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regenerator-runtime/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regenerator-transform/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regexpu-core/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regjsgen/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regjsparser/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/regjsparser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve-cwd/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve-pathname/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/invalid_main/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/multirepo/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/nested_symlinks/mylib/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/resolve/test/resolver/symlinked/package/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/scheduler/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/serialize-javascript/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/set-immediate-shim/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/stream/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/string_decoder/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/strip-final-newline/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/style-loader/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/style-loader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/table-layout/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tapable/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser-webpack-plugin/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser/bin/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser/dist/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/terser/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tiny-invariant/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tiny-warning/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/to-fast-properties/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tslib/modules/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/tslib/test/validateModuleExportsMatchCommonJS/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/typical/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/uncontrollable/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/unicode-canonical-property-names-ecmascript/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/unicode-match-property-ecmascript/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/unicode-match-property-value-ecmascript/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/unicode-property-aliases-ecmascript/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/uniq/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/uri-js/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/url-loader/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/url-loader/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/v8-compile-cache/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/value-equal/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/warning/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/watchpack/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/webpack-cli/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/webpack-cli/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/webpack-merge/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/webpack-sources/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/webpack/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/wordwrapjs/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/frontend/node_modules/yaml/package.json" />
+      <path value="$PROJECT_DIR$/frontend/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WebDECIMER" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDECIMER" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDECIMER" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDECIMER" type="462c0819:PsiDirectoryNode" />
+              <item name="segmentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="WebDECIMER" type="Python.DjangoServer" factoryName="Django server">
+      <module name="WebDECIMER" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84c2c5c9-17fc-4519-8866-767bc4111e30" name="Default" comment="" />
+      <created>1607601209248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607601209248</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>
