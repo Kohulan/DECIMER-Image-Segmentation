@@ -29,6 +29,17 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/molecules-25-01124-v2.pdf_3_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/molecules-25-01124-v2.pdf_3_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/molecules-25-01124-v2.pdf_3_2.png
@@ -41,22 +52,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/molecules-25-01124-v2.pdf_3_9.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01124-v2.pdf_output/molecules-25-01124-v2.pdf_3_10.png
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 Cleaning up images
 
-real	2m58.565s
-user	25m50.567s
-sys	3m58.813s
+real	2m36.883s
+user	25m54.571s
+sys	4m6.892s
 molecules-25-01152-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -102,9 +102,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	2m33.337s
-user	23m29.346s
-sys	3m53.706s
+real	2m30.001s
+user	23m6.577s
+sys	3m24.851s
 molecules-25-01160-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -130,6 +130,20 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_1_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_1_1.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_2_1.png
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_7_0.png
 No masks found.
 No masks found.
@@ -147,25 +161,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_4_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_4_7.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_4_8.png
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_1_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_1_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_5_6.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_2_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01160-v2.pdf_output/molecules-25-01160-v2.pdf_2_1.png
-No masks found.
-No masks found.
 Cleaning up images
 
-real	2m22.031s
-user	19m16.707s
-sys	3m58.257s
+real	2m32.665s
+user	19m47.365s
+sys	4m3.553s
 molecules-25-01162.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -191,9 +191,6 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/molecules-25-01162.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/molecules-25-01162.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01162.pdf_output/molecules-25-01162.pdf_2_2.png
@@ -207,11 +204,14 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
 Cleaning up images
 
-real	1m25.961s
-user	14m32.274s
-sys	2m59.787s
+real	1m32.816s
+user	14m33.147s
+sys	3m2.152s
 molecules-25-01170.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -240,6 +240,18 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_6.png
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_7_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_7_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_7_2.png
@@ -257,23 +269,11 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01170.pdf_output/molecules-25-01170.pdf_6_6.png
 Cleaning up images
 
-real	3m2.865s
-user	28m3.820s
-sys	4m11.876s
+real	3m22.177s
+user	28m41.134s
+sys	4m42.099s
 molecules-25-01183.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -324,19 +324,8 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_5_22.png
 No masks found.
 No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_4.png../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_6.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_7.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_8.png
+No masks found.
+No masks found.
 No masks found.
 No masks found.
 No masks found.
@@ -378,13 +367,24 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
-
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_4.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_5.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_7.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_8_8.png
-No masks found.
-No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01183.pdf_output/molecules-25-01183.pdf_3_8.png
 No masks found.
 No masks found.
 No masks found.
@@ -393,9 +393,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	4m51.443s
-user	38m56.506s
-sys	6m54.631s
+real	5m54.869s
+user	41m35.386s
+sys	7m25.078s
 molecules-25-01186.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -428,9 +428,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	0m46.332s
-user	6m19.839s
-sys	1m14.103s
+real	0m45.046s
+user	6m15.251s
+sys	1m5.105s
 molecules-25-01189-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -458,10 +458,23 @@ Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_5_0.png
 No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_6.png
 No masks found.
 No masks found.
 No masks found.
 No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_5.png
 No masks found.
 No masks found.
 No masks found.
@@ -477,24 +490,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_2_3.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_2_4.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_2_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_4_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01189-v2.pdf_output/molecules-25-01189-v2.pdf_6_6.png
 Cleaning up images
 
-real	2m10.069s
-user	19m2.068s
-sys	4m8.314s
+real	2m28.166s
+user	19m48.281s
+sys	4m10.277s
 molecules-25-01192.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -522,17 +522,17 @@ Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_3.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_4.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_2_5.png
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_10_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_10_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01192.pdf_output/molecules-25-01192.pdf_10_2.png
@@ -546,9 +546,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	2m15.731s
-user	21m25.714s
-sys	3m59.942s
+real	2m12.760s
+user	21m35.410s
+sys	3m45.835s
 molecules-25-01204.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -586,9 +586,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	1m16.315s
-user	12m36.726s
-sys	2m16.894s
+real	1m16.802s
+user	12m33.330s
+sys	2m16.691s
 molecules-25-01209.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -618,17 +618,6 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_3.png
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_3_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_3_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_3_2.png
@@ -641,11 +630,22 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_4_4.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_4_5.png
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01209.pdf_output/molecules-25-01209.pdf_2_3.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 Cleaning up images
 
-real	2m24.603s
-user	21m59.316s
-sys	4m9.085s
+real	2m33.278s
+user	21m57.930s
+sys	3m48.588s
 molecules-25-01213-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -673,21 +673,21 @@ Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/molecules-25-01213-v2.pdf_3_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/molecules-25-01213-v2.pdf_3_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/molecules-25-01213-v2.pdf_3_2.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 No masks found.
 No masks found.
 No masks found.
@@ -700,9 +700,9 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01213-v2.pdf_output/molecules-25-01213-v2.pdf_2_1.png
 Cleaning up images
 
-real	2m54.979s
-user	28m53.103s
-sys	5m34.987s
+real	2m49.940s
+user	28m59.720s
+sys	5m0.200s
 molecules-25-01216.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -735,17 +735,17 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/molecules-25-01216.pdf_4_4.png
 No masks found.
 No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/molecules-25-01216.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/molecules-25-01216.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/molecules-25-01216.pdf_2_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01216.pdf_output/molecules-25-01216.pdf_2_3.png
-No masks found.
-No masks found.
 Cleaning up images
 
-real	0m55.291s
-user	8m41.388s
-sys	2m1.104s
+real	1m1.119s
+user	8m45.069s
+sys	2m4.002s
 molecules-25-01228-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -772,6 +772,15 @@ WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmen
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/molecules-25-01228-v2.pdf_4_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/molecules-25-01228-v2.pdf_4_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/molecules-25-01228-v2.pdf_4_2.png
@@ -796,20 +805,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/molecules-25-01228-v2.pdf_5_12.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01228-v2.pdf_output/molecules-25-01228-v2.pdf_5_13.png
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 Cleaning up images
 
-real	2m44.362s
-user	23m42.722s
-sys	4m19.811s
+real	3m2.518s
+user	23m43.726s
+sys	3m58.314s
 molecules-25-01233-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -835,22 +835,6 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_6.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_7.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_8.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_5_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_5_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_5_2.png
@@ -877,6 +861,22 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_2_7.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_2_8.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_2_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_6_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_3_2.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_4_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_4_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_4_2.png
@@ -891,9 +891,9 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01233-v2.pdf_output/molecules-25-01233-v2.pdf_4_11.png
 Cleaning up images
 
-real	2m24.748s
-user	16m25.944s
-sys	3m42.457s
+real	2m49.903s
+user	16m58.421s
+sys	3m49.699s
 molecules-25-01235-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -933,9 +933,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	1m27.881s
-user	15m15.265s
-sys	2m40.602s
+real	1m25.896s
+user	15m19.763s
+sys	2m26.794s
 molecules-25-01237-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -962,11 +962,6 @@ WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmen
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/molecules-25-01237-v2.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/molecules-25-01237-v2.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/molecules-25-01237-v2.pdf_2_2.png
@@ -980,11 +975,16 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01237-v2.pdf_output/molecules-25-01237-v2.pdf_2_10.png
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 Cleaning up images
 
-real	1m40.207s
-user	12m26.020s
-sys	2m28.143s
+real	1m59.422s
+user	12m29.572s
+sys	2m17.149s
 molecules-25-01239-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1010,10 +1010,20 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_5_1.png
 No masks found.
 No masks found.
-No masks found.
-No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_8_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_8_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_4.png
 No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_6_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_6_1.png
@@ -1025,19 +1035,9 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_10_3.png
 No masks found.
 No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_8_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_8_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_9_4.png
 No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_11_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_5_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_5_1.png
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_4_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_4_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_4_2.png
@@ -1056,9 +1056,9 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01239-v2.pdf_output/molecules-25-01239-v2.pdf_7_9.png
 Cleaning up images
 
-real	3m18.205s
-user	26m11.458s
-sys	5m41.763s
+real	3m54.267s
+user	26m18.774s
+sys	5m11.860s
 molecules-25-01243-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1089,6 +1089,17 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_8.png
+No masks found.
+No masks found.
 No masks found.
 No masks found.
 No masks found.
@@ -1100,22 +1111,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_2_3.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_2_4.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_2_5.png
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_6.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_7.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01243-v2.pdf_output/molecules-25-01243-v2.pdf_4_8.png
 Cleaning up images
 
-real	2m9.940s
-user	19m23.347s
-sys	3m36.279s
+real	2m18.241s
+user	19m53.034s
+sys	3m44.339s
 molecules-25-01249-v3.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1148,13 +1148,13 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01249-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01249-v3.pdf_output/molecules-25-01249-v3.pdf_3_0.png
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 No masks found.
 No masks found.
 No masks found.
@@ -1162,9 +1162,9 @@ No masks found.
 No masks found.
 Cleaning up images
 
-real	2m37.227s
-user	24m40.971s
-sys	4m8.367s
+real	2m34.461s
+user	24m51.188s
+sys	3m35.254s
 molecules-25-01250-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1192,21 +1192,21 @@ Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/molecules-25-01250-v2.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/molecules-25-01250-v2.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/molecules-25-01250-v2.pdf_2_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01250-v2.pdf_output/molecules-25-01250-v2.pdf_2_3.png
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 Cleaning up images
 
-real	1m15.724s
-user	11m46.971s
-sys	2m9.091s
+real	1m15.229s
+user	11m45.004s
+sys	1m56.710s
 molecules-25-01253.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1236,6 +1236,14 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_2_0.png
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_2.png
@@ -1244,19 +1252,11 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_5.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_3_7.png
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01253.pdf_output/molecules-25-01253.pdf_2_0.png
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 Cleaning up images
 
-real	1m55.260s
-user	18m11.557s
-sys	3m8.098s
+real	1m54.521s
+user	17m49.675s
+sys	3m18.915s
 molecules-25-01254-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1284,10 +1284,6 @@ Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_2.png
@@ -1297,22 +1293,26 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_7.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_2_8.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_4_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_4_1.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_3_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_3_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_3_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_3_3.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01254-v2.pdf_output/molecules-25-01254-v2.pdf_3_4.png
-No masks found.
-No masks found.
-No masks found.
-No masks found.
 Cleaning up images
 
-real	1m58.586s
-user	18m9.826s
-sys	3m55.806s
+real	2m11.498s
+user	18m49.563s
+sys	3m57.495s
 molecules-25-01255-v3.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1342,25 +1342,16 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_7_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_7_1.png
-No masks found.
-No masks found.
-No masks found.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_2.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_3.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_4.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_5.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_6.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_7.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_8.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_9.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_10.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_11.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_12.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_13.png
 No masks found.
 No masks found.
 No masks found.
@@ -1379,17 +1370,26 @@ No masks found.
 No masks found.
 No masks found.
 No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
-No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_2.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_3.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_4.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_5.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_6.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_7.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_8.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_9.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_10.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_11.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_12.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01255-v3.pdf_output/molecules-25-01255-v3.pdf_5_13.png
 No masks found.
 Cleaning up images
 
-real	4m14.318s
-user	36m33.821s
-sys	6m9.545s
+real	4m32.375s
+user	37m39.814s
+sys	6m23.243s
 molecules-25-01257-v2.pdf has been converted.
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:574: calling map_fn_v2 (from tensorflow.python.ops.map_fn) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
@@ -1415,12 +1415,6 @@ This property should not be used in TensorFlow 2.0, as updates are applied autom
 WARNING:tensorflow:From /media/data_drive_big/otto/anaconda3/envs/DECIMER_segmentation/lib/python3.7/site-packages/tensorflow/python/keras/engine/training_v1.py:2070: Model.state_updates (from tensorflow.python.keras.engine.training) is deprecated and will be removed in a future version.
 Instructions for updating:
 This property should not be used in TensorFlow 2.0, as updates are applied automatically.
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_2.png
-No masks found.
-No masks found.
-No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_7_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_7_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_7_2.png
@@ -1428,6 +1422,18 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_7_4.png
 No masks found.
 No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_2_2.png
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+No masks found.
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_0.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_1.png
+../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_2.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_0.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_1.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_2.png
@@ -1436,15 +1442,9 @@ No masks found.
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_5.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_6.png
 ../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_8_7.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_0.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_1.png
-../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/segments/../OCSR/Image_segmentation/DECIMER_SEGMENTATION_VALIDATION/molecules_validation_data/molecules_pdf/molecules-25-01257-v2.pdf_output/molecules-25-01257-v2.pdf_4_2.png
-No masks found.
-No masks found.
-No masks found.
 No masks found.
 Cleaning up images
 
-real	1m59.208s
-user	18m30.805s
-sys	3m39.725s
+real	2m2.206s
+user	19m6.649s
+sys	3m49.833s
