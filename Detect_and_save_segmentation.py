@@ -47,12 +47,12 @@ def main():
 
 	print("Segmented Images can be found on: ", zipper)
 
-def load_model():
+def load_model(path = "model_trained/mask_rcnn_molecule.h5"):
 	# Directory to save logs and trained model
 	MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 	# Local path to trained weights file
-	TRAINED_MODEL_PATH = os.path.join("model_trained/mask_rcnn_molecule.h5")
+	TRAINED_MODEL_PATH = os.path.join(path)
 
 	# Download COCO trained weights from Releases if needed
 	if not os.path.exists(TRAINED_MODEL_PATH):
