@@ -43,7 +43,7 @@ def main():
 	else:
 		os.system("mkdir "+output_directory)
 
-	zipper = get_segments(IMAGE_PATH,output_directory)
+	zipper = get_segments(IMAGE_PATH, output_directory)
 
 	print("Segmented Images can be found on: ", zipper)
 
