@@ -24,28 +24,23 @@ from Scripts import complete_structure
 ROOT_DIR = os.path.dirname(os.path.dirname(os.getcwd()))
 
 def main():
-
+	# Handle input arguments
 	parser = argparse.ArgumentParser(description="Select the chemical structures from a scanned literature and save them")
-    # Input Arguments
 	parser.add_argument(
 		'--input',
 		help='Enter the input filename',
 		required=True
 	)
-
 	args = parser.parse_args()
-	
-	IMAGE_PATH = (args.input)
-	output_directory = 'output'
 
-	if os.path.exists(output_directory):
-		pass
-	else:
-		os.system("mkdir "+output_directory)
+	# Define image path and output path
+	IMAGE_PATH = os.path.normpath(args.input)
+	output_directory = str(IMAGE_PATH) + '_output'
 
-	zipper = get_segments(IMAGE_PATH, output_directory)
+	# Segment chemical structure depictions
+	zipper = get_segments(output_directory, IMAGE_PATH)
+	print("Segmented Images can be found in: ", str(os.path.normpath(zipper)))
 
-	print("Segmented Images can be found on: ", zipper)
 
 def load_model(path = "model_trained/mask_rcnn_molecule.h5"):
 	# Directory to save logs and trained model
@@ -81,31 +76,30 @@ def load_model(path = "model_trained/mask_rcnn_molecule.h5"):
 	return model
 
 
-def get_segments(output_directory,IMAGE_PATH):
+def get_segments(output_directory, IMAGE_PATH):
+	# Structure detection
 	model = load_model()
 	r = get_masks(IMAGE_PATH,model)
 
-	#Expand Masks
+	# Mask expansion
 	image = skimage.io.imread(IMAGE_PATH)
 	expanded_masks = complete_structure.complete_structure_mask(image_array = image, mask_array = r['masks'], debug = False)
-	
-	zipper = (expanded_masks,IMAGE_PATH,output_directory)
-	
-	segmented_img = save_segments(zipper)
 
+	# Save segments
+	zipper = (expanded_masks,IMAGE_PATH,output_directory)
+	segmented_img = save_segments(zipper)
 	return segmented_img
 
-def get_masks(IMAGE_PATH,model):
 
-	# Image Path
+def get_masks(IMAGE_PATH,model):
+	# Read image
 	image = skimage.io.imread(IMAGE_PATH)
 
 	# Run detection
 	results = model.detect([image], verbose=1)
-
 	r = results[0]
-
 	return r
+
 
 def save_segments(zipper):
 	expanded_masks,IMAGE_PATH,output_directory = zipper
@@ -116,8 +110,6 @@ def save_segments(zipper):
 
 		for j in range(image.shape[2]):
 			image[:,:,j] = image[:,:,j] * mask[:,:,i]
-
-		original = image.copy()
 
 		#Remove unwanted background
 		grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -144,24 +136,22 @@ def save_segments(zipper):
 		background[trans_mask] = [255, 255, 255, 255]
 		new_img = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
 
-		#save segments
+		#Save segments
 		#Making directory for saving the segments
 		if os.path.exists(output_directory+"/segments"):
 			pass
 		else:
-			os.system("mkdir "+output_directory+"/segments")
+			os.system("mkdir "+str(os.path.normpath(output_directory+"/segments")))
 
-		#Defining the correct path to save the segments
-		if len(IMAGE_PATH.split("/")) == 2:
-			filename = output_directory+"/segments/"+IMAGE_PATH.split("/")[1][:-4]+"_%d.png"%i
-		else:
-			filename = output_directory+"/segments/"+IMAGE_PATH[:-4]+"_%d.png"%i
-		print(filename)
-		cv2.imwrite(filename,new_img)
-		
+		#Define the correct path to save the segments
+		segment_dirname = os.path.normpath(output_directory+"/segments/")
+		filename = str(IMAGE_PATH).replace("\\", "/").split("/")[-1][:-4]+"_%d.png"%i
+		file_path = os.path.normpath(segment_dirname + "/" +filename)
 
+		print(file_path)
+		cv2.imwrite(file_path, new_img)
 	return output_directory+"/segments/"
 
 
 if __name__ == '__main__':
-    main()
+	main()

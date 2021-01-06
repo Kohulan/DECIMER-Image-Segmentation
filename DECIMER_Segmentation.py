@@ -31,21 +31,9 @@ def main():
 
 		expanded_masks = pool.map(Pool_function,converted_images)
 
-		#segmented_img = pool.map(Detect_and_save_segmentation.save_segments,expanded_masks)
-
-		'''
-		for i in converted_images:
-			print(i)
-			directory,info = Detect_and_save_segmentation.get_segments(output_directory,i)
-		'''
 		path_to_segments = glob.glob(expanded_masks[0]+"*.png")
 		print("Cleaning up images")
-		'''
-		for im_pth in path_to_segments:
-			Image_resizer.get_clean_segments(im_pth)
-		'''
-		#pool = mp.Pool(4)
-		pool.map(Image_resizer.get_clean_segments,path_to_segments)
+		pool.map(Image_resizer.get_clean_segments, path_to_segments)
 		
 		pool.close()
 		pool.join()
@@ -53,4 +41,4 @@ def main():
 	sys.exit(1)
 
 if __name__ == '__main__':
-    main()
+	main()
