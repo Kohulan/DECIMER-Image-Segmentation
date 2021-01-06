@@ -36,6 +36,10 @@ def main():
 	# Define image path and output path
 	IMAGE_PATH = os.path.normpath(args.input)
 	output_directory = str(IMAGE_PATH) + '_output'
+	if os.path.exists(output_directory):
+		pass
+	else:
+		os.system("mkdir " + output_directory)
 
 	# Segment chemical structure depictions
 	zipper = get_segments(output_directory, IMAGE_PATH)
