@@ -27,7 +27,7 @@ $ conda install pip
 $ pip install tensorflow-gpu==2.3.0 pillow opencv-python matplotlib scikit-image imantics IPython pdf2image #Install tensorflow==2.3.0 if you do not have a nVidia GPU
 $ python3 DECIMER_Segmentation.py pdf_file_name 
 
-$python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
+$ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 ```
 - Segmented images will be saved inside the output folder generated under the name of the pdf file.
 
