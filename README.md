@@ -70,7 +70,7 @@ $ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 
 ## decimer.ai
 
-- A web application implementation is available at [decimer.ai](www.decimer.ai), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
+- A web application implementation is available at [decimer.ai](http://www.decimer.ai), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
 
 ## Citation
 
