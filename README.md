@@ -9,22 +9,28 @@ The workflow is divided into two main stages. During the detection step, a deep 
 By making the source code and the trained model publicly available, we hope to contribute to the development of comprehensive chemical data extraction workflows. In order to facilitate access to DECIMER Segmentation, we also developed a web application. The web application, available at https://decimer.ai, lets the user upload a pdf file and retrieve the segmented structure depictions.
 
 [![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/Validation/Abstract1.png)](https://decimer.ai)
-## Usage
 
+## Usage
 -  To use the scripts clone the repository to your local disk. Mask-RCNN runs on a GPU-enabled PC or simply on CPU, so please do make sure you have all the necessary drivers installed if you are using the GPU.
 
-- Enter the following commands:
+### We suggest to use DECIMER-Segmentation inside a Conda environment, which makes the dependencies to install easily.
+- Conda can be downloaded as part of the [Anaconda](https://www.anaconda.com/) or the [Miniconda](https://conda.io/en/latest/miniconda.html) plattforms (Python 3.7). We recommend to install miniconda3. Using Linux you can get it with:
+```
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ bash Miniconda3-latest-Linux-x86_64.sh
+```
+## How to use Decimer-Segmantation
+
 ```
 $ git clone https://github.com/Kohulan/DECIMER-Image-Segmentation
 $ cd DECIMER-Image-Segmentation
 ```
-- Download the [trained model](https://storage.googleapis.com/mrcnn-weights/mask_rcnn_molecule.h5)
-- Copy the model to DECIMER-Image-Segmentation/model_trained/
-- Create a python virtual environment. (We recommend using a conda environment)
+- You can Download the [trained model](https://storage.googleapis.com/mrcnn-weights/mask_rcnn_molecule.h5)
 ```
 $ conda create --name DECIMER_IMGSEG python=3.7
 $ conda activate DECIMER_IMGSEG
 $ conda install pip
+$ python -m pip install -U pip #Upgrade pip
 $ pip install tensorflow-gpu==2.3.0 pillow opencv-python matplotlib scikit-image imantics IPython pdf2image #Install tensorflow==2.3.0 if you do not have a nVidia GPU
 $ python3 DECIMER_Segmentation.py pdf_file_name 
 
