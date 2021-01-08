@@ -73,7 +73,7 @@ $ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 - A web application implementation is available at [decimer.ai](http://www.decimer.ai), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
 
 ## Citation
-Rajan, Kohulan, Henning Otto brinkhaus, Maria Sorokina, Achim Zielesny, and Christoph Steinbeck. 2021. “DECIMER Segmentation - Automated Extraction of Chemical Structure Depictions from Scientific Literature.” ChemRxiv. Preprint. https://doi.org/10.26434/chemrxiv.13536950.v1
+Rajan K, Brinkhaus HO, Sorokina M, Zielesny A, Steinbeck C (2021) DECIMER Segmentation - Automated Extraction of Chemical Structure Depictions from Scientific Literature. ChemRxiv. https://doi.org/10.26434/chemrxiv.13536950.v1
 
 ## Project page
 
