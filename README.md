@@ -17,7 +17,7 @@ By making the source code and the trained model publicly available, we hope to c
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
-## How to use Decimer-Segmentation
+## How to use DECIMER-Segmentation
 
 ```
 $ git clone https://github.com/Kohulan/DECIMER-Image-Segmentation
