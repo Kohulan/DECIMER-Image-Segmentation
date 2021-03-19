@@ -47,7 +47,7 @@ parso==0.7.1
 pdf2image==1.14.0
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==8.0.1
+Pillow>=8.1.1
 pip-chill==1.0.0
 prompt-toolkit==3.0.8
 protobuf==3.14.0
