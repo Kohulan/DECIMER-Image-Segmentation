@@ -1,4 +1,8 @@
 # DECIMER-Image-Segmentation
+[![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](https://opensource.org/licenses/MIt)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/graphs/commit-activity)
+[![GitHub issues](https://img.shields.io/github/issues/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/issues/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/graphs/contributors/)
 
 Chemistry looks back at many decades of publications on chemical compounds, their structures and properties, in scientific articles. Liberating this knowledge (semi-)automatically and making it available to the world in open-access databases is a current challenge. Apart from mining textual information, Optical Chemical Structure Recognition (OCSR), the translation of an image of a chemical structure into a machine-readable representation, is part of this workflow. As the OCSR process requires an image containing a chemical structure, there is a need for a publicly available tool that automatically recognizes and segments chemical structure depictions from scientific publications. This is especially important for older documents which are only available as scanned pages. Here, we present DECIMER (Deep lEarning for Chemical IMagE Recognition) Segmentation, the first open-source, deep learning-based tool for automated recognition and segmentation of chemical structures from the scientific literature.
 
@@ -73,7 +77,7 @@ $ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 - A web application implementation is available at [decimer.ai](http://www.decimer.ai), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
 
 ## Citation
-Rajan K, Brinkhaus HO, Sorokina M, Zielesny A, Steinbeck C (2021) DECIMER Segmentation - Automated Extraction of Chemical Structure Depictions from Scientific Literature. ChemRxiv. https://doi.org/10.26434/chemrxiv.13536950.v1
+Rajan, K., Brinkhaus, H.O., Sorokina, M. et al. DECIMER-Segmentation: Automated extraction of chemical structure depictions from scientific literature. J Cheminform 13, 20 (2021). https://doi.org/10.1186/s13321-021-00496-1
 
 ## Project page
 
