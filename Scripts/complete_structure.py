@@ -150,14 +150,22 @@ def find_mask_center(mask_array: np.array) -> Tuple[int, int]:
 		return x_center, y_center
 	else:
 		# If the global mask center is not placed in the mask, take the center on the x-axis and the first-best y-coordinate that lies in the mask
-		x_center = np.where(mask_array[y_center] == True)[0][0]
-		return x_center, y_center
+		true_pos = np.where(mask_array[y_center] == True)[0]
+		if len(true_pos) != 0:
+			x_center = true_pos[0]
+			return x_center, y_center
+		else:
+			return False
 
 
 def find_seeds(image_array: np.array, mask_array: np.array) -> List[Tuple[int, int]]:
 	"""This function takes an array that represents an image and a mask.
 	It returns a list of tuples with indices of seeds in the structure covered by the mask."""
-	x_center, y_center = find_mask_center(mask_array)
+	mask_center = find_mask_center(mask_array)
+	if mask_center:
+		x_center, y_center = mask_center
+	else:
+		return []
 	# Starting at the mask center, check for pixels that are not white
 	seed_pixels = []
 	up, down, right, left = True, True, True, True
