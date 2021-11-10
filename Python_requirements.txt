@@ -1,4 +1,4 @@
-tensorflow-gpu==2.3.0
+tensorflow-gpu==2.5.2
 tensorflow==2.3.0
 pillow
 opencv-python
