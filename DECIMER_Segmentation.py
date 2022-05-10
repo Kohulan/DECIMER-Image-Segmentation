@@ -83,7 +83,8 @@ class DecimerSegmentation:
         return segments
 
     def segment_chemical_structures(self, image: np.array,
-                                    expand: bool = True
+                                    expand: bool = True,
+                                    visualization: bool = False,
                                     ) -> List[np.array]:
         """
         This function runs the segmentation model as well as the mask expansion
@@ -92,6 +93,8 @@ class DecimerSegmentation:
         Args:
             image (np.array): image of a page from a scientific publication
             expand (bool): indicates whether or not to use mask expansion
+            visualization (bool): indicates whether or not to visualize the
+                                  results (only works in Jupyter notebook)
 
         Returns:
             List[np.array]: expanded masks (shape: (h, w, num_masks))
@@ -100,7 +103,13 @@ class DecimerSegmentation:
             masks, _, _ = self.get_mrcnn_results(image)
         else:
             masks = self.get_expanded_masks(image)
-        segments = self.apply_masks(image, masks)
+        segments, bboxes = self.apply_masks(image, masks)
+        if visualization:
+            visualize.display_instances(image=image,
+                                        masks=masks,
+                                        class_ids=np.array([0]*len(bboxes)),
+                                        boxes=np.array(bboxes),
+                                        class_names=np.array(['structure']*len(bboxes)))
         return segments
 
     def load_model(self) -> modellib.MaskRCNN:
@@ -158,10 +167,10 @@ class DecimerSegmentation:
 
         Args:
             image (np.array): image of a page from a scientific publication
-            List[Tuple[int]]: bounding boxes [(y0, x0, y1, x1), ...]
-            List[float]: confidence scores
         Returns:
             np.array: expanded masks (shape: (h, w, num_masks))
+            List[Tuple[int]]: bounding boxes [(y0, x0, y1, x1), ...]
+            List[float]: confidence scores
         """
         results = self.model.detect([image], verbose=1)
         scores = results[0]['scores']
@@ -183,8 +192,9 @@ class DecimerSegmentation:
             List[np.array]: segmented chemical structure depictions
         """
         masks = [masks[:, :, i] for i in range(masks.shape[2])]
-        segmented_images = map(self.apply_mask, cycle([image]), masks)
-        return list(segmented_images)
+        segmented_images_bboxes = map(self.apply_mask, cycle([image]), masks)
+        segmented_images, bboxes = list(zip(*list(segmented_images_bboxes)))
+        return segmented_images, bboxes
 
     def apply_mask(self, image: np.array, mask: np.array) -> np.array:
         """
@@ -197,6 +207,7 @@ class DecimerSegmentation:
 
         Returns:
             np.array: segmented chemical structure depiction
+            Tuple[int]: (y0, x0, y1, x1)
         """
         # TODO: Further cleanup
         im = deepcopy(image)
@@ -217,7 +228,7 @@ class DecimerSegmentation:
         trans_mask = background[:, :, 3] == 0
         background[trans_mask] = [255, 255, 255, 255]
         segmented_image = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
-        return segmented_image
+        return segmented_image, (y, x, y + h, x + w)
 
     def get_masked_image(self, image: np.array, mask: np.array) -> np.array:
         """
