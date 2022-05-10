@@ -26,7 +26,7 @@ from tensorflow.python.eager import context
 import tensorflow.keras.models as KM
 
 
-from mrcnn import utils
+from . import utils
 
 os.environ["CUDA_VISIBLE_DEVICES"]="3"
 

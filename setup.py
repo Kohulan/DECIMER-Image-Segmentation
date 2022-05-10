@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="DECIMER Segmentation",
+    name="DECIMER_Segmentation",
     version="1.1",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
@@ -19,13 +19,14 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     license="MIT",
     install_requires=[
-        "tensorflow==2.3.0"
-        "pillow"
-        "opencv-python"
-        "matplotlib"
-        "imantics"
-        "IPython"
-        "pdf2image"
+        "tensorflow==2.3.0",
+        "scikit-image",
+        "pillow",
+        "opencv-python",
+        "matplotlib",
+        "imantics",
+        "IPython",
+        "pdf2image",
     ],
     package_data={"DECIMER_Segmentation": ["repack/*.*", "trainer/*.*"]},
     classifiers=[

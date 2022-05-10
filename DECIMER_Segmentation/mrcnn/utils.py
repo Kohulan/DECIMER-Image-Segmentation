@@ -9,10 +9,7 @@ Written by Waleed Abdulla
 Modified on 2020 July by : Kohulan Rajan 
 """
 
-import sys
-import os
 import logging
-import math
 import random
 import numpy as np
 import tensorflow as tf

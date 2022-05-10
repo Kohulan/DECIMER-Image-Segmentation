@@ -44,9 +44,9 @@ if ROOT_DIR.endswith("samples/balloon"):
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)
-from mrcnn.config import Config
-from mrcnn import utils
-from mrcnn import model as modellib
+from .config import Config
+from . import utils
+from . import model as modellib
 
 # Path to trained weights file
 COCO_WEIGHTS_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")

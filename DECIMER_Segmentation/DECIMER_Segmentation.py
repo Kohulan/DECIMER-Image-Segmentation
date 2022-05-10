@@ -16,10 +16,11 @@ from pdf2image import convert_from_path
 from pdf2image.exceptions import PDFInfoNotInstalledError
 from typing import List, Tuple
 from PIL import Image
-from mrcnn import model as modellib
-from mrcnn import visualize
-from mrcnn import moldetect
-from Scripts.complete_structure import complete_structure_mask
+from .complete_structure import complete_structure_mask
+from .mrcnn import model as modellib
+from .mrcnn import visualize
+from .mrcnn import moldetect
+
 
 warnings.filterwarnings("ignore")
 
@@ -121,7 +122,7 @@ class DecimerSegmentation:
         """
         # Define directory with trained model weights
         root_dir = os.path.split(__file__)[0]
-        model_path = os.path.join(root_dir, "model_trained/mask_rcnn_molecule.h5")
+        model_path = os.path.join(root_dir, "mask_rcnn_molecule.h5")
         # Download trained weights if needed
         if not os.path.exists(model_path):
             print("Downloading model weights...")

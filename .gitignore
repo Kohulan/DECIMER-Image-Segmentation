@@ -147,3 +147,5 @@ tags
 [._]*.un~
 
 .mypy_cache
+
+./Validation/*
