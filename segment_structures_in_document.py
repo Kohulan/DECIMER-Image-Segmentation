@@ -4,40 +4,40 @@
  * Written by ©Kohulan Rajan 2020
 '''
 import sys
-import glob
 import os
-import warnings
-from Utils import pdf_2_img_Convert
-from Utils import Image_resizer
-import Detect_and_save_segmentation
-import multiprocessing as mp
-from functools import partial
-
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-warnings.filterwarnings("ignore")
+from DECIMER_Segmentation import DecimerSegmentation
 
 
 def main():
-	if len(sys.argv) != 2:
-		print("\"Usage of this function: convert.py input_path")
-	if len(sys.argv) == 2:
-		output_directory = pdf_2_img_Convert.convert(sys.argv[1])
-  		# Get all images converted into JPEGs
-		converted_images = glob.glob(output_directory+"/*.png")
-		pool = mp.Pool(4)
+    """
+    This script segments chemical structures in a document, saves the original
+    segmented images as well as a binarized image and a an undistorted square
+    image
+    """
+    if len(sys.argv) != 2:
+        print("Usage of this function: convert.py input_path")
+    if len(sys.argv) == 2:
+        structure_extractor = DecimerSegmentation()
+        # Extract chemical structure depictions and save them
+        raw_segments = structure_extractor.segment_chemical_structures_from_file(sys.argv[1])
+        segment_dir = os.path.join(f"{sys.argv[1]}_output", "segments")
+        structure_extractor.save_images(raw_segments,
+                                        segment_dir,
+                                        f"{os.path.split(sys.argv[1])[1][:-4]}_orig")
+        # Get binarized segment images
+        binarized_segments = [structure_extractor.get_bnw_image(segment)
+                              for segment in raw_segments]
+        structure_extractor.save_images(binarized_segments,
+                                        segment_dir,
+                                        f"{os.path.split(sys.argv[1])[1][:-4]}_bnw")
+        # Get segments in size 299*299 and save them
+        normalized_segments = [structure_extractor.get_square_image(segment, 299)
+                               for segment in raw_segments]
+        structure_extractor.save_images(normalized_segments,
+                                        segment_dir,
+                                        f"{os.path.split(sys.argv[1])[1][:-4]}_norm")
+        print(f"Segments saved at {segment_dir}.")
 
-		Pool_function = partial(Detect_and_save_segmentation.get_segments,output_directory)
-
-		expanded_masks = pool.map(Pool_function,converted_images)
-
-		path_to_segments = glob.glob(expanded_masks[0]+"*.png")
-		print("Cleaning up images")
-		pool.map(Image_resizer.get_clean_segments, path_to_segments)
-		
-		pool.close()
-		pool.join()
-
-	sys.exit(1)
 
 if __name__ == '__main__':
-	main()
+    main()
