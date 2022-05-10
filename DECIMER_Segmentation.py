@@ -4,19 +4,18 @@
  * Written by ©Kohulan Rajan 2020
 '''
 import os
+import requests
+import cv2
+import argparse
+import warnings
 import numpy as np
 from copy import deepcopy
 from itertools import cycle
-import skimage.io
 from multiprocessing import Pool
 from pdf2image import convert_from_path
 from pdf2image.exceptions import PDFInfoNotInstalledError
-import cv2
 from typing import List, Tuple
 from PIL import Image
-import argparse
-import warnings
-from mrcnn import utils
 from mrcnn import model as modellib
 from mrcnn import visualize
 from mrcnn import moldetect
@@ -125,7 +124,12 @@ class DecimerSegmentation:
         model_path = os.path.join(root_dir, "model_trained/mask_rcnn_molecule.h5")
         # Download trained weights if needed
         if not os.path.exists(model_path):
-            utils.download_trained_weights(model_path)
+            print("Downloading model weights...")
+            url = 'https://storage.googleapis.com/mrcnn-weights/mask_rcnn_molecule.h5'
+            req = requests.get(url, allow_redirects=True)
+            with open(model_path, 'wb') as model_file:
+                model_file.write(req.content)
+            print("Successfully downloaded the segmentation model weights!")
         # Create model object in inference mode.
         model = modellib.MaskRCNN(mode="inference",
                                   model_dir=".",
