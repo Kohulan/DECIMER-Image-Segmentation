@@ -42,10 +42,10 @@ class DecimerSegmentation:
     """
     def __init__(self):
         self.model = self.load_model()
-        
+
     def segment_chemical_structures_from_file(self,
                                               file_path: str,
-                                              expand: bool=True,
+                                              expand: bool = True,
                                               poppler_path=None,
                                               ) -> List[np.array]:
         """
@@ -181,7 +181,7 @@ class DecimerSegmentation:
         bboxes = results[0]['rois']
         masks = results[0]['masks']
         return masks, bboxes, scores
-    
+
     def apply_masks(self, image: np.array, masks: np.array) -> List[np.array]:
         """
         This function takes an image and the masks for this image
@@ -264,6 +264,79 @@ class DecimerSegmentation:
         masked_image = masked_image.convert('RGB')
         return np.array(masked_image), bbox
 
+    def save_images(self,
+                    images: List[np.array],
+                    path: str,
+                    name: str
+                    ) -> None:
+        """
+        This function takes an array of np.array images, an output path
+        and an ID for the name generation and saves the images as png files
+        ("$name_$index.png).
+
+        Args:
+            images (List[np.array]): Images
+            path (str): Output directory
+            name (str): name for filename generation
+        """
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        for index in range(len(images)):
+            filename = f"{name}_{index}.png"
+            file_path = os.path.join(path, filename)
+            cv2.imwrite(file_path, images[index])
+
+    def get_bnw_image(self, image: np.array) -> np.array:
+        """
+        This function takes an image and returns
+
+        Args:
+            image (np.array): input image
+
+        Returns:
+            np.array: binarized input image
+        """
+        grayscale_im = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        _, im_bw = cv2.threshold(grayscale_im,
+                                 128,
+                                 255,
+                                 cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+        return im_bw
+
+    def get_square_image(self,
+                         image: np.array,
+                         desired_size: int
+                         ) -> np.array:
+        """
+        This function takes an image and resizes it without distortion
+        with the result of a square image with an edge length of
+        desired_size.
+
+        Args:
+            image (np.array): input image
+            desired_size (int): desired output image length/height
+
+        Returns:
+            np.array: resized output image
+        """
+        image = Image.fromarray(image)
+        old_size = image.size
+        grayscale_image = image.convert('L')
+        if(old_size[0] or old_size[1] != desired_size):
+            ratio = float(desired_size)/max(old_size)
+            new_size = tuple([int(x*ratio) for x in old_size])
+            grayscale_image = grayscale_image.resize(new_size, Image.ANTIALIAS)
+        else:
+            new_size = old_size
+        resized_image = Image.new('L',
+                                  (desired_size, desired_size),
+                                  'white')
+
+        resized_image.paste(grayscale_image,
+                            ((desired_size-new_size[0])//2,
+                             (desired_size-new_size[1])//2))
+        return np.array(resized_image)
+
 
 def main():
     """
@@ -281,23 +354,18 @@ def main():
     args = parser.parse_args()
     # Define image path and output path
     input_path = os.path.normpath(args.input)
-    output_directory = f"{input_path}_output"
-    if not os.path.exists(output_directory):
-        os.mkdir(output_directory)
     # Segment chemical structure depictions
     print("Loading model...")
     structure_extractor = DecimerSegmentation()
     print("Segmenting structures...")
     segments = structure_extractor.segment_chemical_structures_from_file(input_path)
     # Save segments
-    segment_dir = os.path.join(output_directory, "segments")
-    if not os.path.exists(segment_dir):
-        os.mkdir(segment_dir)
-    for index in range(len(segments)):
-        filename = f"{os.path.split(input_path)[1][:-4]}_{index}.png"
-        file_path = os.path.join(segment_dir, filename)
-        cv2.imwrite(file_path, segments[index])
+    segment_dir = os.path.join(f"{input_path}_output", "segments")
+    structure_extractor.save_images(segments,
+                                    segment_dir,
+                                    os.path.split(input_path)[1][:-4])
     print(f"The segmented images can be found in {segment_dir}")
+
 
 if __name__ == '__main__':
     main()
