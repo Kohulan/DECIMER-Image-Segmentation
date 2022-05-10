@@ -8,6 +8,9 @@ import numpy as np
 from copy import deepcopy
 from itertools import cycle
 import skimage.io
+from multiprocessing import Pool
+from pdf2image import convert_from_path
+from pdf2image.exceptions import PDFInfoNotInstalledError
 import cv2
 from typing import List, Tuple
 from PIL import Image
@@ -41,8 +44,43 @@ class DecimerSegmentation:
     def __init__(self):
         self.model = self.load_model()
         
-    def segment_chemical_structures_from_file(self, file_path):
-        pass
+    def segment_chemical_structures_from_file(self,
+                                              file_path: str,
+                                              expand: bool=True,
+                                              poppler_path=None,
+                                              ) -> List[np.array]:
+        """
+        This function runs the segmentation model as well as the mask expansion
+        on a pdf document or an image of a page from a scientific publication.
+        It returns a list of segmented chemical structure depictions (np.array)
+
+        Args:
+            file_path (str): image of a page from a scientific publication
+            expand (bool): indicates whether or not to use mask expansion
+            poppler_path: Windows users need to specify the path of their
+                          poppler installation
+
+        Returns:
+            List[np.array]: expanded masks (shape: (h, w, num_masks))
+        """
+        if file_path[-3:].lower() == "pdf":
+            try:
+                images = convert_from_path(file_path, 300, poppler_path=poppler_path)
+            except PDFInfoNotInstalledError:
+                poppler_path = "C:\\Program Files (x86)\\poppler-0.68.0\\bin"
+                images = convert_from_path(file_path, 300, poppler_path=poppler_path)
+            images = [np.array(image) for image in images]
+        else:
+            images = [cv2.imread(file_path)]
+        if len(images) > 1:
+            with Pool(4) as pool:
+                starmap_args = [(im, expand) for im in images]
+                segments = pool.map(self.segment_chemical_structures,
+                                    starmap_args)
+                segments = [su for li in segments for su in li]
+        else:
+            segments = self.segment_chemical_structures(images[0])
+        return segments
 
     def segment_chemical_structures(self, image: np.array,
                                     expand: bool = True
@@ -213,39 +251,38 @@ class DecimerSegmentation:
 
 
 def main():
+    """
+    This script takes a file path as an argument (pdf or image), runs DECIMER
+    Segmentation on it and saves the segmented structures as PNG images.
+    """
     # Handle input arguments
-    parser = argparse.ArgumentParser(description="Select the chemical structures from a scanned literature and save them")
+    description = "Segment chemical structures from the scientific literature"
+    parser = argparse.ArgumentParser(description=description)
     parser.add_argument(
         '--input',
-        help='Enter the input filename',
+        help='Enter the input filename (pdf or image)',
         required=True
     )
     args = parser.parse_args()
-
     # Define image path and output path
-    IMAGE_PATH = os.path.normpath(args.input)
-    output_directory = str(IMAGE_PATH) + '_output'
-    if os.path.exists(output_directory):
-        pass
-    else:
-        os.system("mkdir " + output_directory)
-
+    input_path = os.path.normpath(args.input)
+    output_directory = f"{input_path}_output"
+    if not os.path.exists(output_directory):
+        os.mkdir(output_directory)
     # Segment chemical structure depictions
-    #Save segments
-        #Making directory for saving the segments
-        if os.path.exists(output_directory+"/segments"):
-            pass
-        else:
-            os.system("mkdir "+str(os.path.normpath(output_directory+"/segments")))
-
-        #Define the correct path to save the segments
-        segment_dirname = os.path.normpath(output_directory+"/segments/")
-        filename = str(IMAGE_PATH).replace("\\", "/").split("/")[-1][:-4]+"_%d.png"%i
-        file_path = os.path.normpath(segment_dirname + "/" +filename)
-
-        print(file_path)
-        cv2.imwrite(file_path, new_img)
-    print("Segmented Images can be found in: ", str(os.path.normpath(zipper)))
+    print("Loading model...")
+    structure_extractor = DecimerSegmentation()
+    print("Segmenting structures...")
+    segments = structure_extractor.segment_chemical_structures_from_file(input_path)
+    # Save segments
+    segment_dir = os.path.join(output_directory, "segments")
+    if not os.path.exists(segment_dir):
+        os.mkdir(segment_dir)
+    for index in range(len(segments)):
+        filename = f"{os.path.split(input_path)[1][:-4]}_{index}.png"
+        file_path = os.path.join(segment_dir, filename)
+        cv2.imwrite(file_path, segments[index])
+    print(f"The segmented images can be found in {segment_dir}")
 
 if __name__ == '__main__':
     main()
