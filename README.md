@@ -9,9 +9,9 @@ Chemistry looks back at many decades of publications on chemical compounds, thei
 
 The workflow is divided into two main stages. During the detection step, a deep learning model recognizes chemical structure depictions and creates masks which define their positions on the input page. Subsequently, potentially incomplete masks are expanded in a post-processing workflow. The performance of DECIMER Segmentation has been manually evaluated on three sets of publications from different publishers. The approach operates on bitmap images of journal pages to be applicable also to older articles before the introduction of vector images in PDFs. 
 
-By making the source code and the trained model publicly available, we hope to contribute to the development of comprehensive chemical data extraction workflows. In order to facilitate access to DECIMER Segmentation, we also developed a web application. The web application, available at www.decimer.ai, lets the user upload a pdf file and retrieve the segmented structure depictions.
+By making the source code and the trained model publicly available, we hope to contribute to the development of comprehensive chemical data extraction workflows. In order to facilitate access to DECIMER Segmentation, we also developed a web application. The web application, available at https://decimer.ai, lets the user upload a pdf file and retrieve the segmented structure depictions.
 
-[![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/Validation/Abstract1.png)](www.decimer.ai)
+[![GitHub Logo](https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/Validation/Abstract1.png)](https://decimer.ai)
 
 ## Usage
 -  To use DECIMER Segmentation, clone the repository to your local disk. Mask-RCNN runs on a GPU-enabled PC or simply on CPU, so please do make sure you have all the necessary drivers installed if you are using the GPU.
@@ -22,28 +22,44 @@ By making the source code and the trained model publicly available, we hope to c
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
-## How to use DECIMER-Segmentation
+## How to install DECIMER-Segmentation
 
 ```
 $ git clone https://github.com/Kohulan/DECIMER-Image-Segmentation
 $ cd DECIMER-Image-Segmentation
-```
-- Download the [trained model](https://storage.googleapis.com/mrcnn-weights/mask_rcnn_molecule.h5)
-```
 $ conda create --name DECIMER_IMGSEG python=3.7
 $ conda activate DECIMER_IMGSEG
 $ conda install pip
 $ python -m pip install -U pip #Upgrade pip
-$ pip install tensorflow-gpu==2.3.0 pillow opencv-python matplotlib scikit-image imantics IPython pdf2image #Install tensorflow==2.3.0 if you do not have a nVidia GPU
-$ python3 DECIMER_Segmentation.py pdf_file_name 
+$ pip install .
 
-$ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
+
+```
+## How to use DECIMER-Segmentation
+- The repository contains a script that can be used for the segmentation of chemical structures from an image of a scanned page or from a pdf document:
+```
+$ python3 segment_structures_in_document.py file_name (the file can be an image of a scanned page or a pdf document) 
 ```
 - Segmented images are saved in the output folder (which has the name of the pdf file).
 
-#### Separate usage of model detection and mask expansion
+- Alternatively, you can use integrate DECIMER Segmentation in your Python code:
+```
+from decimer_segmentation import DecimerSegmentation
+import cv2
 
-- An example of how to apply the model and the mask expansion separately is given [in this Jupyter Notebook](https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/DECIMER_Segmentation_notebook.ipynb).
+structure_extractor = DecimerSegmentation()
+
+# Segment structures in scanned page image (np.array)
+page = cv2.imread(scanned_page_file_path)
+segments = structure_extractor.segment_chemical_structures(page, expand=True)
+
+# Segment structures from file (pdf or image)
+# Windows users may need to specify the location of their poppler installation with the poppler_path argument if they want to process pdf files
+segments = structure_extractor.segment_chemical_structures_from_file(path, expand=True, poppler_path=None)
+
+```
+
+- More examples are given [in this Jupyter Notebook](https://github.com/Kohulan/DECIMER-Image-Segmentation/blob/master/DECIMER_Segmentation_notebook.ipynb).
 
 #### Notes for Windows users:
 
@@ -51,18 +67,7 @@ $ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 
 
 - If you run into an error with the pdf conversion on Windows, you need to [download poppler](http://blog.alivate.com.au/poppler-windows/) and extract the file.
-- Open DECIMER-Image-Segmentation/Utils/pdf_2_img_Convert.py
-  
-- Look for the following line (line 28):
-
-```
-  $   pages = convert_from_path(str(path), 500)
-```
-- Replace it with the following line (Don't forget to modify the path!)
-```
-  $   pages = convert_from_path(str(path), 500, poppler_path = 'PATH/TO/POPPLER/bin')
-```
-- Now, everything should run as described above.
+- The method segment_chemical_structures_from_file() takes a 'poppler_path' argument where the user can specify the path of their poppler installation ('PATH/TO/POPPLER/bin').
 
 
 
@@ -75,7 +80,7 @@ $ python3 Detect_and_save_segmentation.py --input path/to/input/Image (optional)
 
 ## decimer.ai
 
-- A web application implementation is available at [decimer.ai](http://www.decimer.ai), implemented by [Dr.Maria Sorokina](https://github.com/mSorok)
+- A web application implementation is available at [decimer.ai](https://decimer.ai), implemented by [Otto Brinkhaus](https://github.com/OBrink)
 
 ## Citation
 Rajan, K., Brinkhaus, H.O., Sorokina, M. et al. DECIMER-Segmentation: Automated extraction of chemical structure depictions from scientific literature. J Cheminform 13, 20 (2021). https://doi.org/10.1186/s13321-021-00496-1
