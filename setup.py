@@ -19,7 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     license="MIT",
     install_requires=[
-        "tensorflow==2.3.0",
+        "tensorflow==2.5.3",
         "scikit-image",
         "pillow",
         "opencv-python",
