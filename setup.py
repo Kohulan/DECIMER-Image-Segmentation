@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="DECIMER_Segmentation",
+    name="decimer_segmentation",
     version="1.1",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
@@ -28,7 +28,7 @@ setuptools.setup(
         "IPython",
         "pdf2image",
     ],
-    package_data={"DECIMER_Segmentation": ["repack/*.*", "trainer/*.*"]},
+    package_data={"decimer_segmentation": ["repack/*.*", "trainer/*.*"]},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",

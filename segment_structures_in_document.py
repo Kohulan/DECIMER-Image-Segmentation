@@ -5,7 +5,7 @@
 '''
 import sys
 import os
-from DECIMER_Segmentation import DecimerSegmentation
+from decimer_segmentation import DecimerSegmentation
 
 
 def main():

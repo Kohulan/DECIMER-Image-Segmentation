@@ -13,8 +13,8 @@ please raise a issue on our Github repository.
 __version__ = "1.1"
 
 __all__ = [
-    "DECIMER_Segmentation",
+    "decimer_segmentation",
 ]
 
-from .DECIMER_Segmentation import DecimerSegmentation
+from .decimer_segmentation import DecimerSegmentation
 from .complete_structure import *
