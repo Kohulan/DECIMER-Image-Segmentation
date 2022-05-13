@@ -11,8 +11,7 @@ from PIL import Image
 import argparse
 import time
 import warnings
-from decimer_segmentation import DecimerSegmentation
-from decimer_segmentation import complete_structure_mask
+from decimer_segmentation import complete_structure_mask, load_model
 from decimer_segmentation.mrcnn import visualize
 warnings.filterwarnings("ignore")
 
@@ -39,8 +38,7 @@ def main():
     args = parser.parse_args()
 
     # Instantiate extractor and load model
-    structure_extractor = DecimerSegmentation()
-    model = structure_extractor.load_model()
+    model = load_model()
 
     # Apply the model to every image in the input directory,
     # save the result, apply the mask expansion and save the result again.
