@@ -28,7 +28,7 @@ setuptools.setup(
         "IPython",
         "pdf2image",
     ],
-    package_data={"decimer_segmentation": ["repack/*.*", "trainer/*.*"]},
+    package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",
