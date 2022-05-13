@@ -5,7 +5,8 @@
 '''
 import sys
 import os
-from decimer_segmentation import DecimerSegmentation
+from decimer_segmentation import segment_chemical_structures_from_file
+from decimer_segmentation import save_images, get_bnw_image, get_square_image
 
 
 def main():
@@ -17,25 +18,24 @@ def main():
     if len(sys.argv) != 2:
         print("Usage of this function: convert.py input_path")
     if len(sys.argv) == 2:
-        structure_extractor = DecimerSegmentation()
         # Extract chemical structure depictions and save them
-        raw_segments = structure_extractor.segment_chemical_structures_from_file(sys.argv[1])
+        raw_segments = segment_chemical_structures_from_file(sys.argv[1])
         segment_dir = os.path.join(f"{sys.argv[1]}_output", "segments")
-        structure_extractor.save_images(raw_segments,
-                                        segment_dir,
-                                        f"{os.path.split(sys.argv[1])[1][:-4]}_orig")
+        save_images(raw_segments,
+                    segment_dir,
+                    f"{os.path.split(sys.argv[1])[1][:-4]}_orig")
         # Get binarized segment images
-        binarized_segments = [structure_extractor.get_bnw_image(segment)
+        binarized_segments = [get_bnw_image(segment)
                               for segment in raw_segments]
-        structure_extractor.save_images(binarized_segments,
-                                        segment_dir,
-                                        f"{os.path.split(sys.argv[1])[1][:-4]}_bnw")
+        save_images(binarized_segments,
+                    segment_dir,
+                    f"{os.path.split(sys.argv[1])[1][:-4]}_bnw")
         # Get segments in size 299*299 and save them
-        normalized_segments = [structure_extractor.get_square_image(segment, 299)
+        normalized_segments = [get_square_image(segment, 299)
                                for segment in raw_segments]
-        structure_extractor.save_images(normalized_segments,
-                                        segment_dir,
-                                        f"{os.path.split(sys.argv[1])[1][:-4]}_norm")
+        save_images(normalized_segments,
+                    segment_dir,
+                    f"{os.path.split(sys.argv[1])[1][:-4]}_norm")
         print(f"Segments saved at {segment_dir}.")
 
 
