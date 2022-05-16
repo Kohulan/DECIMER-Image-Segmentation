@@ -1,10 +1,6 @@
-import sys
-import os
 import numpy as np
-test_dir = os.path.split('__file__')[0]
-main_path = os.path.join(test_dir, '..')
-sys.path.append(main_path)
-from Scripts.complete_structure import *
+from decimer_segmentation import get_bounding_box_center
+
 
 def test_get_bounding_box_center():
     # Determine the center of a given polygon bounding box
@@ -13,11 +9,11 @@ def test_get_bounding_box_center():
     actual_result = get_bounding_box_center(test_bbox)
     for index in range(len(expected_result)):
         assert expected_result[index] == actual_result[index]
-        
+
+
 def test_get_edge_line():
     pass
 
+
 def test_set_x_range():
     pass
-        
-
