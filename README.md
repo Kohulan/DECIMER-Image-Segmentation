@@ -44,18 +44,16 @@ $ python3 segment_structures_in_document.py file_name (the file can be an image 
 
 - Alternatively, you can use integrate DECIMER Segmentation in your Python code:
 ```
-from decimer_segmentation import DecimerSegmentation
+from decimer_segmentation import segment_chemical_structures, segment_chemical_structures_from_file
 import cv2
-
-structure_extractor = DecimerSegmentation()
 
 # Segment structures in scanned page image (np.array)
 page = cv2.imread(scanned_page_file_path)
-segments = structure_extractor.segment_chemical_structures(page, expand=True)
+segments = segment_chemical_structures(page, expand=True)
 
 # Segment structures from file (pdf or image)
 # Windows users may need to specify the location of their poppler installation with the poppler_path argument if they want to process pdf files
-segments = structure_extractor.segment_chemical_structures_from_file(path, expand=True, poppler_path=None)
+segments = segment_chemical_structures_from_file(path, expand=True, poppler_path=None)
 
 ```
 
