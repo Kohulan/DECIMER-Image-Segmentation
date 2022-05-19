@@ -33,7 +33,8 @@ $ conda install pip
 $ python -m pip install -U pip #Upgrade pip
 $ pip install .
 
-
+#From Pypi
+$ pip install decimer-segmentation
 ```
 ## How to use DECIMER-Segmentation
 - The repository contains a script that can be used for the segmentation of chemical structures from an image of a scanned page or from a pdf document:
