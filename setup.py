@@ -27,6 +27,7 @@ setuptools.setup(
         "imantics",
         "IPython",
         "pdf2image",
+        "protobuf==3.19.0",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
