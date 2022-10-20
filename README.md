@@ -36,6 +36,9 @@ $ pip install .
 #From Pypi
 $ pip install decimer-segmentation
 ```
+
+### The Mask-RCNN Model is available at: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7228583.svg)](https://doi.org/10.5281/zenodo.7228583)
+
 ## How to use DECIMER-Segmentation
 - The repository contains a script that can be used for the segmentation of chemical structures from an image of a scanned page or from a pdf document:
 ```
