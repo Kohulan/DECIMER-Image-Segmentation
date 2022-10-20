@@ -1,8 +1,8 @@
-'''
+"""
  * This Software is under the MIT License
  * Refer to LICENSE or https://opensource.org/licenses/MIT for more information
  * Written by ©Kohulan Rajan 2020
-'''
+"""
 import sys
 import os
 from decimer_segmentation import segment_chemical_structures_from_file
@@ -21,23 +21,25 @@ def main():
         # Extract chemical structure depictions and save them
         raw_segments = segment_chemical_structures_from_file(sys.argv[1])
         segment_dir = os.path.join(f"{sys.argv[1]}_output", "segments")
-        save_images(raw_segments,
-                    segment_dir,
-                    f"{os.path.split(sys.argv[1])[1][:-4]}_orig")
+        save_images(
+            raw_segments, segment_dir, f"{os.path.split(sys.argv[1])[1][:-4]}_orig"
+        )
         # Get binarized segment images
-        binarized_segments = [get_bnw_image(segment)
-                              for segment in raw_segments]
-        save_images(binarized_segments,
-                    segment_dir,
-                    f"{os.path.split(sys.argv[1])[1][:-4]}_bnw")
+        binarized_segments = [get_bnw_image(segment) for segment in raw_segments]
+        save_images(
+            binarized_segments, segment_dir, f"{os.path.split(sys.argv[1])[1][:-4]}_bnw"
+        )
         # Get segments in size 299*299 and save them
-        normalized_segments = [get_square_image(segment, 299)
-                               for segment in raw_segments]
-        save_images(normalized_segments,
-                    segment_dir,
-                    f"{os.path.split(sys.argv[1])[1][:-4]}_norm")
+        normalized_segments = [
+            get_square_image(segment, 299) for segment in raw_segments
+        ]
+        save_images(
+            normalized_segments,
+            segment_dir,
+            f"{os.path.split(sys.argv[1])[1][:-4]}_norm",
+        )
         print(f"Segments saved at {segment_dir}.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,8 +1,8 @@
-'''
+"""
  * This Software is under the MIT License
  * Refer to LICENSE or https://opensource.org/licenses/MIT for more information
  * Written by ©Kohulan Rajan 2020
-'''
+"""
 import os
 import requests
 import cv2
@@ -32,15 +32,17 @@ class InferenceConfig(moldetect.MolDetectConfig):
     """
     Inference configuration class for MRCNN
     """
+
     # Run detection on one image at a time
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
 
 
-def segment_chemical_structures_from_file(file_path: str,
-                                          expand: bool = True,
-                                          poppler_path=None,
-                                          ) -> List[np.array]:
+def segment_chemical_structures_from_file(
+    file_path: str,
+    expand: bool = True,
+    poppler_path=None,
+) -> List[np.array]:
     """
     This function runs the segmentation model as well as the mask expansion
     on a pdf document or an image of a page from a scientific publication.
@@ -60,27 +62,25 @@ def segment_chemical_structures_from_file(file_path: str,
             images = convert_from_path(file_path, 300, poppler_path=poppler_path)
         except PDFInfoNotInstalledError:
             poppler_path = "C:\\Program Files (x86)\\poppler-0.68.0\\bin"
-            images = convert_from_path(file_path,
-                                       300,
-                                       poppler_path=poppler_path)
+            images = convert_from_path(file_path, 300, poppler_path=poppler_path)
         images = [np.array(image) for image in images]
     else:
         images = [cv2.imread(file_path)]
     if len(images) > 1:
         with Pool(4) as pool:
             starmap_args = [(im, expand) for im in images]
-            segments = pool.starmap(segment_chemical_structures,
-                                    starmap_args)
+            segments = pool.starmap(segment_chemical_structures, starmap_args)
             segments = [su for li in segments for su in li]
     else:
         segments = segment_chemical_structures(images[0])
     return segments
 
 
-def segment_chemical_structures(image: np.array,
-                                expand: bool = True,
-                                visualization: bool = False,
-                                ) -> List[np.array]:
+def segment_chemical_structures(
+    image: np.array,
+    expand: bool = True,
+    visualization: bool = False,
+) -> List[np.array]:
     """
     This function runs the segmentation model as well as the mask expansion
     -> returns a List of segmented chemical structure depictions (np.array)
@@ -102,11 +102,13 @@ def segment_chemical_structures(image: np.array,
     segments, bboxes = apply_masks(image, masks)
 
     if visualization:
-        visualize.display_instances(image=image,
-                                    masks=masks,
-                                    class_ids=np.array([0]*len(bboxes)),
-                                    boxes=np.array(bboxes),
-                                    class_names=np.array(['structure']*len(bboxes)))
+        visualize.display_instances(
+            image=image,
+            masks=masks,
+            class_ids=np.array([0] * len(bboxes)),
+            boxes=np.array(bboxes),
+            class_names=np.array(["structure"] * len(bboxes)),
+        )
     return segments
 
 
@@ -124,15 +126,13 @@ def load_model() -> modellib.MaskRCNN:
     # Download trained weights if needed
     if not os.path.exists(model_path):
         print("Downloading model weights...")
-        url = 'https://zenodo.org/record/7228583/files/mask_rcnn_molecule.h5?download=1'
+        url = "https://zenodo.org/record/7228583/files/mask_rcnn_molecule.h5?download=1"
         req = requests.get(url, allow_redirects=True)
-        with open(model_path, 'wb') as model_file:
+        with open(model_path, "wb") as model_file:
             model_file.write(req.content)
         print("Successfully downloaded the segmentation model weights!")
     # Create model object in inference mode.
-    model = modellib.MaskRCNN(mode="inference",
-                              model_dir=".",
-                              config=InferenceConfig())
+    model = modellib.MaskRCNN(mode="inference", model_dir=".", config=InferenceConfig())
     # Load weights
     model.load_weights(model_path, by_name=True)
     return model
@@ -154,14 +154,13 @@ def get_expanded_masks(image: np.array) -> np.array:
     # Structure detection with MRCNN
     masks, _, _ = get_mrcnn_results(image)
     # Mask expansion
-    expanded_masks = complete_structure_mask(image_array=image,
-                                             mask_array=masks)
+    expanded_masks = complete_structure_mask(image_array=image, mask_array=masks)
     return expanded_masks
 
 
-def get_mrcnn_results(image: np.array) -> Tuple[np.array,
-                                                List[Tuple[int]],
-                                                List[float]]:
+def get_mrcnn_results(
+    image: np.array,
+) -> Tuple[np.array, List[Tuple[int]], List[float]]:
     """
     This function runs the segmentation model as well as the mask
     expansion mechanism and returns an array with the masks (shape:
@@ -178,9 +177,9 @@ def get_mrcnn_results(image: np.array) -> Tuple[np.array,
         List[float]: confidence scores
     """
     results = model.detect([image], verbose=1)
-    scores = results[0]['scores']
-    bboxes = results[0]['rois']
-    masks = results[0]['masks']
+    scores = results[0]["scores"]
+    bboxes = results[0]["rois"]
+    masks = results[0]["masks"]
     return masks, bboxes, scores
 
 
@@ -222,18 +221,16 @@ def apply_mask(image: np.array, mask: np.array) -> np.array:
     im = deepcopy(image)
     for channel in range(image.shape[2]):
         im[:, :, channel] = im[:, :, channel] * mask
-    masked_image, bbox = get_masked_image(deepcopy(image),
-                                          mask)
+    masked_image, bbox = get_masked_image(deepcopy(image), mask)
     x, y, w, h = bbox
     im_gray = cv2.cvtColor(masked_image, cv2.COLOR_RGB2GRAY)
-    _, im_bw = cv2.threshold(im_gray, 128, 255,
-                             cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    _, im_bw = cv2.threshold(im_gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
     # Removal of transparent layer and generation of segment
     _, alpha = cv2.threshold(im_bw, 0, 255, cv2.THRESH_BINARY)
     b, g, r = cv2.split(image)
     rgba = [b, g, r, alpha]
     dst = cv2.merge(rgba, 4)
-    background = dst[y:y + h, x:x + w]
+    background = dst[y : y + h, x : x + w]
     trans_mask = background[:, :, 3] == 0
     background[trans_mask] = [255, 255, 255, 255]
     segmented_image = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
@@ -242,18 +239,18 @@ def apply_mask(image: np.array, mask: np.array) -> np.array:
 
 def get_masked_image(image: np.array, mask: np.array) -> np.array:
     """
-        This function takes an image and a masks for this image
-        (shape: (h, w)) and returns the masked image where only the
-        masked area is not completely white and a bounding box of the
-        segmented object
+    This function takes an image and a masks for this image
+    (shape: (h, w)) and returns the masked image where only the
+    masked area is not completely white and a bounding box of the
+    segmented object
 
-        Args:
-            image (np.array): image of a page from a scientific publication
-            mask (np.array): masks (shape: (h, w, num_masks))
+    Args:
+        image (np.array): image of a page from a scientific publication
+        mask (np.array): masks (shape: (h, w, num_masks))
 
-        Returns:
-            List[np.array]: segmented chemical structure depictions
-            List[int]: bounding box of segmented object
+    Returns:
+        List[np.array]: segmented chemical structure depictions
+        List[int]: bounding box of segmented object
     """
     for channel in range(image.shape[2]):
         image[:, :, channel] = image[:, :, channel] * mask[:, :]
@@ -263,18 +260,13 @@ def get_masked_image(image: np.array, mask: np.array) -> np.array:
     bbox = cv2.boundingRect(thresholded)
 
     masked_image = np.zeros(image.shape).astype(np.uint8)
-    masked_image = visualize.apply_mask(masked_image,
-                                        mask,
-                                        [1, 1, 1])
+    masked_image = visualize.apply_mask(masked_image, mask, [1, 1, 1])
     masked_image = Image.fromarray(masked_image)
-    masked_image = masked_image.convert('RGB')
+    masked_image = masked_image.convert("RGB")
     return np.array(masked_image), bbox
 
 
-def save_images(images: List[np.array],
-                path: str,
-                name: str
-                ) -> None:
+def save_images(images: List[np.array], path: str, name: str) -> None:
     """
     This function takes an array of np.array images, an output path
     and an ID for the name generation and saves the images as png files
@@ -304,16 +296,13 @@ def get_bnw_image(image: np.array) -> np.array:
         np.array: binarized input image
     """
     grayscale_im = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    _, im_bw = cv2.threshold(grayscale_im,
-                             128,
-                             255,
-                             cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    _, im_bw = cv2.threshold(
+        grayscale_im, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU
+    )
     return im_bw
 
 
-def get_square_image(image: np.array,
-                     desired_size: int
-                     ) -> np.array:
+def get_square_image(image: np.array, desired_size: int) -> np.array:
     """
     This function takes an image and resizes it without distortion
     with the result of a square image with an edge length of
@@ -328,20 +317,19 @@ def get_square_image(image: np.array,
     """
     image = Image.fromarray(image)
     old_size = image.size
-    grayscale_image = image.convert('L')
-    if(old_size[0] or old_size[1] != desired_size):
-        ratio = float(desired_size)/max(old_size)
-        new_size = tuple([int(x*ratio) for x in old_size])
+    grayscale_image = image.convert("L")
+    if old_size[0] or old_size[1] != desired_size:
+        ratio = float(desired_size) / max(old_size)
+        new_size = tuple([int(x * ratio) for x in old_size])
         grayscale_image = grayscale_image.resize(new_size, Image.ANTIALIAS)
     else:
         new_size = old_size
-    resized_image = Image.new('L',
-                              (desired_size, desired_size),
-                              'white')
+    resized_image = Image.new("L", (desired_size, desired_size), "white")
 
-    resized_image.paste(grayscale_image,
-                        ((desired_size-new_size[0])//2,
-                            (desired_size-new_size[1])//2))
+    resized_image.paste(
+        grayscale_image,
+        ((desired_size - new_size[0]) // 2, (desired_size - new_size[1]) // 2),
+    )
     return np.array(resized_image)
 
 
@@ -357,9 +345,7 @@ def main():
     description = "Segment chemical structures from the scientific literature"
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument(
-        '--input',
-        help='Enter the input filename (pdf or image)',
-        required=True
+        "--input", help="Enter the input filename (pdf or image)", required=True
     )
     args = parser.parse_args()
     # Define image path and output path
@@ -374,5 +360,5 @@ def main():
     print(f"The segmented images can be found in {segment_dir}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
