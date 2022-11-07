@@ -10,7 +10,7 @@ For comments, bug reports or feature requests,
 please raise a issue on our Github repository.
 """
 
-__version__ = "1.1"
+__version__ = "1.1.1"
 
 __all__ = [
     "decimer_segmentation",
