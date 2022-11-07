@@ -19,7 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     license="MIT",
     install_requires=[
-        "tensorflow==2.3.0",
+        "tensorflow==2.10.0",
         "scikit-image",
         "pillow",
         "opencv-python",
@@ -27,7 +27,6 @@ setuptools.setup(
         "imantics",
         "IPython",
         "pdf2image",
-        "protobuf==3.19.0",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[

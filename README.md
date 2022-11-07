@@ -17,7 +17,7 @@ By making the source code and the trained model publicly available, we hope to c
 -  To use DECIMER Segmentation, clone the repository to your local disk. Mask-RCNN runs on a GPU-enabled PC or simply on CPU, so please do make sure you have all the necessary drivers installed if you are using the GPU.
 
 ##### We recommend to use DECIMER-Segmentation inside a Conda environment to facilitate the installation of the dependencies.
-- Conda can be downloaded as part of the [Anaconda](https://www.anaconda.com/) or the [Miniconda](https://conda.io/en/latest/miniconda.html) plattforms (Python 3.7). We recommend to install miniconda3. Using Linux you can get it with:
+- Conda can be downloaded as part of the [Anaconda](https://www.anaconda.com/) or the [Miniconda](https://conda.io/en/latest/miniconda.html) platforms (Python 3.0). We recommend to install miniconda3. Using Linux you can get it with:
 ```
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
@@ -27,7 +27,7 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 ```
 $ git clone https://github.com/Kohulan/DECIMER-Image-Segmentation
 $ cd DECIMER-Image-Segmentation
-$ conda create --name DECIMER_IMGSEG python=3.7
+$ conda create --name DECIMER_IMGSEG python=3.10
 $ conda activate DECIMER_IMGSEG
 $ conda install pip
 $ python -m pip install -U pip #Upgrade pip
