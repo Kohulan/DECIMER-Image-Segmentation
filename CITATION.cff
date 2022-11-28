@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Rajan"
+  orcid: "https://orcid.org/0000-0003-1066-7792"
+  given-names: "Kohulan"
+- family-names: "Brinkhaus"
+  given-names: "Henning Otto"
+  orcid: "https://orcid.org/0000-0002-6664-2183"
+- family-names: "Sorokina"
+  given-names: "Maria"
+  orcid: "https://orcid.org/0000-0001-9359-7149"
+- family-names: "Zielesny"
+  given-names: "Achim"
+  orcid: "https://orcid.org/0000-0003-0722-4229"
+- family-names: "Steinbeck"
+  given-names: "Christoph"
+  orcid: "https://orcid.org/0000-0001-6966-0814"
+
+  
+title: "DECIMER-Image-Segmentation"
+version: 1.1.1
+doi: 10.5281/zenodo.7299334
+date-released: 2021-05-03
+url: "https://github.com/OBrink/DECIMER-Image-Segmentation"
+license: MIT
