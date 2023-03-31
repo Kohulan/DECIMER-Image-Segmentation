@@ -20,7 +20,8 @@ setuptools.setup(
     license="MIT",
     install_requires=[
         "tensorflow==2.10.0",
-        "scikit-image",
+        "numpy>=1.2.0",
+        "scikit-image>=0.2.0",
         "pillow",
         "opencv-python",
         "matplotlib",
