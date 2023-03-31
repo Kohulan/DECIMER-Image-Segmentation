@@ -434,7 +434,7 @@ def complete_structure_mask(
             plot_it(binarized_image_array)
         # Define kernel and apply
         kernel = np.ones((blur_factor, blur_factor))
-        blurred_image_array = binary_erosion(binarized_image_array, selem=kernel)
+        blurred_image_array = binary_erosion(binarized_image_array, footprint=kernel)
         if debug:
             plot_it(blurred_image_array)
         # Slice mask array along third dimension into single masks
