@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decimer_segmentation",
-    version="1.1.1",
+    version="1.1.2",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
     maintainer="Kohulan Rajan",
@@ -19,7 +19,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     license="MIT",
     install_requires=[
-        "tensorflow==2.10.0",
+        "tensorflow==2.10.1",
         "numpy>=1.2.0",
         "scikit-image>=0.2.0",
         "pillow",
