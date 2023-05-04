@@ -3,7 +3,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/graphs/commit-activity)
 [![GitHub issues](https://img.shields.io/github/issues/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/issues/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/graphs/contributors/)
+[![tensorflow](https://img.shields.io/badge/TensorFlow-2.10.1-FF6F00.svg?style=flat&logo=tensorflow)](https://www.tensorflow.org)
 [![DOI](https://zenodo.org/badge/268631290.svg)](https://zenodo.org/badge/latestdoi/268631290)
+[![GitHub release](https://img.shields.io/github/release/Kohulan/DECIMER-Image-Segmentation.svg)](https://GitHub.com/Kohulan/DECIMER-Image-Segmentation/releases/)
+[![PyPI version fury.io](https://badge.fury.io/py/decimer.svg)](https://pypi.python.org/pypi/decimer-segmentation/)
 
 Chemistry looks back at many decades of publications on chemical compounds, their structures and properties, in scientific articles. Liberating this knowledge (semi-)automatically and making it available to the world in open-access databases is a current challenge. Apart from mining textual information, Optical Chemical Structure Recognition (OCSR), the translation of an image of a chemical structure into a machine-readable representation, is part of this workflow. As the OCSR process requires an image containing a chemical structure, there is a need for a publicly available tool that automatically recognizes and segments chemical structure depictions from scientific publications. This is especially important for older documents which are only available as scanned pages. Here, we present DECIMER (Deep lEarning for Chemical IMagE Recognition) Segmentation, the first open-source, deep learning-based tool for automated recognition and segmentation of chemical structures from the scientific literature.
 
