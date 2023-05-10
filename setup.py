@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 
 import setuptools
+import platform
+
+if (platform.processor() == 'arm' or platform.processor() == 'i386') and platform.system() == 'Darwin':
+    tensorflow_os = "tensorflow-macos==2.10.0"
+else:
+    tensorflow_os = "tensorflow==2.10.1"
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -19,7 +25,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     license="MIT",
     install_requires=[
-        "tensorflow==2.10.1",
+        tensorflow_os,
         "numpy>=1.2.0",
         "scikit-image>=0.2.0",
         "pillow",
