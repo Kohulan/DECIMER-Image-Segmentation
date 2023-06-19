@@ -55,7 +55,7 @@ def segment_chemical_structures_from_file(
                         poppler installation
 
     Returns:
-        List[np.array]: expanded masks (shape: (h, w, num_masks))
+        List[np.array]: expanded segments (shape: (h, w, num_masks))
     """
     if file_path[-3:].lower() == "pdf":
         try:
@@ -92,7 +92,7 @@ def segment_chemical_structures(
                                 results (only works in Jupyter notebook)
 
     Returns:
-        List[np.array]: expanded masks (shape: (h, w, num_masks))
+        List[np.array]: expanded segments (shape: (h, w, num_masks))
     """
     if not expand:
         masks, _, _ = get_mrcnn_results(image)
