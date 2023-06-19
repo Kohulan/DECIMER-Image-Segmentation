@@ -35,6 +35,7 @@ $ conda activate DECIMER_IMGSEG
 $ conda install pip
 $ python -m pip install -U pip #Upgrade pip
 $ pip install .
+$ conda install -c conda-forge poppler
 
 #From Pypi
 $ pip install decimer-segmentation
