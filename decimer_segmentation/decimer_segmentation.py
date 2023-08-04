@@ -112,7 +112,7 @@ def segment_chemical_structures(
         )
 
     # Sort the segments based on their position at the image
-    sorted_indices = np.lexsort((bboxes[:, 1], bboxes[:, 0]))
+    sorted_indices = np.lexsort((np.array(bboxes)[:, 1], np.array(bboxes)[:, 0]))
     sorted_segments = [segments[i] for i in sorted_indices]
 
     return sorted_segments
