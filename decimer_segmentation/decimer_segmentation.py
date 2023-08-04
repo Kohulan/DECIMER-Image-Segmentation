@@ -73,6 +73,7 @@ def segment_chemical_structures_from_file(
             segments = [su for li in segments for su in li]
     else:
         segments = segment_chemical_structures(images[0])
+
     return segments
 
 
@@ -83,7 +84,7 @@ def segment_chemical_structures(
 ) -> List[np.array]:
     """
     This function runs the segmentation model as well as the mask expansion
-    -> returns a List of segmented chemical structure depictions (np.array)
+    -> returns a List of sorted segmented chemical structure depictions (np.array)
 
     Args:
         image (np.array): image of a page from a scientific publication
@@ -109,7 +110,12 @@ def segment_chemical_structures(
             boxes=np.array(bboxes),
             class_names=np.array(["structure"] * len(bboxes)),
         )
-    return segments
+
+    # Sort the segments based on their position at the image
+    sorted_indices = np.lexsort((bboxes[:, 1], bboxes[:, 0]))
+    sorted_segments = [segments[i] for i in sorted_indices]
+
+    return sorted_segments
 
 
 def load_model() -> modellib.MaskRCNN:
