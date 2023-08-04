@@ -118,7 +118,7 @@ def segment_chemical_structures(
     rows = []
     current_row = [sorted_bboxes[0]]
     for bbox in sorted_bboxes[1:]:
-        if abs(bbox[0] - current_row[-1][0]) < 20:  # You can adjust this threshold as needed
+        if abs(bbox[0] - current_row[-1][0]) < 50:  # You can adjust this threshold as needed
             current_row.append(bbox)
         else:
             rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort by x-coordinate within each row
