@@ -92,7 +92,8 @@ def segment_chemical_structures(
                                 results (only works in Jupyter notebook)
 
     Returns:
-        List[np.array]: expanded segments (shape: (h, w, num_masks))
+        List[np.array]: expanded segments sorted in top->bottom, left->right order with
+        a certain tolerance for grouping into "lines"(shape: (h, w, num_masks))
     """
     if not expand:
         masks, _, _ = get_mrcnn_results(image)
@@ -109,7 +110,28 @@ def segment_chemical_structures(
             boxes=np.array(bboxes),
             class_names=np.array(["structure"] * len(bboxes)),
         )
-    return segments
+
+    # Sort by y-coordinate (top-to-bottom reading order)
+    sorted_bboxes = sorted(bboxes, key=lambda bbox: bbox[0])
+
+    # Group bounding boxes by rows based on y-coordinate
+    rows = []
+    current_row = [sorted_bboxes[0]]
+    for bbox in sorted_bboxes[1:]:
+        if abs(bbox[0] - current_row[-1][0]) < 50:  # You can adjust this threshold as needed
+            current_row.append(bbox)
+        else:
+            rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort by x-coordinate within each row
+            current_row = [bbox]
+    rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort the last row
+
+    # Flatten the list of rows and return
+    sorted_bboxes = [bbox for row in rows for bbox in row]
+
+    sorted_segments = [segments[bboxes.index(bbox)] for bbox in sorted_bboxes]
+
+    return sorted_segments, sorted_bboxes
+
 
 
 def load_model() -> modellib.MaskRCNN:
