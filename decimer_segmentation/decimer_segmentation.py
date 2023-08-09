@@ -111,6 +111,28 @@ def segment_chemical_structures(
             class_names=np.array(["structure"] * len(bboxes)),
         )
 
+    sorted_segments, sorted_bboxes = sort_segments_bboxes(segments, bboxes)
+
+    return sorted_segments
+
+
+def sort_segments_bboxes(
+        segments : List[np.array], 
+        bboxes : List[tuple[int, int, int, int]], #(y0, x0, y1, x1)
+        same_row_pixel_threshold = 50
+        ) -> Tuple[np.array, List[tuple[int, int, int, int]]]:
+    """
+    Sorts segments and bounding boxes in "reading order"
+
+    Args:
+        segments - image segments to be sorted
+        bboxes - bounding boxes containing edge coordinates of the image segments
+        same_row_pixel_threshold - how many pixels apart can two pixels be to be considered "on the same row"
+    
+    Returns:
+        segments and bboxes in reading order
+    """
+
     # Sort by y-coordinate (top-to-bottom reading order)
     sorted_bboxes = sorted(bboxes, key=lambda bbox: bbox[0])
 
@@ -118,7 +140,7 @@ def segment_chemical_structures(
     rows = []
     current_row = [sorted_bboxes[0]]
     for bbox in sorted_bboxes[1:]:
-        if abs(bbox[0] - current_row[-1][0]) < 50:  # You can adjust this threshold as needed
+        if abs(bbox[0] - current_row[-1][0]) < same_row_pixel_threshold:  # You can adjust this threshold as needed
             current_row.append(bbox)
         else:
             rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort by x-coordinate within each row
@@ -129,10 +151,7 @@ def segment_chemical_structures(
     sorted_bboxes = [bbox for row in rows for bbox in row]
 
     sorted_segments = [segments[bboxes.index(bbox)] for bbox in sorted_bboxes]
-
-    return sorted_segments
-
-
+    return sorted_segments, sorted_bboxes
 
 def load_model() -> modellib.MaskRCNN:
     """
