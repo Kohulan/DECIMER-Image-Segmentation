@@ -36,6 +36,7 @@ class InferenceConfig(moldetect.MolDetectConfig):
     # Run detection on one image at a time
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
+    DETECTION_MIN_CONFIDENCE = 0.90
 
 
 def segment_chemical_structures_from_file(
@@ -122,7 +123,9 @@ def load_model() -> modellib.MaskRCNN:
     """
     # Define directory with trained model weights
     root_dir = os.path.split(__file__)[0]
-    model_path = os.path.join(root_dir, "mask_rcnn_molecule.h5")
+    model_path = os.path.join(root_dir, "mask_rcnn_molecule_orig.h5")
+    model_path = os.path.join(root_dir, "mask_rcnn_chemsegment_0001.h5")
+    print(model_path)
     # Download trained weights if needed
     if not os.path.exists(model_path):
         print("Downloading model weights...")
