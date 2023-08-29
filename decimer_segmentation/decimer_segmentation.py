@@ -111,16 +111,17 @@ def segment_chemical_structures(
             class_names=np.array(["structure"] * len(bboxes)),
         )
 
-    sorted_segments, sorted_bboxes = sort_segments_bboxes(segments, bboxes)
+    if len(segments) > 0:
+        segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
-    return sorted_segments
+    return segments
 
 
 def sort_segments_bboxes(
-        segments : List[np.array], 
-        bboxes : List[tuple[int, int, int, int]], #(y0, x0, y1, x1)
-        same_row_pixel_threshold = 50
-        ) -> Tuple[np.array, List[tuple[int, int, int, int]]]:
+        segments: List[np.array],
+        bboxes: List[Tuple[int, int, int, int]],  # (y0, x0, y1, x1)
+        same_row_pixel_threshold=50
+        ) -> Tuple[np.array, List[Tuple[int, int, int, int]]]:
     """
     Sorts segments and bounding boxes in "reading order"
 
@@ -128,7 +129,7 @@ def sort_segments_bboxes(
         segments - image segments to be sorted
         bboxes - bounding boxes containing edge coordinates of the image segments
         same_row_pixel_threshold - how many pixels apart can two pixels be to be considered "on the same row"
-    
+
     Returns:
         segments and bboxes in reading order
     """
