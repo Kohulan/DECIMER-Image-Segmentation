@@ -400,7 +400,7 @@ def expand_masks(
     image_array: np.array,
     seed_pixels: List[Tuple[int, int]],
     mask_array: np.array,
-    exclusion_mask: List[Tuple],
+    exclusion_mask: np.array,
     contour_expansion=False,
 ) -> np.array:
     """
@@ -411,7 +411,8 @@ def expand_masks(
         image_array (np.array): array that represents an image (float values)
         seed_pixels (List[Tuple[int, int]]): [(x, y), ...]
         mask_array (np.array): MRCNN output; shape: (y, x, mask_index)
-        excluded_pixels (List[Tuple]): [(x, y), ...]
+        exclusion_mask (np.array]: indicates whether or not a pixel is excluded from
+            expansion
         contour_expansion (bool, optional): Indicates whether or not to expand
                                             from contours. Defaults to False.
 
@@ -436,7 +437,7 @@ def expand_masks(
 
 def expansion_coordination(mask_array: np.array,
                            image_array: np.array,
-                           exclusion_mask: List[Tuple]) -> np.array:
+                           exclusion_mask: np.array) -> np.array:
     """
     This function takes a single mask and an image (np.array) and coordinates
     the mask expansion. It returns the expanded mask. The purpose of this function is
