@@ -98,7 +98,6 @@ def segment_chemical_structures(
     if not expand:
         masks, bboxes, _ = get_mrcnn_results(image)
     else:
-        average_height, average_width = determine_average_depiction_size(bboxes)
         masks = get_expanded_masks(image)
 
     segments, bboxes = apply_masks(image, masks)
@@ -227,9 +226,12 @@ def get_expanded_masks(image: np.array) -> np.array:
         np.array: expanded masks (shape: (h, w, num_masks))
     """
     # Structure detection with MRCNN
-    masks, _, _ = get_mrcnn_results(image)
+    masks, bboxes, _ = get_mrcnn_results(image)
+    size = determine_average_depiction_size(bboxes)
     # Mask expansion
-    expanded_masks = complete_structure_mask(image_array=image, mask_array=masks)
+    expanded_masks = complete_structure_mask(image_array=image,
+                                             mask_array=masks,
+                                             average_depiction_size=size,)
     return expanded_masks
 
 
