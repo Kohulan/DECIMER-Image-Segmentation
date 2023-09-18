@@ -121,7 +121,7 @@ def determine_depiction_size_with_buffer(
     bboxes: List[Tuple[int, int, int, int]]
 ) -> Tuple[int, int]:
     """
-    This function takes a list of bounding boxes and returns 1.2 * the maximal
+    This function takes a list of bounding boxes and returns 1.1 * the maximal
     depiction size (height, width) of the depicted chemical structures.
 
     Args:
@@ -138,8 +138,8 @@ def determine_depiction_size_with_buffer(
         width = bbox[3] - bbox[1]
         heights.append(height)
         widths.append(width)
-    height = int(1.2 * np.max(heights))
-    width = int(1.2 * np.max(widths))
+    height = int(1.1 * np.max(heights))
+    width = int(1.1 * np.max(widths))
     return height, width
 
 
