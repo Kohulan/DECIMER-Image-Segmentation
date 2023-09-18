@@ -278,13 +278,12 @@ def get_mask_center(mask_array: np.array) -> Tuple[int, int]:
     else:
         # If the global mask center is not placed in the mask, take the
         # center on the x-axis and the first-best y-coordinate in the mask
-        x_centers = np.where(mask_array[y_center] == True)
+        x_centers = np.where(mask_array[y_center] is True)
         if len(x_centers) > 0 and len(x_centers[0]) > 0:
             x_center = x_centers[0][0]
             return x_center, y_center
         else:
             return None, None
-
 
 
 def get_seeds(image_array: np.array, mask_array: np.array) -> List[Tuple[int, int]]:
