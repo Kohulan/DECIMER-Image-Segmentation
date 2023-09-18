@@ -383,7 +383,7 @@ def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
     binarised_im = ~image * 255
     binarised_im = binarised_im.astype("uint8")
 
-    horizontal_kernel_size = int(binarised_im.shape[1] / 5)
+    horizontal_kernel_size = int(binarised_im.shape[1] / 7)
     horizontal_kernel = cv2.getStructuringElement(
         cv2.MORPH_RECT, (horizontal_kernel_size, 1)
     )
@@ -392,7 +392,7 @@ def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
     )
     horizontal_mask = horizontal_mask == 255
 
-    vertical_kernel_size = int(binarised_im.shape[0] / 5)
+    vertical_kernel_size = int(binarised_im.shape[0] / 7)
     vertical_kernel = cv2.getStructuringElement(
         cv2.MORPH_RECT, (1, vertical_kernel_size)
     )
