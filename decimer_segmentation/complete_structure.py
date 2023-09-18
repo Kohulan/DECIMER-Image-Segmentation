@@ -368,7 +368,7 @@ def get_neighbour_pixels(
 
 def detect_horizontal_and_vertical_lines(
     image: np.ndarray,
-    average_depiction_size: Tuple[int, int]
+    max_depiction_size: Tuple[int, int]
 ) -> np.ndarray:
     """
     This function takes an image and returns a binary mask that labels the pixels that
@@ -378,6 +378,7 @@ def detect_horizontal_and_vertical_lines(
     Args:
         image (np.ndarray): binarised image (np.array; type bool) as it is returned by
             binary_erosion() in complete_structure_mask()
+        max_depiction_size (Tuple[int, int]): height, width; used as thresholds
 
     Returns:
         np.ndarray: Exclusion mask that contains indices of pixels that are part of
@@ -385,8 +386,8 @@ def detect_horizontal_and_vertical_lines(
     """
     binarised_im = ~image * 255
     binarised_im = binarised_im.astype("uint8")
-    
-    structure_height, structure_width = average_depiction_size
+
+    structure_height, structure_width = max_depiction_size
 
     horizontal_kernel = cv2.getStructuringElement(
         cv2.MORPH_RECT, (structure_width, 1)
@@ -477,23 +478,23 @@ def expansion_coordination(
 def complete_structure_mask(
     image_array: np.array,
     mask_array: np.array,
-    average_depiction_size: Tuple[int, int],
+    max_depiction_size: Tuple[int, int],
     debug=False
 ) -> np.array:
     """
     This funtion takes an image (np.array) and an array containing the masks (shape:
     x,y,n where n is the amount of masks and x and y are the pixel coordinates).
-    Additionally, it takes the average depiction size of the structures in the image
+    Additionally, it takes the maximal depiction size of the structures in the image
     which is used to define the kernel size for the vertical and horizontal line
     detection for the exclusion masks. The exclusion mask is used to exclude pixels
-    from the mask expansion to avoid including whole tables. 
+    from the mask expansion to avoid including whole tables.
     It detects objects on the contours of the mask and expands it until it frames the
     complete object in the image. It returns the expanded mask array
 
     Args:
         image_array (np.array): input image
         mask_array (np.array): shape: y, x, n where n is the amount of masks
-        average_depiction_size (Tuple[int, int]): height, width
+        max_depiction_size (Tuple[int, int]): height, width
         debug (bool, optional): More verbose if True. Defaults to False.
 
     Returns:
@@ -519,7 +520,7 @@ def complete_structure_mask(
             [mask_array[:, :, index] for index in range(mask_array.shape[2])]
         )
         exclusion_mask = detect_horizontal_and_vertical_lines(blurred_image_array,
-                                                              average_depiction_size)
+                                                              max_depiction_size)
         # Run expansion the expansion
         image_repeat = itertools.repeat(blurred_image_array, mask_array.shape[2])
         exclusion_mask_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])
