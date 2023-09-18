@@ -128,7 +128,8 @@ def sort_segments_bboxes(
     Args:
         segments - image segments to be sorted
         bboxes - bounding boxes containing edge coordinates of the image segments
-        same_row_pixel_threshold - how many pixels apart can two pixels be to be considered "on the same row"
+        same_row_pixel_threshold - how many pixels apart can two pixels be to be
+            considered "on the same row"
 
     Returns:
         segments and bboxes in reading order
@@ -280,8 +281,7 @@ def apply_mask(image: np.array, mask: np.array) -> np.array:
     background = dst[y : y + h, x : x + w]
     trans_mask = background[:, :, 3] == 0
     background[trans_mask] = [255, 255, 255, 255]
-    segmented_image = cv2.cvtColor(background, cv2.COLOR_BGRA2BGR)
-    return segmented_image, (y, x, y + h, x + w)
+    return background, (y, x, y + h, x + w)
 
 
 def get_masked_image(image: np.array, mask: np.array) -> np.array:
