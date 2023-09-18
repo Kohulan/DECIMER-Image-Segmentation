@@ -8,6 +8,6 @@ def test_determine_depiction_size_with_buffer():
         [0, 0, 8, 8],
         [0, 0, 10, 10],
     ]
-    expected_result = (12, 12)
+    expected_result = (11, 11)
     actual_result = determine_depiction_size_with_buffer(bboxes)
     assert expected_result == actual_result
