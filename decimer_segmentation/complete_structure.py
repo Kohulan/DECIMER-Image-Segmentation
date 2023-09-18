@@ -458,7 +458,7 @@ def expansion_coordination(mask_array: np.array,
             image_array=image_array, bounding_box=polygon[0]
         )
         mask_array = expand_masks(
-            image_array, seed_pixels, mask_array, contour_expansion=True
+            image_array, seed_pixels, mask_array, exclusion_mask, contour_expansion=True
         )
     return mask_array
 
