@@ -593,14 +593,16 @@ def display_weight_stats(model):
     """
     layers = model.get_trainable_layers()
     table = [["WEIGHT NAME", "SHAPE", "MIN", "MAX", "STD"]]
-    for l in layers:
-        weight_values = l.get_weights()  # list of Numpy arrays
-        weight_tensors = l.weights  # list of TF tensors
+    for layer_ in layers:
+        weight_values = layer_.get_weights()  # list of Numpy arrays
+        weight_tensors = layer_.weights  # list of TF tensors
         for i, w in enumerate(weight_values):
             weight_name = weight_tensors[i].name
             # Detect problematic layers. Exclude biases of conv layers.
             alert = ""
-            if w.min() == w.max() and not (l.__class__.__name__ == "Conv2D" and i == 1):
+            if w.min() == w.max() and not (
+                layer_.__class__.__name__ == "Conv2D" and i == 1
+            ):
                 alert += "<span style='color:red'>*** dead?</span>"
             if np.abs(w.min()) > 1000 or np.abs(w.max()) > 1000:
                 alert += "<span style='color:red'>*** Overflow?</span>"

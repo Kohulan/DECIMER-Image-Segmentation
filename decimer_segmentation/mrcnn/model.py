@@ -6,7 +6,7 @@ Copyright (c) 2017 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
 
-Modified on 2020 July by : Kohulan Rajan 
+Modified on 2020 July by : Kohulan Rajan
 
 """
 
@@ -27,6 +27,7 @@ import tensorflow.keras.models as KM
 
 
 from . import utils
+from distutils.version import LooseVersion
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
@@ -35,7 +36,7 @@ for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 
 # Requires TensorFlow 2.0+
-from distutils.version import LooseVersion
+
 
 assert LooseVersion(tf.__version__) >= LooseVersion("2.0")
 
@@ -2164,6 +2165,7 @@ class MaskRCNN(object):
             anchors = np.broadcast_to(anchors, (config.BATCH_SIZE,) + anchors.shape)
             # A hack to get around Keras's bad support for constants
             # This class returns a constant layer
+
             class ConstLayer(tf.keras.layers.Layer):
                 def __init__(self, x, name=None):
                     super(ConstLayer, self).__init__(name=name)
@@ -3031,12 +3033,12 @@ class MaskRCNN(object):
         """Returns a list of layers that have weights."""
         layers = []
         # Loop through all layers
-        for l in self.keras_model.layers:
+        for layer_ in self.keras_model.layers:
             # If layer is a wrapper, find inner trainable layer
-            l = self.find_trainable_layer(l)
+            layer_ = self.find_trainable_layer(layer_)
             # Include layer if it has weights
-            if l.get_weights():
-                layers.append(l)
+            if layer_.get_weights():
+                layers.append(layer_)
         return layers
 
     def run_graph(self, images, outputs, image_metas=None):
@@ -3063,7 +3065,7 @@ class MaskRCNN(object):
         inputs = model.inputs
         # if model.uses_learning_phase and not isinstance(K.learning_phase(), int):
         #     inputs += [K.learning_phase()]
-        kf = K.function(model.inputs, list(outputs.values()))
+        kf = K.function(inputs, list(outputs.values()))
 
         # Prepare inputs
         if image_metas is None:

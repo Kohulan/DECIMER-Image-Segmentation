@@ -118,10 +118,10 @@ def segment_chemical_structures(
 
 
 def sort_segments_bboxes(
-        segments: List[np.array],
-        bboxes: List[Tuple[int, int, int, int]],  # (y0, x0, y1, x1)
-        same_row_pixel_threshold=50
-        ) -> Tuple[np.array, List[Tuple[int, int, int, int]]]:
+    segments: List[np.array],
+    bboxes: List[Tuple[int, int, int, int]],  # (y0, x0, y1, x1)
+    same_row_pixel_threshold=50,
+) -> Tuple[np.array, List[Tuple[int, int, int, int]]]:
     """
     Sorts segments and bounding boxes in "reading order"
 
@@ -141,10 +141,14 @@ def sort_segments_bboxes(
     rows = []
     current_row = [sorted_bboxes[0]]
     for bbox in sorted_bboxes[1:]:
-        if abs(bbox[0] - current_row[-1][0]) < same_row_pixel_threshold:  # You can adjust this threshold as needed
+        if (
+            abs(bbox[0] - current_row[-1][0]) < same_row_pixel_threshold
+        ):  # You can adjust this threshold as needed
             current_row.append(bbox)
         else:
-            rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort by x-coordinate within each row
+            rows.append(
+                sorted(current_row, key=lambda x: x[1])
+            )  # Sort by x-coordinate within each row
             current_row = [bbox]
     rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort the last row
 
@@ -153,6 +157,7 @@ def sort_segments_bboxes(
 
     sorted_segments = [segments[bboxes.index(bbox)] for bbox in sorted_bboxes]
     return sorted_segments, sorted_bboxes
+
 
 def load_model() -> modellib.MaskRCNN:
     """
