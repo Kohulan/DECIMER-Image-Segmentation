@@ -145,33 +145,14 @@ def test_expansion_coordination():
 
 def test_detect_horizontal_and_vertical_lines():
     test_image = np.array(
-        [
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, True, False, False, False, True, False, False, True, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [True, True, True, True, True, True, True, True, True, True],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, True, False, False, False, True, False, False, True, False],
-            [False, False, False, False, False, True, False, False, False, False],
-        ]
+        [[False] * 20] * 20
     )
+    test_image[9] = np.array([True] * 20)
+    test_image[2][3] = True
     expected_result = np.array(
-        [
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [True, True, True, True, True, True, True, True, True, True],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-            [False, False, False, False, False, True, False, False, False, False],
-        ]
+        [[False] * 20] * 20
     )
+    expected_result[9] = np.array([True] * 20)
     actual_result = detect_horizontal_and_vertical_lines(~test_image)
     np.testing.assert_array_equal(expected_result, actual_result)
 
