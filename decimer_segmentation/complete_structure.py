@@ -360,49 +360,40 @@ def get_neighbour_pixels(
     return neighbour_pixels
 
 
-def detect_horizontal_and_vertical_lines(image: np.ndarray):
+def detect_horizontal_and_vertical_lines(
+    image: np.ndarray
+) -> np.ndarray:
     """
-    This function takes an image and returns the indices of the pixels that
+    This function takes an image and returns a binary mask that labels the pixels that
+    are part of long horizontal or vertical lines. [Definition of long: 1/5 of the
+    width/height of the image].
 
     Args:
-        image (np.ndarray): _description_
+        image (np.ndarray): binarised image (np.array; type bool) as it is returned by
+            binary_erosion() in complete_structure_mask()
 
     Returns:
-        _type_: _description_
+        np.ndarray: Exclusion mask that contains indices of pixels that are part of
+            horizontal or vertical lines
     """
-    # Binarize image
-    #gray_im = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    #binarised_im = cv2.threshold(gray_im, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-    # Detect horizontal lines
-    image = ~image * 255
-    binarised_im = image.astype('uint8')
-    
-    exclusion_mask = np.zeros(binarised_im.shape)
-    
-    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (300, 1))
-    detect_horizontal = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN, horizontal_kernel, iterations=2)
-    cnts = cv2.findContours(detect_horizontal, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    cnts = cnts[0] if len(cnts) == 2 else cnts[1]
+    binarised_im = ~image * 255
+    binarised_im = binarised_im.astype('uint8')
 
-    # horizontal_line_pixels = []
-    for y in range(detect_horizontal.shape[0]):
-        for x in range(detect_horizontal.shape[1]):
-            if detect_horizontal[y, x] == 255:
-                exclusion_mask[y, x] = 1
-                # horizontal_line_pixels.append((x, y))
-    # Detect vertical lines
-    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 300))
-    detect_vertical = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN, vertical_kernel, iterations=2)
-    cnts = cv2.findContours(detect_vertical, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    cnts = cnts[0] if len(cnts) == 2 else cnts[1]
+    horizontal_kernel_size = int(binarised_im.shape[1] / 5)
+    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
+                                                  (horizontal_kernel_size, 1))
+    horizontal_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
+                                       horizontal_kernel, iterations=2)
+    horizontal_mask = horizontal_mask == 255
 
-    # vertical_line_pixels = []
-    for y in range(detect_vertical.shape[0]):
-        for x in range(detect_vertical.shape[1]):
-            if detect_vertical[y, x] == 255:
-                exclusion_mask[y, x] = 1
-                #vertical_line_pixels.append((x, y))
-    return exclusion_mask
+    vertical_kernel_size = int(binarised_im.shape[0] / 5)
+    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
+                                                (1, vertical_kernel_size))
+    vertical_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
+                                     vertical_kernel, iterations=2)
+    vertical_mask = vertical_mask == 255
+
+    return horizontal_mask + vertical_mask
 
 
 def expand_masks(
@@ -446,9 +437,11 @@ def expand_masks(
 def expansion_coordination(mask_array: np.array,
                            image_array: np.array,
                            exclusion_mask: List[Tuple]) -> np.array:
-    """This function takes a single mask and an image (np.array) and coordinates
-    the mask expansion. It returns the expanded mask.
-    The purpose of this function is wrapping up the expansion procedure in a map function."""
+    """
+    This function takes a single mask and an image (np.array) and coordinates
+    the mask expansion. It returns the expanded mask. The purpose of this function is
+    wrapping up the expansion procedure in a map function.
+    """
     seed_pixels = get_seeds(image_array, mask_array)
     if seed_pixels != []:
         mask_array = expand_masks(image_array, seed_pixels, mask_array, exclusion_mask)
@@ -472,14 +465,16 @@ def expansion_coordination(mask_array: np.array,
 def complete_structure_mask(
     image_array: np.array, mask_array: np.array, debug=False
 ) -> np.array:
-    """This funtion takes an image (array) and an array containing the masks (shape: x,y,n where n is the amount of masks and x and y are the pixel coordinates).
-    It detects objects on the contours of the mask and expands it until it frames the complete object in the image.
-    It returns the expanded mask array"""
+    """
+    This funtion takes an image (array) and an array containing the masks (shape:
+    x,y,n where n is the amount of masks and x and y are the pixel coordinates).
+    It detects objects on the contours of the mask and expands it until it frames the
+    complete object in the image. It returns the expanded mask array"""
 
     if mask_array.size != 0:
         # Binarization of input image
         binarized_image_array = binarize_image(image_array, threshold=0.85)
-        # Apply gaussian filter with a resolution-dependent standard deviation to the image
+        # Apply dilation with a resolution-dependent kernel to the image
         blur_factor = (
             int(image_array.shape[1] / 185) if image_array.shape[1] / 185 >= 2 else 2
         )
