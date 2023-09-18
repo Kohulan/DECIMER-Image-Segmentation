@@ -96,8 +96,9 @@ def segment_chemical_structures(
         a certain tolerance for grouping into "lines"(shape: (h, w, num_masks))
     """
     if not expand:
-        masks, _, _ = get_mrcnn_results(image)
+        masks, bboxes, _ = get_mrcnn_results(image)
     else:
+        average_height, average_width = determine_average_depiction_size(bboxes)
         masks = get_expanded_masks(image)
 
     segments, bboxes = apply_masks(image, masks)
@@ -115,6 +116,32 @@ def segment_chemical_structures(
         segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
     return segments
+
+
+def determine_average_depiction_size(
+    bboxes: List[Tuple[int, int, int, int]]
+) -> Tuple[int, int]:
+    """
+    This function takes a list of bounding boxes and returns the average
+    depiction size (height, width) of the depicted chemical structures.
+
+    Args:
+        bboxes (List[Tuple[int, int, int, int]]): bounding boxes of the structure
+            depictions (y0, x0, y1, x1)
+
+    Returns:
+        Tuple: average depiction size (height, width)
+    """
+    heights = []
+    widths = []
+    for bbox in bboxes:
+        height = bbox[2] - bbox[0]
+        width = bbox[3] - bbox[1]
+        heights.append(height)
+        widths.append(width)
+    average_height = int(np.mean(heights))
+    average_width = int(np.mean(widths))
+    return int(average_height), int(average_width)
 
 
 def sort_segments_bboxes(
