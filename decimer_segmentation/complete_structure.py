@@ -278,8 +278,12 @@ def get_mask_center(mask_array: np.array) -> Tuple[int, int]:
     else:
         # If the global mask center is not placed in the mask, take the
         # center on the x-axis and the first-best y-coordinate in the mask
-        x_center = np.where(mask_array[y_center] == True)[0][0]
-        return x_center, y_center
+        x_centers = np.where(mask_array[y_center] is True)
+        if len(x_centers) > 0 and len(x_centers[0]) > 0:
+            x_center = x_centers[0][0]
+            return x_center, y_center
+        else:
+            return None, None
 
 
 def get_seeds(image_array: np.array, mask_array: np.array) -> List[Tuple[int, int]]:
@@ -296,6 +300,8 @@ def get_seeds(image_array: np.array, mask_array: np.array) -> List[Tuple[int, in
         List[Tuple[int, int]]: [(x,y), (x,y), ...]
     """
     x_center, y_center = get_mask_center(mask_array)
+    if x_center is None:
+        return []
     # Starting at the mask center, check for pixels that are not white
     seed_pixels = []
     up, down, right, left = True, True, True, True
@@ -360,9 +366,7 @@ def get_neighbour_pixels(
     return neighbour_pixels
 
 
-def detect_horizontal_and_vertical_lines(
-    image: np.ndarray
-) -> np.ndarray:
+def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
     """
     This function takes an image and returns a binary mask that labels the pixels that
     are part of long horizontal or vertical lines. [Definition of long: 1/5 of the
@@ -377,20 +381,24 @@ def detect_horizontal_and_vertical_lines(
             horizontal or vertical lines
     """
     binarised_im = ~image * 255
-    binarised_im = binarised_im.astype('uint8')
+    binarised_im = binarised_im.astype("uint8")
 
     horizontal_kernel_size = int(binarised_im.shape[1] / 5)
-    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
-                                                  (horizontal_kernel_size, 1))
-    horizontal_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
-                                       horizontal_kernel, iterations=2)
+    horizontal_kernel = cv2.getStructuringElement(
+        cv2.MORPH_RECT, (horizontal_kernel_size, 1)
+    )
+    horizontal_mask = cv2.morphologyEx(
+        binarised_im, cv2.MORPH_OPEN, horizontal_kernel, iterations=2
+    )
     horizontal_mask = horizontal_mask == 255
 
     vertical_kernel_size = int(binarised_im.shape[0] / 5)
-    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
-                                                (1, vertical_kernel_size))
-    vertical_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
-                                     vertical_kernel, iterations=2)
+    vertical_kernel = cv2.getStructuringElement(
+        cv2.MORPH_RECT, (1, vertical_kernel_size)
+    )
+    vertical_mask = cv2.morphologyEx(
+        binarised_im, cv2.MORPH_OPEN, vertical_kernel, iterations=2
+    )
     vertical_mask = vertical_mask == 255
 
     return horizontal_mask + vertical_mask
@@ -435,9 +443,9 @@ def expand_masks(
     return mask_array
 
 
-def expansion_coordination(mask_array: np.array,
-                           image_array: np.array,
-                           exclusion_mask: np.array) -> np.array:
+def expansion_coordination(
+    mask_array: np.array, image_array: np.array, exclusion_mask: np.array
+) -> np.array:
     """
     This function takes a single mask and an image (np.array) and coordinates
     the mask expansion. It returns the expanded mask. The purpose of this function is
@@ -497,8 +505,9 @@ def complete_structure_mask(
         # Faster with map function
         expanded_split_mask_arrays = map(
             expansion_coordination,
-            split_mask_arrays, image_repeat,
-            exclusion_mask_repeat
+            split_mask_arrays,
+            image_repeat,
+            exclusion_mask_repeat,
         )
         # Stack mask arrays to give the desired output format
         mask_array = np.stack(expanded_split_mask_arrays, -1)

@@ -123,10 +123,12 @@ def test_expand_masks():
     test_seed_pixels = [(2, 0)]
     test_mask_array = np.array([(True, True, True, True, True)])
     expected_result = np.array([(True, True, True, False, False)])
-    actual_result = expand_masks(test_image_array,
-                                 test_seed_pixels,
-                                 test_mask_array,
-                                 np.zeros(test_image_array.shape))
+    actual_result = expand_masks(
+        test_image_array,
+        test_seed_pixels,
+        test_mask_array,
+        np.zeros(test_image_array.shape),
+    )
     assert expected_result.all() == actual_result.all()
 
 
@@ -135,35 +137,44 @@ def test_expansion_coordination():
     test_mask_array = np.array([(9, 5, 9)])
     test_image_array = np.array([(3, 2)])
     expected_result = np.array([(9, 5, 9)])
-    actual_result = expansion_coordination(test_mask_array,
-                                           test_image_array,
-                                           np.zeros(test_image_array.shape))
+    actual_result = expansion_coordination(
+        test_mask_array, test_image_array, np.zeros(test_image_array.shape)
+    )
     assert expected_result.all() == actual_result.all()
 
 
 def test_detect_horizontal_and_vertical_lines():
-    test_image = np.array([[False, False, False, False, False, True, False, False, False, False],
-                           [False, True, False, False, False, True, False, False, True, False],
-                           [False, False, False, False, False, True, False, False, False, False],
-                           [False, False, False, False, False, True, False, False, False, False],
-                           [False, False, False, False, False, True, False, False, False, False],
-                           [True, True, True, True, True, True, True, True, True, True],
-                           [False, False, False, False, False, True, False, False, False, False],
-                           [False, False, False, False, False, True, False, False, False, False],
-                           [False, True, False, False, False, True, False, False, True, False],
-                           [False, False, False, False, False, True, False, False, False, False]])
-    expected_result = np.array([[False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [True, True, True, True, True, True, True, True, True, True],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False],
-                                [False, False, False, False, False, True, False, False, False, False]])
+    test_image = np.array(
+        [
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, True, False, False, False, True, False, False, True, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [True, True, True, True, True, True, True, True, True, True],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, True, False, False, False, True, False, False, True, False],
+            [False, False, False, False, False, True, False, False, False, False],
+        ]
+    )
+    expected_result = np.array(
+        [
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [True, True, True, True, True, True, True, True, True, True],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+            [False, False, False, False, False, True, False, False, False, False],
+        ]
+    )
     actual_result = detect_horizontal_and_vertical_lines(~test_image)
     np.testing.assert_array_equal(expected_result, actual_result)
+
 
 def test_complete_structure_mask():
     pass

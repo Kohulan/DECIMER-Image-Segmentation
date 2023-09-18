@@ -6,7 +6,7 @@ Copyright (c) 2018 Matterport, Inc.
 Licensed under the MIT License (see LICENSE for details)
 Written by Waleed Abdulla
 
-Modified on 2020 July by : Kohulan Rajan 
+Modified on 2020 July by : Kohulan Rajan
 
 ------------------------------------------------------------
 
