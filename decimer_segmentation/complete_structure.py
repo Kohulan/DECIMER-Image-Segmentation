@@ -1,3 +1,4 @@
+import cv2
 import numpy as np
 import copy
 import matplotlib.pyplot as plt
@@ -359,10 +360,47 @@ def get_neighbour_pixels(
     return neighbour_pixels
 
 
+def detect_horizontal_and_vertical_lines(
+    image: np.ndarray
+) -> np.ndarray:
+    """
+    This function takes an image and returns a binary mask that labels the pixels that
+    are part of long horizontal or vertical lines. [Definition of long: 1/5 of the
+    width/height of the image].
+
+    Args:
+        image (np.ndarray): binarised image (np.array; type bool) as it is returned by
+            binary_erosion() in complete_structure_mask()
+
+    Returns:
+        np.ndarray: Exclusion mask that contains indices of pixels that are part of
+            horizontal or vertical lines
+    """
+    binarised_im = ~image * 255
+    binarised_im = binarised_im.astype('uint8')
+
+    horizontal_kernel_size = int(binarised_im.shape[1] / 5)
+    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
+                                                  (horizontal_kernel_size, 1))
+    horizontal_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
+                                       horizontal_kernel, iterations=2)
+    horizontal_mask = horizontal_mask == 255
+
+    vertical_kernel_size = int(binarised_im.shape[0] / 5)
+    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT,
+                                                (1, vertical_kernel_size))
+    vertical_mask = cv2.morphologyEx(binarised_im, cv2.MORPH_OPEN,
+                                     vertical_kernel, iterations=2)
+    vertical_mask = vertical_mask == 255
+
+    return horizontal_mask + vertical_mask
+
+
 def expand_masks(
     image_array: np.array,
     seed_pixels: List[Tuple[int, int]],
     mask_array: np.array,
+    exclusion_mask: np.array,
     contour_expansion=False,
 ) -> np.array:
     """
@@ -373,6 +411,8 @@ def expand_masks(
         image_array (np.array): array that represents an image (float values)
         seed_pixels (List[Tuple[int, int]]): [(x, y), ...]
         mask_array (np.array): MRCNN output; shape: (y, x, mask_index)
+        exclusion_mask (np.array]: indicates whether or not a pixel is excluded from
+            expansion
         contour_expansion (bool, optional): Indicates whether or not to expand
                                             from contours. Defaults to False.
 
@@ -382,6 +422,9 @@ def expand_masks(
     if not contour_expansion:
         mask_array = np.zeros(mask_array.shape)
     for seed_pixel in seed_pixels:
+        x, y = seed_pixel
+        if exclusion_mask[y, x]:
+            continue
         neighbour_pixels = get_neighbour_pixels(seed_pixel, image_array.shape)
         for neighbour_pixel in neighbour_pixels:
             x, y = neighbour_pixel
@@ -392,13 +435,17 @@ def expand_masks(
     return mask_array
 
 
-def expansion_coordination(mask_array: np.array, image_array: np.array) -> np.array:
-    """This function takes a single mask and an image (np.array) and coordinates
-    the mask expansion. It returns the expanded mask.
-    The purpose of this function is wrapping up the expansion procedure in a map function."""
+def expansion_coordination(mask_array: np.array,
+                           image_array: np.array,
+                           exclusion_mask: np.array) -> np.array:
+    """
+    This function takes a single mask and an image (np.array) and coordinates
+    the mask expansion. It returns the expanded mask. The purpose of this function is
+    wrapping up the expansion procedure in a map function.
+    """
     seed_pixels = get_seeds(image_array, mask_array)
     if seed_pixels != []:
-        mask_array = expand_masks(image_array, seed_pixels, mask_array)
+        mask_array = expand_masks(image_array, seed_pixels, mask_array, exclusion_mask)
     else:
         # If the seed detection inside of the mask has failed for some reason,
         # look for seeds on the contours of the mask and expand from there on.
@@ -411,7 +458,7 @@ def expansion_coordination(mask_array: np.array, image_array: np.array) -> np.ar
             image_array=image_array, bounding_box=polygon[0]
         )
         mask_array = expand_masks(
-            image_array, seed_pixels, mask_array, contour_expansion=True
+            image_array, seed_pixels, mask_array, exclusion_mask, contour_expansion=True
         )
     return mask_array
 
@@ -419,14 +466,16 @@ def expansion_coordination(mask_array: np.array, image_array: np.array) -> np.ar
 def complete_structure_mask(
     image_array: np.array, mask_array: np.array, debug=False
 ) -> np.array:
-    """This funtion takes an image (array) and an array containing the masks (shape: x,y,n where n is the amount of masks and x and y are the pixel coordinates).
-    It detects objects on the contours of the mask and expands it until it frames the complete object in the image.
-    It returns the expanded mask array"""
+    """
+    This funtion takes an image (array) and an array containing the masks (shape:
+    x,y,n where n is the amount of masks and x and y are the pixel coordinates).
+    It detects objects on the contours of the mask and expands it until it frames the
+    complete object in the image. It returns the expanded mask array"""
 
     if mask_array.size != 0:
         # Binarization of input image
         binarized_image_array = binarize_image(image_array, threshold=0.85)
-        # Apply gaussian filter with a resolution-dependent standard deviation to the image
+        # Apply dilation with a resolution-dependent kernel to the image
         blur_factor = (
             int(image_array.shape[1] / 185) if image_array.shape[1] / 185 >= 2 else 2
         )
@@ -441,11 +490,15 @@ def complete_structure_mask(
         split_mask_arrays = np.array(
             [mask_array[:, :, index] for index in range(mask_array.shape[2])]
         )
+        exclusion_mask = detect_horizontal_and_vertical_lines(blurred_image_array)
         # Run expansion the expansion
         image_repeat = itertools.repeat(blurred_image_array, mask_array.shape[2])
+        exclusion_mask_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])
         # Faster with map function
         expanded_split_mask_arrays = map(
-            expansion_coordination, split_mask_arrays, image_repeat
+            expansion_coordination,
+            split_mask_arrays, image_repeat,
+            exclusion_mask_repeat
         )
         # Stack mask arrays to give the desired output format
         mask_array = np.stack(expanded_split_mask_arrays, -1)
