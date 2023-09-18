@@ -2430,7 +2430,7 @@ class MaskRCNN(object):
 
             # Exclude some layers
             if exclude:
-                layers = filter(lambda l: l.name not in exclude, layers)
+                layers = filter(lambda layer_: layer_.name not in exclude, layers)
 
             if by_name:
                 hdf5_format.load_weights_from_hdf5_group_by_name(f, layers)
