@@ -96,7 +96,7 @@ def segment_chemical_structures(
         a certain tolerance for grouping into "lines"(shape: (h, w, num_masks))
     """
     if not expand:
-        masks, _, _ = get_mrcnn_results(image)
+        masks, bboxes, _ = get_mrcnn_results(image)
     else:
         masks = get_expanded_masks(image)
 
@@ -115,6 +115,32 @@ def segment_chemical_structures(
         segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
     return segments
+
+
+def determine_depiction_size_with_buffer(
+    bboxes: List[Tuple[int, int, int, int]]
+) -> Tuple[int, int]:
+    """
+    This function takes a list of bounding boxes and returns 1.1 * the maximal
+    depiction size (height, width) of the depicted chemical structures.
+
+    Args:
+        bboxes (List[Tuple[int, int, int, int]]): bounding boxes of the structure
+            depictions (y0, x0, y1, x1)
+
+    Returns:
+        Tuple: average depiction size (height, width)
+    """
+    heights = []
+    widths = []
+    for bbox in bboxes:
+        height = bbox[2] - bbox[0]
+        width = bbox[3] - bbox[1]
+        heights.append(height)
+        widths.append(width)
+    height = int(1.1 * np.max(heights))
+    width = int(1.1 * np.max(widths))
+    return height, width
 
 
 def sort_segments_bboxes(
@@ -200,9 +226,12 @@ def get_expanded_masks(image: np.array) -> np.array:
         np.array: expanded masks (shape: (h, w, num_masks))
     """
     # Structure detection with MRCNN
-    masks, _, _ = get_mrcnn_results(image)
+    masks, bboxes, _ = get_mrcnn_results(image)
+    size = determine_depiction_size_with_buffer(bboxes)
     # Mask expansion
-    expanded_masks = complete_structure_mask(image_array=image, mask_array=masks)
+    expanded_masks = complete_structure_mask(image_array=image,
+                                             mask_array=masks,
+                                             max_depiction_size=size,)
     return expanded_masks
 
 
