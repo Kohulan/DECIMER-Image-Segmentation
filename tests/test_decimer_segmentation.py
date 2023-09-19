@@ -1,8 +1,9 @@
-import numpy as np
-from decimer_segmentation.decimer_segmentation import *
+from decimer_segmentation.decimer_segmentation import (
+    determine_depiction_size_with_buffer
+)
 
 def test_determine_depiction_size_with_buffer():
-    # Determine the average depiction size of the structures in a given list of structures
+    # Determine 1.1 * max depiction size of the structures in a given list of bboxes
     bboxes = [
         [0, 0, 6, 6],
         [0, 0, 8, 8],

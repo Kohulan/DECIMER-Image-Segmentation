@@ -1,5 +1,19 @@
 import numpy as np
-from decimer_segmentation.complete_structure import *
+from decimer_segmentation.complete_structure import (
+    get_bounding_box_center,
+    get_edge_line,
+    get_euklidian_distance,
+    set_x_range,
+    get_next_pixel_to_check,
+    adapt_x_values,
+    get_contour_seeds,
+    get_mask_center,
+    get_seeds,
+    get_neighbour_pixels,
+    expand_masks,
+    expansion_coordination,
+    detect_horizontal_and_vertical_lines,
+)
 
 
 def test_get_bounding_box_center():
@@ -31,7 +45,8 @@ def test_get_euklidian_distance():
 
 
 def test_set_x_range():
-    # For the contour-based expansion, non-white pixels on the contours of the original polygon bounding box are detected
+    # For the contour-based expansion, non-white pixels on the contours of the original
+    # polygon bounding box are detected
     test_distance = 3
     test_eukl_distance = 4
     test_image_array = np.array([[1, 5]])
@@ -55,7 +70,8 @@ def test_get_next_pixel_to_check():
 
 
 def test_adapt_x_values():
-    # Returns a bounding box where the nodes are altered depending on their relative position to bounding box centre
+    # Returns a bounding box where the nodes are altered depending on their relative
+    # position to bounding box centre
     test_bounding_box = np.array([[1, 5], [2, 4]])
     test_node_index = 1
     test_image_shape = [2, 4, 6]
