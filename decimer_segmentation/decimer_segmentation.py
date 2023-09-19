@@ -229,9 +229,11 @@ def get_expanded_masks(image: np.array) -> np.array:
     masks, bboxes, _ = get_mrcnn_results(image)
     size = determine_depiction_size_with_buffer(bboxes)
     # Mask expansion
-    expanded_masks = complete_structure_mask(image_array=image,
-                                             mask_array=masks,
-                                             max_depiction_size=size,)
+    expanded_masks = complete_structure_mask(
+        image_array=image,
+        mask_array=masks,
+        max_depiction_size=size,
+    )
     return expanded_masks
 
 

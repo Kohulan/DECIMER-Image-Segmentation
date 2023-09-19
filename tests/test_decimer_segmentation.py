@@ -1,6 +1,7 @@
 from decimer_segmentation.decimer_segmentation import (
-    determine_depiction_size_with_buffer
+    determine_depiction_size_with_buffer,
 )
+
 
 def test_determine_depiction_size_with_buffer():
     # Determine 1.1 * max depiction size of the structures in a given list of bboxes
