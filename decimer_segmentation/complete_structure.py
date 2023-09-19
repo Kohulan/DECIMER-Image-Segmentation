@@ -367,8 +367,7 @@ def get_neighbour_pixels(
 
 
 def detect_horizontal_and_vertical_lines(
-    image: np.ndarray,
-    max_depiction_size: Tuple[int, int]
+    image: np.ndarray, max_depiction_size: Tuple[int, int]
 ) -> np.ndarray:
     """
     This function takes an image and returns a binary mask that labels the pixels that
@@ -389,17 +388,13 @@ def detect_horizontal_and_vertical_lines(
 
     structure_height, structure_width = max_depiction_size
 
-    horizontal_kernel = cv2.getStructuringElement(
-        cv2.MORPH_RECT, (structure_width, 1)
-    )
+    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (structure_width, 1))
     horizontal_mask = cv2.morphologyEx(
         binarised_im, cv2.MORPH_OPEN, horizontal_kernel, iterations=2
     )
     horizontal_mask = horizontal_mask == 255
 
-    vertical_kernel = cv2.getStructuringElement(
-        cv2.MORPH_RECT, (1, structure_height)
-    )
+    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, structure_height))
     vertical_mask = cv2.morphologyEx(
         binarised_im, cv2.MORPH_OPEN, vertical_kernel, iterations=2
     )
@@ -479,7 +474,7 @@ def complete_structure_mask(
     image_array: np.array,
     mask_array: np.array,
     max_depiction_size: Tuple[int, int],
-    debug=False
+    debug=False,
 ) -> np.array:
     """
     This funtion takes an image (np.array) and an array containing the masks (shape:
@@ -519,8 +514,9 @@ def complete_structure_mask(
         split_mask_arrays = np.array(
             [mask_array[:, :, index] for index in range(mask_array.shape[2])]
         )
-        exclusion_mask = detect_horizontal_and_vertical_lines(blurred_image_array,
-                                                              max_depiction_size)
+        exclusion_mask = detect_horizontal_and_vertical_lines(
+            blurred_image_array, max_depiction_size
+        )
         # Run expansion the expansion
         image_repeat = itertools.repeat(blurred_image_array, mask_array.shape[2])
         exclusion_mask_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])
