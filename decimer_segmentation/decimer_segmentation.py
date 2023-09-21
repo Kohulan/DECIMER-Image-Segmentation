@@ -129,7 +129,7 @@ def determine_depiction_size_with_buffer(
             depictions (y0, x0, y1, x1)
 
     Returns:
-        Tuple: average depiction size (height, width)
+        Tuple [int, int]: average depiction size (height, width)
     """
     heights = []
     widths = []
