@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.2...v1.2.3) (2023-09-21)
+
+
+### Bug Fixes
+
+* test-commit ([33fd1b7](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/33fd1b70cc021aac0334e29cf85c312ea50fd42f))
+
 ## [1.2.2](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.1...v1.2.2) (2023-09-21)
 
 
