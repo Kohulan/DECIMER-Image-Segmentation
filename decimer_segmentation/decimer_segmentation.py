@@ -52,7 +52,7 @@ def segment_chemical_structures_from_file(
         file_path (str): image of a page from a scientific publication
         expand (bool): indicates whether or not to use mask expansion
         poppler_path: Windows users need to specify the path of their
-                        poppler installation
+                        Poppler installation
 
     Returns:
         List[np.array]: expanded segments (shape: (h, w, num_masks))
