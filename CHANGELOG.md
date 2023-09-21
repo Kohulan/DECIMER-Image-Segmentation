@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.0...v1.2.1) (2023-09-21)
+
+
+### Bug Fixes
+
+* GH action for pypi releases ([ce4c3b9](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/ce4c3b940d4c9763f6fb352c7cc4bf5895185d2a))
+
 ## [1.2.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/1.1.4...v1.2.0) (2023-09-19)
 
 
