@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decimer_segmentation",
-    version="1.2.3",
+    version="1.2.4",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
     maintainer="Kohulan Rajan",

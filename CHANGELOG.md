@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.3...v1.2.4) (2023-10-19)
+
+
+### Bug Fixes
+
+* expansion crash when no structures have been detected [#95](https://github.com/Kohulan/DECIMER-Image-Segmentation/issues/95) ([1242a67](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1242a676de2ba970d074be151b8b1865b608f8d5))
+
 ## [1.2.3](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.2...v1.2.3) (2023-09-21)
 
 
