@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.5](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.4...v1.2.5) (2023-10-19)
+
+
+### Bug Fixes
+
+* adapt seed pixel determination test according to changes ([337775d](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/337775d34b536ee79aa63e7b0153aae7c49b229d))
+* do not return empty segments ([f1deb46](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/f1deb4606627fd96c43ec8527c5287e0823f5905))
+* don't use pixels from exclusion mask as seed pixels ([fe96aa9](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/fe96aa91af94c2c8b650ae8d3215a3b497af7469))
+
 ## [1.2.4](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.3...v1.2.4) (2023-10-19)
 
 
