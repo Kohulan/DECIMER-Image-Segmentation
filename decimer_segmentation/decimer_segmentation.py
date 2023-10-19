@@ -114,6 +114,10 @@ def segment_chemical_structures(
     if len(segments) > 0:
         segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
+    segments = [segment for segment in segments
+                if segment.shape[0] > 0
+                if segment.shape[1] > 0]
+
     return segments
 
 
@@ -235,6 +239,7 @@ def get_expanded_masks(image: np.array) -> np.array:
         image_array=image,
         mask_array=masks,
         max_depiction_size=size,
+        debug=False
     )
     return expanded_masks
 
