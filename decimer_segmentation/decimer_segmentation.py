@@ -227,6 +227,8 @@ def get_expanded_masks(image: np.array) -> np.array:
     """
     # Structure detection with MRCNN
     masks, bboxes, _ = get_mrcnn_results(image)
+    if len(bboxes) == 0:
+        return masks
     size = determine_depiction_size_with_buffer(bboxes)
     # Mask expansion
     expanded_masks = complete_structure_mask(
