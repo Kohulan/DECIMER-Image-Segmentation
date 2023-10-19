@@ -117,10 +117,11 @@ def test_get_mask_center():
 
 
 def test_get_seeds():
-    test_image_array = np.array([(3, 2)])
-    test_mask_array = np.array([(9, 5, 9)])
+    test_image_array = np.array([[0, 1, 0],[1, 0, 1],[0, 1, 0]])
+    test_mask_array = np.ones(test_image_array.shape)
+    exclusion_mask = np.zeros(test_image_array.shape)
     expected_result = []
-    actual_result = get_seeds(test_image_array, test_mask_array)
+    actual_result = get_seeds(test_image_array, test_mask_array, exclusion_mask)
     for index in range(len(expected_result)):
         assert expected_result[index] == actual_result[index]
 
