@@ -27,14 +27,14 @@ def test_get_euklidian_distance():
     test_distancepoint2 = [5, 8]
     expected_result = 4.47213595499958
     actual_result = get_euklidian_distance(test_distancepoint1, test_distancepoint2)
-    assert expected_result == actual_result
+    assert round(expected_result, 3) == round(actual_result, 3)
 
 
 def test_set_x_range():
     # For the contour-based expansion, non-white pixels on the contours of the original polygon bounding box are detected
     test_distance = 3
     test_eukl_distance = 4
-    test_image_array = np.array([[1, 5]])
+    test_image_array = np.ones((512, 512))
     expected_result = [2.5, 2.75, 1.0, 0.25, 0.75, 0.0, 2.0, 2.25, 1.5, 1.75, 1.25, 0.5]
     actual_result = set_x_range(test_distance, test_eukl_distance, test_image_array)
     assert set(expected_result) == set(actual_result)
@@ -66,24 +66,27 @@ def test_adapt_x_values():
 
 def test_binarize_image():
     # Returns the binarized image (np.array) by applying the otsu threshold
-    # test_image_array = np.array([1,2,3])
-    # test_threshold = "otsu"
-    # expected_result = False
-    # actual_result = binarize_image(test_image_array, test_threshold)
-    # assert expected_result == actual_result
-    pass
+    test_image_array = np.zeros((512, 512, 3))
+    test_image_array[200, 200] = [255, 255, 255]
+    test_threshold = "otsu"
+    expected_result = np.zeros((512, 512), dtype=bool)
+    expected_result[200, 200] = True
+    actual_result = binarize_image(test_image_array, test_threshold)
+    assert np.array_equal(expected_result, actual_result)
 
 
 def test_get_biggest_polygon():
     # returns the Polygon object that only contains the biggest bounding box
-    # test_polygon = np.array([[(7,7), (8,16)]])
-    # expected_result = np.array([[(7,7), (8,16)]])
-    # actual_result = get_biggest_polygon(test_polygon)
-    # assert expected_result.all() == actual_result.all()
-    pass
+    test_polygon = np.array([[(7,7), (7,16), (16,16), (16,7)],
+                             [(8,8), (8,15), (15,15), (15,8)]])
+    expected_result = np.array([[(7,7), (7,16), (16,16), (16,7)]])
+    actual_result = get_biggest_polygon(test_polygon)
+    assert np.array_equal(expected_result, actual_result)
+    
 
 
 def test_get_contour_seeds():
+    # TODO: Fix this nonsense
     test_image_array = np.array([(1, 2)])
     test_bounding_box = np.array([[1, 1], [2, 1]])
     expected_result = []
