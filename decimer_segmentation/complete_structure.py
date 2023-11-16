@@ -296,57 +296,45 @@ def get_seeds(
     It returns a list of tuples with indices of seeds in the structure
     covered by the mask.
 
+    The seed pixels are defined as pixels in the inner 80% of the mask which
+    are not white in the image.
+
     Args:
         image_array (np.array): Image
-        mask_array (np.array): Mask
+        mask_array (np.array): Mask array of shape (y, x)
         exclusion_mask (np.array): Exclusion mask
 
     Returns:
         List[Tuple[int, int]]: [(x,y), (x,y), ...]
     """
-    x_center, y_center = get_mask_center(mask_array)
-    if x_center is None:
-        return []
-    # Starting at the mask center, check for pixels that are not white
+    mask_y_values, mask_x_values = np.where(mask_array)
+    # Define boundaries of the inner 80% of the mask
+    mask_y_diff = mask_y_values.max() - mask_y_values.min()
+    mask_x_diff = mask_x_values.max() - mask_x_values.min()
+    x_min_limit = mask_x_values.min() + mask_x_diff / 10
+    x_max_limit = mask_x_values.max() - mask_x_diff / 10
+    y_min_limit = mask_y_values.min() + mask_y_diff / 10
+    y_max_limit = mask_y_values.max() - mask_y_diff / 10
+    # Define intersection of mask and image
+    mask_coordinates = set(zip(mask_y_values, mask_x_values))
+    image_y_values, image_x_values = np.where(np.invert(image_array))
+    image_coordinates = set(zip(image_y_values, image_x_values))
+
+    intersection_coordinates = mask_coordinates & image_coordinates
+    # Select intersection coordinates that are in the inner 80% of the mask
     seed_pixels = []
-    up, down, right, left = True, True, True, True
-    for n in range(1, 1000):
-        # Check for seeds above center
-        if up:
-            if x_center + n < image_array.shape[1]:
-                if not mask_array[y_center, x_center + n]:
-                    up = False
-                if not image_array[y_center, x_center + n]:
-                    if not exclusion_mask[y_center, x_center + n]:
-                        seed_pixels.append((x_center + n, y_center))
-                        up = False
-        # Check for seeds below center
-        if down:
-            if x_center - n >= 0:
-                if not mask_array[y_center, x_center - n]:
-                    down = False
-                if not image_array[y_center, x_center - n]:
-                    if not exclusion_mask[y_center, x_center - n]:
-                        seed_pixels.append((x_center - n, y_center))
-                        down = False
-        # Check for seeds left from center
-        if left:
-            if y_center + n < image_array.shape[0]:
-                if not mask_array[y_center + n, x_center]:
-                    left = False
-                if not image_array[y_center + n, x_center]:
-                    if not exclusion_mask[y_center + n, x_center]:
-                        seed_pixels.append((x_center, y_center + n))
-                        left = False
-        # Check for seeds right from center
-        if right:
-            if y_center - n >= 0:
-                if not mask_array[y_center - n, x_center]:
-                    right = False
-                if not image_array[y_center - n, x_center]:
-                    if not exclusion_mask[y_center - n, x_center]:
-                        seed_pixels.append((x_center, y_center - n))
-                        right = False
+    for y_coord, x_coord in intersection_coordinates:
+        if x_coord < x_min_limit:
+            continue
+        if x_coord > x_max_limit:
+            continue
+        if y_coord < y_min_limit:
+            continue
+        if y_coord > y_max_limit:
+            continue
+        if exclusion_mask[y_coord, x_coord]:
+            continue
+        seed_pixels.append((x_coord, y_coord))
     return seed_pixels
 
 
