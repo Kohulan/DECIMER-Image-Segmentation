@@ -33,9 +33,9 @@ setuptools.setup(
         "pillow",
         "opencv-python",
         "matplotlib",
-        "imantics",
         "IPython",
         "pdf2image",
+        "scipy"
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
