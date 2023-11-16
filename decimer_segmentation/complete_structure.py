@@ -9,6 +9,8 @@ from skimage.morphology import binary_erosion
 from imantics import Polygons
 from typing import List, Tuple
 
+from scipy.ndimage import label
+
 
 def plot_it(image_array: np.array) -> None:
     """
@@ -405,6 +407,40 @@ def expand_masks(
     seed_pixels: List[Tuple[int, int]],
     mask_array: np.array,
     exclusion_mask: np.array,
+) -> np.array:
+    """
+    This function generates a mask array where the given masks have been
+    expanded to surround the covered object in the image completely.
+
+    Args:
+        image_array (np.array): array that represents an image (float values)
+        seed_pixels (List[Tuple[int, int]]): [(x, y), ...]
+        mask_array (np.array): MRCNN output; shape: (y, x, mask_index)
+        exclusion_mask (np.array]: indicates whether or not a pixel is excluded from
+            expansion
+        contour_expansion (bool, optional): Indicates whether or not to expand
+                                            from contours. Defaults to False.
+
+    Returns:
+        np.array: Expanded masks
+    """
+    labeled_array, _ = label(np.invert(image_array))
+    mask_array = np.zeros_like(image_array)
+    for seed_pixel in seed_pixels:
+        x, y = seed_pixel
+        if mask_array[y, x] or exclusion_mask[y, x]:
+            continue
+        label_value = labeled_array[y, x]
+        if label_value > 0:
+            mask_array[labeled_array == label_value] = True
+    return mask_array
+
+
+'''def expand_masks(
+    image_array: np.array,
+    seed_pixels: List[Tuple[int, int]],
+    mask_array: np.array,
+    exclusion_mask: np.array,
     contour_expansion=False,
 ) -> np.array:
     """
@@ -436,7 +472,7 @@ def expand_masks(
                 if not image_array[y, x]:
                     mask_array[y, x] = True
                     seed_pixels.append((x, y))
-    return mask_array
+    return mask_array'''
 
 
 def expansion_coordination(
