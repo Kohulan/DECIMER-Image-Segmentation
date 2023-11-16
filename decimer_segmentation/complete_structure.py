@@ -41,58 +41,6 @@ def binarize_image(image_array: np.array, threshold="otsu") -> np.array:
     return binarized_image_array
 
 
-def get_biggest_polygon(polygon: np.array) -> np.array:
-    """
-    Sometimes, the mask R CNN model produces a weird output with one big masks
-    and some small irrelevant islands. This function takes the imantics Polygon
-    object and returns the Polygon object that only contains the biggest
-    bounding box (which is defined by the biggest range in y-direction).
-
-    Args:
-        polygon (np.array): [[(x0,y0), (x1,y1), ...], ...]
-
-    Returns:
-        np.array: [[(x0,y0), (x1,y1), ...]]
-    """
-    if len(polygon) == 1:
-        return polygon
-    else:
-        y_variance = []  # list<tuple<box_index, y-variance>>
-        for box in polygon:
-            y_values = np.array([value[1] for value in box])
-            y_variance.append(max(y_values) - min(y_values))
-        return [polygon[y_variance.index(max(y_variance))]]
-
-
-def get_mask_center(mask_array: np.array) -> Tuple[int, int]:
-    """
-    This function takes a binary np.array (mask) and defines its center.
-    It returns a tuple with the center indices.
-
-    Args:
-        mask_array (np.array): Mask R CNN output
-
-    Returns:
-        Tuple[int, int]: x, y
-    """
-    # First, try to find global mask center.
-    # If that point is included in the mask, return it.
-    y_coordinates, x_coordinates = np.nonzero(mask_array)
-    x_center = int((x_coordinates.max() + x_coordinates.min()) / 2)
-    y_center = int((y_coordinates.max() + y_coordinates.min()) / 2)
-    if mask_array[y_center, x_center]:
-        return x_center, y_center
-    else:
-        # If the global mask center is not placed in the mask, take the
-        # center on the x-axis and the first-best y-coordinate in the mask
-        x_centers = np.where(mask_array[y_center] is True)
-        if len(x_centers) > 0 and len(x_centers[0]) > 0:
-            x_center = x_centers[0][0]
-            return x_center, y_center
-        else:
-            return None, None
-
-
 def get_seeds(
     image_array: np.array,
     mask_array: np.array,
