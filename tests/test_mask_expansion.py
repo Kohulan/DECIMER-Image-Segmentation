@@ -1,5 +1,6 @@
 import numpy as np
 from decimer_segmentation.complete_structure import (
+    binarize_image,
     get_seeds,
     expand_masks,
     expansion_coordination,
@@ -7,15 +8,12 @@ from decimer_segmentation.complete_structure import (
 )
 
 
-
 def test_binarize_image():
-    # Returns the binarized image (np.array) by applying the otsu threshold
-    # test_image_array = np.array([1,2,3])
-    # test_threshold = "otsu"
-    # expected_result = False
-    # actual_result = binarize_image(test_image_array, test_threshold)
-    # assert expected_result == actual_result
-    pass
+    test_image_array = np.array([[255, 255, 255],[0, 0, 0],[255, 255, 255]])
+    test_threshold = "otsu"
+    expected_result = np.array([True, False, True])
+    actual_result = binarize_image(test_image_array, test_threshold)
+    assert np.array_equal(expected_result, actual_result)
 
 
 def test_get_seeds():
@@ -29,28 +27,26 @@ def test_get_seeds():
 
 
 def test_expand_masks():
-    # TODO: Fix this mess! This is not testing anything.
-    test_image_array = np.array([(0, 0, 0, 255, 0)])
+    test_image_array = np.array([(False, False, True, True, True)])
     test_seed_pixels = [(2, 0)]
-    test_mask_array = np.array([(True, True, True, True, True)])
-    expected_result = np.array([(True, True, True, False, True)])
+    test_mask_array = np.array([(True, True, False, True, True)])
+    expected_result = np.array([(False, False, True, True, True)])
     actual_result = expand_masks(
         test_image_array,
         test_seed_pixels,
         test_mask_array,
-        np.zeros(test_image_array.shape),
+        np.zeros(test_image_array.shape, dtype=bool),
     )
     expected_result.all() == actual_result.all()
     # assert expected_result.all() == actual_result.all()
 
 
 def test_expansion_coordination():
-    # TODO: Go through tests and fix nonsense like this
-    test_mask_array = np.array([(9, 5, 9)])
-    test_image_array = np.array([(3, 2)])
-    expected_result = np.array([(9, 5, 9)])
+    test_image_array = np.array([(False, False, True, True, True)])
+    test_mask_array = np.array([(True, True, False, True, True)])
+    expected_result = np.array([(False, False, True, True, True)])
     actual_result = expansion_coordination(
-        test_mask_array, test_image_array, np.zeros(test_image_array.shape)
+        test_mask_array, test_image_array, np.zeros(test_image_array.shape, dtype=bool)
     )
     assert expected_result.all() == actual_result.all()
 
