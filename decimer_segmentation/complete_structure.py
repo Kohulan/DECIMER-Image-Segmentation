@@ -152,7 +152,8 @@ def expand_masks(
     Returns:
         np.array: Expanded masks
     """
-    labeled_array, _ = label(np.invert(image_array))
+    image_with_exclusion = np.invert(image_array) * np.invert(exclusion_mask)
+    labeled_array, _ = label(image_with_exclusion)
     mask_array = np.zeros_like(image_array)
     for seed_pixel in seed_pixels:
         x, y = seed_pixel
