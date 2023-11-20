@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.3.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.5...v1.3.0) (2023-11-20)
+
+
+### Features
+
+* delete more deprecated mask expansion code ([45e0b97](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/45e0b970f3cf1c0b89421c478bc9a6ce23bd0217))
+* delete tests of deleted functions ([99d1b38](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/99d1b3849aba7abe7588d489486f4862ebd158f4))
+* new seed pixel determination ([2ef9a5e](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/2ef9a5e7e406407b09e1197f1c0defc2be1250bb))
+* remove deprecated expansion code ([1ca862f](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1ca862f0237134b935d5d32151129d0045057f4c))
+* speed-up scikit-image and avoiding loops ([fd874a3](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/fd874a34ec9045b8ab116c34f1821479397e5e10))
+* Update demonstration notebook ([e648541](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/e6485410fcebe72ef50b26d4a335d151db42de67))
+* update dependencies ([60358c9](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/60358c9f9cc4fd29184d78c84718cb454b8cbfaf))
+* Update link to download new model ([28c3397](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/28c33975d1538f6920321f03cc638d38e96f7dd9))
+
+
+### Bug Fixes
+
+* table line exlusion with connected object detection ([e2f38d7](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/e2f38d7b646fefc39b3401d49fd9a54707ddeb20))
+* tests for mask expansion ([3ec8239](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/3ec8239db46b1d92faa89a15e3e1319462f04502))
+* update model link README.md ([c5b2cd3](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/c5b2cd3d04133aeaee41ee9fb6a0d263154abb7e))
+
 ## [1.2.5](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.4...v1.2.5) (2023-10-19)
 
 
