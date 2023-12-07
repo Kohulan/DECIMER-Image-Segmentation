@@ -279,6 +279,9 @@ def complete_structure_mask(
     if mask_array.size != 0:
         # Binarization of input image
         binarized_image_array = binarize_image(image_array, threshold=0.72)
+        debug = True
+        if debug:
+            plot_it(binarized_image_array)
         # Apply dilation with a resolution-dependent kernel to the image
         blur_factor = (
             int(image_array.shape[1] / 185) if image_array.shape[1] / 185 >= 2 else 2
@@ -287,9 +290,6 @@ def complete_structure_mask(
         blurred_image_array = binary_erosion(binarized_image_array, footprint=kernel)
         if debug:
             plot_it(blurred_image_array)
-        debug = True
-        if debug:
-            plot_it(binarized_image_array)
         # Slice mask array along third dimension into single masks
         split_mask_arrays = np.array(
             [mask_array[:, :, index] for index in range(mask_array.shape[2])]
@@ -306,13 +306,14 @@ def complete_structure_mask(
         )
         hough_lines = binary_dilation(hough_lines, footprint=kernel)
         exclusion_mask = horizontal_vertical_lines + hough_lines
+        image_with_exclusion = np.invert(
+            np.invert(blurred_image_array) * np.invert(exclusion_mask)
+        )
         if debug:
             plot_it(horizontal_vertical_lines)
             plot_it(hough_lines)
             plot_it(exclusion_mask)
-            plot_it(np.invert(binarized_image_array) * np.invert(exclusion_mask))
-        image_with_exclusion = np.invert(blurred_image_array) * np.invert(exclusion_mask)
-        
+            plot_it(image_with_exclusion)
         # Run expansion
         image_repeat = itertools.repeat(image_with_exclusion, mask_array.shape[2])
         exclusion_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])

@@ -143,8 +143,8 @@ def determine_depiction_size_with_buffer(
         width = bbox[3] - bbox[1]
         heights.append(height)
         widths.append(width)
-    height = int(1.05 * np.max(heights))
-    width = int(1.05 * np.max(widths))
+    height = int(1.1 * np.max(heights))
+    width = int(1.1 * np.max(widths))
     return height, width
 
 
