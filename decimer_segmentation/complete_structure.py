@@ -223,6 +223,7 @@ def expand_masks(
     Returns:
         np.array: Expanded masks
     """
+    image_array = np.invert(image_array)
     labeled_array, _ = label(image_array)
     mask_array = np.zeros_like(image_array)
     for seed_pixel in seed_pixels:
@@ -279,7 +280,6 @@ def complete_structure_mask(
     if mask_array.size != 0:
         # Binarization of input image
         binarized_image_array = binarize_image(image_array, threshold=0.72)
-        debug = True
         if debug:
             plot_it(binarized_image_array)
         # Apply dilation with a resolution-dependent kernel to the image
