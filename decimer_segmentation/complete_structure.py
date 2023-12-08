@@ -324,9 +324,31 @@ def complete_structure_mask(
             image_repeat,
             exclusion_repeat,
         )
-        # Stack mask arrays to give the desired output format
+        # Filter duplicates and stack mask arrays to give the desired output format
+        expanded_split_mask_arrays = filter_duplicate_masks(expanded_split_mask_arrays)
         mask_array = np.stack(expanded_split_mask_arrays, -1)
         return mask_array
     else:
         print("No masks found.")
         return mask_array
+
+
+def filter_duplicate_masks(array_list: List[np.array]) -> List[np.array]:
+    """
+    This function takes a list of arrays and returns a list of unique arrays.
+
+    Args:
+        array_list (List[np.array]): Masks
+
+    Returns:
+        List[np.array]: Unique masks
+    """
+    seen = set()
+    unique_list = []
+    for arr in array_list:
+        # Convert the array to a hashable tuple
+        arr_tuple = tuple(arr.ravel())
+        if arr_tuple not in seen:
+            seen.add(arr_tuple)
+            unique_list.append(arr)
+    return unique_list
