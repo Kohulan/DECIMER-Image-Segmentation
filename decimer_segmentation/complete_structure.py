@@ -1,5 +1,4 @@
 import cv2
-import math
 import numpy as np
 import matplotlib.pyplot as plt
 import itertools
@@ -271,7 +270,8 @@ def complete_structure_mask(
         image_array (np.array): input image
         mask_array (np.array): shape: y, x, n where n is the amount of masks
         max_depiction_size (Tuple[int, int]): height, width
-        debug (bool, optional): More verbose if True. Defaults to False.
+        debug (bool, optional): You get visualisations in a Jupyter Notebook if True.
+            Defaults to False.
 
     Returns:
         np.array: expanded mask array
