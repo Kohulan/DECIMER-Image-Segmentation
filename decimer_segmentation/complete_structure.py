@@ -184,7 +184,7 @@ def detect_lines(
                             1,
                             np.pi / 180,
                             threshold=5,
-                            minLineLength=int(min(max_depiction_size)/4),
+                            minLineLength=int(max(max_depiction_size)/4),
                             maxLineGap=10)
     # Generate exclusion mask based on detected lines
     exclusion_mask = np.zeros_like(image)
