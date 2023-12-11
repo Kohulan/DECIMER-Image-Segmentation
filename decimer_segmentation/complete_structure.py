@@ -317,7 +317,7 @@ def complete_structure_mask(
         image_with_exclusion = np.invert(
             np.invert(image_with_exclusion) * np.invert(exclusion_mask)
         )
-        
+
         if debug:
             plot_it(blurred_image_array)
         if debug:
