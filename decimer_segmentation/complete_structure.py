@@ -276,15 +276,14 @@ def complete_structure_mask(
     Returns:
         np.array: expanded mask array
     """
-
     if mask_array.size != 0:
         # Binarization of input image
         binarized_image_array = binarize_image(image_array, threshold=0.72)
         if debug:
             plot_it(binarized_image_array)
-        # Apply dilation with a resolution-dependent kernel to the image
+        # Apply dilation for line detection
         blur_factor = (
-            int(image_array.shape[1] / 185) if image_array.shape[1] / 185 >= 2 else 2
+            int(image_array.shape[1] / 250) if image_array.shape[1] / 250 >= 2 else 2
         )
         kernel = np.ones((blur_factor, blur_factor))
         blurred_image_array = binary_erosion(binarized_image_array, footprint=kernel)
@@ -307,8 +306,20 @@ def complete_structure_mask(
         hough_lines = binary_dilation(hough_lines, footprint=kernel)
         exclusion_mask = horizontal_vertical_lines + hough_lines
         image_with_exclusion = np.invert(
-            np.invert(blurred_image_array) * np.invert(exclusion_mask)
+            np.invert(binarized_image_array) * np.invert(exclusion_mask)
         )
+        # Apply dilation for connected object detection with bigger kernel
+        blur_factor = (
+            int(image_array.shape[1] / 100) if image_array.shape[1] / 100 >= 2 else 2
+        )
+        kernel = np.ones((blur_factor, blur_factor))
+        image_with_exclusion = binary_erosion(image_with_exclusion, footprint=kernel)
+        image_with_exclusion = np.invert(
+            np.invert(image_with_exclusion) * np.invert(exclusion_mask)
+        )
+        
+        if debug:
+            plot_it(blurred_image_array)
         if debug:
             plot_it(horizontal_vertical_lines)
             plot_it(hough_lines)
