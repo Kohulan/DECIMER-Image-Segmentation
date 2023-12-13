@@ -35,10 +35,8 @@ def test_expand_masks():
         test_image_array,
         test_seed_pixels,
         test_mask_array,
-        np.zeros(test_image_array.shape, dtype=bool),
     )
-    expected_result.all() == actual_result.all()
-    # assert expected_result.all() == actual_result.all()
+    assert expected_result.all() == actual_result.all()
 
 
 def test_expansion_coordination():

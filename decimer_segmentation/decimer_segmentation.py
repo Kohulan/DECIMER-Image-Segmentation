@@ -36,6 +36,7 @@ class InferenceConfig(moldetect.MolDetectConfig):
     # Run detection on one image at a time
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
+    DETECTION_MIN_CONFIDENCE = 0.7
 
 
 def segment_chemical_structures_from_file(
