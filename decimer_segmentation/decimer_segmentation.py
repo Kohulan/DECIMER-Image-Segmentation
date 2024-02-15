@@ -173,7 +173,7 @@ def load_model() -> modellib.MaskRCNN:
     # Download trained weights if needed
     if not os.path.exists(model_path):
         print("Downloading model weights...")
-        url = "https://zenodo.org/record/7228583/files/mask_rcnn_molecule.h5?download=1"
+        url = "https://zenodo.org/record/10663579/files/mask_rcnn_molecule.h5?download=1"
         req = requests.get(url, allow_redirects=True)
         with open(model_path, "wb") as model_file:
             model_file.write(req.content)
