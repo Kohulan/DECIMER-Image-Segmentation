@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decimer_segmentation",
-    version="1.1.3",
+    version="1.3.0",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
     maintainer="Kohulan Rajan",
@@ -33,9 +33,9 @@ setuptools.setup(
         "pillow",
         "opencv-python",
         "matplotlib",
-        "imantics",
         "IPython",
         "pdf2image",
+        "scipy"
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[

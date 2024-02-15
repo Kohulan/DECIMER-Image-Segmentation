@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
-import copy
 import matplotlib.pyplot as plt
 import itertools
 from skimage.color import rgb2gray
 from skimage.filters import threshold_otsu
-from skimage.morphology import binary_erosion
-from imantics import Polygons
+from skimage.morphology import binary_erosion, binary_dilation
 from typing import List, Tuple
+from scipy.ndimage import label
 
 
 def plot_it(image_array: np.array) -> None:
@@ -21,155 +20,6 @@ def plot_it(image_array: np.array) -> None:
     _, ax = plt.subplots(1)
     ax.imshow(image_array)
     plt.show()
-
-
-def get_bounding_box_center(bounding_box: np.array) -> np.array:
-    """
-    This function returns the center np.array([x,y]) of a given
-     bounding box np.array([[x1, y1], [x2, y2],...,[x_n, y_n]])
-
-    Args:
-        bounding_box (np.array): [[x1, y1], [x2, y2],...,[x_n, y_n]]
-
-    Returns:
-        np.array: bounding box center[x_center, y_center]
-    """
-    x_values = np.array([])
-    y_values = np.array([])
-    for node in bounding_box:
-        x_values = np.append(x_values, node[0])
-        y_values = np.append(y_values, node[1])
-    return np.array([np.mean(x_values), np.mean(y_values)])
-
-
-def get_edge_line(
-    node_1: Tuple[int, int], node_2: Tuple[int, int]
-) -> Tuple[float, float]:
-    """
-    This function returns the slope and intercept of a linear
-     function between two given points in a 2-dimensional space
-
-    Args:
-        node_1 (Tuple[int, int]): x, y
-        node_2 (Tuple[int, int]): x, y
-
-    Returns:
-        Tuple[float, float]: slope, intercept
-    """
-    slope = (node_2[1] - node_1[1]) / (node_2[0] - node_1[0])
-    intercept = node_1[1] - slope * node_1[0]
-    return slope, intercept
-
-
-def get_euklidian_distance(point_1: Tuple[int, int], point_2: Tuple[int, int]) -> float:
-    """
-    This function returns the euklidian distance between two
-    given points in a 2-dimensional space.
-
-    Args:
-        point_1 (Tuple[int, int]): x, y
-        point_2 (Tuple[int, int]): x, y
-
-    Returns:
-        float: Euklidian distance between two
-    """
-    return np.sqrt((point_2[0] - point_1[0]) ** 2 + (point_2[1] - point_1[1]) ** 2)
-
-
-def set_x_range(
-    x_distance: float, eukl_distance: float, image_array: np.array
-) -> np.array:
-    """
-    For the contour-based expansion, non-white pixels on the contours of the
-    original polygon bounding box are detected. Checking every single pixel
-    along the edge between two nodes of the polygon would be time-consuming.
-    This function takes the distance between two points along the x-axis,
-    defines the amount of steps to take (depending on the resolution) and
-    returns the corresponding list of steps in x-direction in random order.
-
-    Args:
-        x_distance (float): distance between polygon nodes in x-direction
-        eukl_distance (float): euklidian distance between the nodes
-        image_array (np.array): input image
-
-    Returns:
-        np.array: Shuffled range of steps along x-axis
-    """
-    width = image_array.shape[1]
-    blur_factor = int(width / 500) if width / 500 >= 1 else 1
-    if x_distance > 0:
-        x_range = np.arange(0, x_distance, blur_factor / eukl_distance)
-    else:
-        x_range = np.arange(0, x_distance, -blur_factor / eukl_distance)
-    np.random.shuffle(x_range)
-    return x_range
-
-
-def get_next_pixel_to_check(
-    bounding_box: np.array,
-    node_index: int,
-    x_step: int,
-    image_shape: Tuple[int, int, int],
-) -> Tuple[int, int]:
-    """
-    This function returns the next pixel to check in the image (along the edge
-    of the bounding box). This is only needed for the contour-based expansion.
-    In the case that it tries to check a pixel outside of the image, this is
-    corrected.
-
-    Args:
-        bounding_box (np.array): [(x0,y0), (x1, y1), ...]
-        node_index (int)
-        x_step (int): step in x-direction
-        image_shape (Tuple[int, int])
-
-    Returns:
-        Tuple[int, int]: _description_
-    """
-    # Define the edges of the bounding box
-    slope, intercept = get_edge_line(
-        bounding_box[node_index], bounding_box[node_index - 1]
-    )
-    x = int(bounding_box[node_index - 1][0] + x_step)
-    y = int((slope * (bounding_box[node_index - 1][0] + x_step)) + intercept)
-    if y >= image_shape[0]:
-        y = image_shape[0] - 1
-    if y < 0:
-        y = 0
-    if x >= image_shape[1]:
-        x = image_shape[1] - 1
-    if x < 0:
-        x = 0
-    return x, y
-
-
-def adapt_x_values(
-    bounding_box: np.array, node_index: int, image_shape: Tuple[int, int, int]
-) -> np.array:
-    """
-    If two nodes form a vertical edge, the linear function that describes that
-    edge will in- or decrease infinitely with dx so we need to alter those
-    nodes.
-    This function returns a bounding box where the nodes are altered depending
-    on their relative position to the center of the bounding box.
-    If a node is at the border of the image, then it is not changed.
-
-    Args:
-        bounding_box (np.array): [(x0,y0), (x1, y1), ...]
-        node_index (int)
-        image_shape (Tuple[int, int, int])
-
-    Returns:
-        np.array: [(x0,y0), (x1, y1), ...]
-    """
-    bounding_box = copy.deepcopy(bounding_box)
-    if bounding_box[node_index][0] != image_shape[1]:
-        bounding_box_center = get_bounding_box_center(bounding_box)
-        if bounding_box[node_index][0] < bounding_box_center[0]:
-            bounding_box[node_index][0] = bounding_box[node_index][0] - 1
-        else:
-            bounding_box[node_index][0] = bounding_box[node_index][0] + 1
-    return bounding_box
 
 
 def binarize_image(image_array: np.array, threshold="otsu") -> np.array:
@@ -191,190 +41,69 @@ def binarize_image(image_array: np.array, threshold="otsu") -> np.array:
     return binarized_image_array
 
 
-def get_biggest_polygon(polygon: np.array) -> np.array:
-    """
-    Sometimes, the mask R CNN model produces a weird output with one big masks
-    and some small irrelevant islands. This function takes the imantics Polygon
-    object and returns the Polygon object that only contains the biggest
-    bounding box (which is defined by the biggest range in y-direction).
-
-    Args:
-        polygon (np.array): [[(x0,y0), (x1,y1), ...], ...]
-
-    Returns:
-        np.array: [[(x0,y0), (x1,y1), ...]]
-    """
-    if len(polygon) == 1:
-        return polygon
-    else:
-        y_variance = []  # list<tuple<box_index, y-variance>>
-        for box in polygon:
-            y_values = np.array([value[1] for value in box])
-            y_variance.append(max(y_values) - min(y_values))
-        return [polygon[y_variance.index(max(y_variance))]]
-
-
-def get_contour_seeds(
-    image_array: np.array, bounding_box: np.array
+def get_seeds(
+    image_array: np.array,
+    mask_array: np.array,
+    exclusion_mask: np.array,
 ) -> List[Tuple[int, int]]:
-    """
-    This function an array that represents an image and a polygon bounding box.
-    It returns a list of tuples with indices of objects in the image on the
-    bounding box edges. For clarification: This expansion from the contours of
-    the original polygon is *not* the default expansion.
-
-    Args:
-        image_array (np.array)
-        bounding_box (np.array): [(x0, y0), (x1, y1), ...]
-
-    Returns:
-        seed_pixels (List[Tuple[int, int]]): [(x, y), ...]]
-    """
-    # Check edges for pixels that are not white
-    seed_pixels = []
-    for node_index in range(len(bounding_box)):
-        # Define amount of steps to get from node 1 to node 2 in x-direction
-        x_diff = bounding_box[node_index][0] - bounding_box[node_index - 1][0]
-        if x_diff == 0:
-            bounding_box = adapt_x_values(
-                bounding_box=bounding_box,
-                node_index=node_index,
-                image_shape=image_array.shape,
-            )
-        eukl_dist = get_euklidian_distance(
-            bounding_box[node_index], bounding_box[node_index - 1]
-        )
-        x_diff_range = set_x_range(x_diff, eukl_dist, image_array)
-        # Go down the edge and check if there is something that is not white.
-        # If something was found, the corresponding coordinates are saved.
-        for step in x_diff_range:
-            x, y = get_next_pixel_to_check(
-                bounding_box, node_index, step, image_array.shape
-            )
-            # If there is something that is not white
-            if image_array[y, x] < 0.9:
-                seed_pixels.append((x, y))
-    return seed_pixels
-
-
-def get_mask_center(mask_array: np.array) -> Tuple[int, int]:
-    """
-    This function takes a binary np.array (mask) and defines its center.
-    It returns a tuple with the center indices.
-
-    Args:
-        mask_array (np.array): Mask R CNN output
-
-    Returns:
-        Tuple[int, int]: x, y
-    """
-    # First, try to find global mask center.
-    # If that point is included in the mask, return it.
-    y_coordinates, x_coordinates = np.nonzero(mask_array)
-    x_center = int((x_coordinates.max() + x_coordinates.min()) / 2)
-    y_center = int((y_coordinates.max() + y_coordinates.min()) / 2)
-    if mask_array[y_center, x_center]:
-        return x_center, y_center
-    else:
-        # If the global mask center is not placed in the mask, take the
-        # center on the x-axis and the first-best y-coordinate in the mask
-        x_centers = np.where(mask_array[y_center] is True)
-        if len(x_centers) > 0 and len(x_centers[0]) > 0:
-            x_center = x_centers[0][0]
-            return x_center, y_center
-        else:
-            return None, None
-
-
-def get_seeds(image_array: np.array, mask_array: np.array) -> List[Tuple[int, int]]:
     """
     This function takes an array that represents an image and a mask.
     It returns a list of tuples with indices of seeds in the structure
     covered by the mask.
 
+    The seed pixels are defined as pixels in the inner 80% of the mask which
+    are not white in the image.
+
     Args:
         image_array (np.array): Image
-        mask_array (np.array): Mask
+        mask_array (np.array): Mask array of shape (y, x)
+        exclusion_mask (np.array): Exclusion mask
 
     Returns:
         List[Tuple[int, int]]: [(x,y), (x,y), ...]
     """
-    x_center, y_center = get_mask_center(mask_array)
-    if x_center is None:
-        return []
-    # Starting at the mask center, check for pixels that are not white
+    mask_y_values, mask_x_values = np.where(mask_array)
+    # Define boundaries of the inner 80% of the mask
+    mask_y_diff = mask_y_values.max() - mask_y_values.min()
+    mask_x_diff = mask_x_values.max() - mask_x_values.min()
+    x_min_limit = mask_x_values.min() + mask_x_diff / 10
+    x_max_limit = mask_x_values.max() - mask_x_diff / 10
+    y_min_limit = mask_y_values.min() + mask_y_diff / 10
+    y_max_limit = mask_y_values.max() - mask_y_diff / 10
+    # Define intersection of mask and image
+    mask_coordinates = set(zip(mask_y_values, mask_x_values))
+    image_y_values, image_x_values = np.where(np.invert(image_array))
+    image_coordinates = set(zip(image_y_values, image_x_values))
+
+    intersection_coordinates = mask_coordinates & image_coordinates
+    # Select intersection coordinates that are in the inner 80% of the mask
     seed_pixels = []
-    up, down, right, left = True, True, True, True
-    for n in range(1, 1000):
-        # Check for seeds above center
-        if up:
-            if x_center + n < image_array.shape[1]:
-                if not mask_array[y_center, x_center + n]:
-                    up = False
-                if not image_array[y_center, x_center + n]:
-                    seed_pixels.append((x_center + n, y_center))
-                    up = False
-        # Check for seeds below center
-        if down:
-            if x_center - n >= 0:
-                if not mask_array[y_center, x_center - n]:
-                    down = False
-                if not image_array[y_center, x_center - n]:
-                    seed_pixels.append((x_center - n, y_center))
-                    down = False
-        # Check for seeds left from center
-        if left:
-            if y_center + n < image_array.shape[0]:
-                if not mask_array[y_center + n, x_center]:
-                    left = False
-                if not image_array[y_center + n, x_center]:
-                    seed_pixels.append((x_center, y_center + n))
-                    left = False
-        # Check for seeds right from center
-        if right:
-            if y_center - n >= 0:
-                if not mask_array[y_center - n, x_center]:
-                    right = False
-                if not image_array[y_center - n, x_center]:
-                    seed_pixels.append((x_center, y_center - n))
-                    right = False
+    for y_coord, x_coord in intersection_coordinates:
+        if x_coord < x_min_limit:
+            continue
+        if x_coord > x_max_limit:
+            continue
+        if y_coord < y_min_limit:
+            continue
+        if y_coord > y_max_limit:
+            continue
+        if exclusion_mask[y_coord, x_coord]:
+            continue
+        seed_pixels.append((x_coord, y_coord))
     return seed_pixels
 
 
-def get_neighbour_pixels(
-    seed_pixel: Tuple[int, int], image_shape: Tuple[int, int, int]
-) -> List[Tuple[int, int]]:
-    """
-    This function takes a tuple of x and y coordinates and returns a list of
-    tuples of the coordinates of the eight neighbour pixels.
-
-    Args:
-        seed_pixel (Tuple[int, int]): (x, y)
-        image_shape (Tuple[int, int, int]): (height, width, depth)
-
-    Returns:
-        List[Tuple[int, int]]: [(x0,y0), ... (x7, y7)]]
-    """
-    neighbour_pixels = []
-    x, y = seed_pixel
-    for new_x in range(x - 1, x + 2):
-        if new_x in range(image_shape[1]):
-            for new_y in range(y - 1, y + 2):
-                if new_y in range(image_shape[0]):
-                    if (x, y) != (new_x, new_y):
-                        neighbour_pixels.append((new_x, new_y))
-    return neighbour_pixels
-
-
-def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
+def detect_horizontal_and_vertical_lines(
+    image: np.ndarray, max_depiction_size: Tuple[int, int]
+) -> np.ndarray:
     """
     This function takes an image and returns a binary mask that labels the pixels that
-    are part of long horizontal or vertical lines. [Definition of long: 1/5 of the
-    width/height of the image].
+    are part of long horizontal or vertical lines.
 
     Args:
         image (np.ndarray): binarised image (np.array; type bool) as it is returned by
             binary_erosion() in complete_structure_mask()
+        max_depiction_size (Tuple[int, int]): height, width; used as thresholds
 
     Returns:
         np.ndarray: Exclusion mask that contains indices of pixels that are part of
@@ -383,19 +112,15 @@ def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
     binarised_im = ~image * 255
     binarised_im = binarised_im.astype("uint8")
 
-    horizontal_kernel_size = int(binarised_im.shape[1] / 5)
-    horizontal_kernel = cv2.getStructuringElement(
-        cv2.MORPH_RECT, (horizontal_kernel_size, 1)
-    )
+    structure_height, structure_width = max_depiction_size
+
+    horizontal_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (structure_width, 1))
     horizontal_mask = cv2.morphologyEx(
         binarised_im, cv2.MORPH_OPEN, horizontal_kernel, iterations=2
     )
     horizontal_mask = horizontal_mask == 255
 
-    vertical_kernel_size = int(binarised_im.shape[0] / 5)
-    vertical_kernel = cv2.getStructuringElement(
-        cv2.MORPH_RECT, (1, vertical_kernel_size)
-    )
+    vertical_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, structure_height))
     vertical_mask = cv2.morphologyEx(
         binarised_im, cv2.MORPH_OPEN, vertical_kernel, iterations=2
     )
@@ -404,12 +129,86 @@ def detect_horizontal_and_vertical_lines(image: np.ndarray) -> np.ndarray:
     return horizontal_mask + vertical_mask
 
 
+def find_equidistant_points(
+    x1: int,
+    y1: int,
+    x2: int,
+    y2: int,
+    num_points: int = 5
+) -> List[Tuple[int, int]]:
+    """
+    Finds equidistant points between two points.
+
+    Args:
+        x1 (int): x coordinate of first point
+        y1 (int): y coordinate of first point
+        x2 (int): x coordinate of second point
+        y2 (int): y coordinate of second point
+        num_points (int, optional): Number of points to return. Defaults to 5.
+
+    Returns:
+        List[Tuple[int, int]]: Equidistant points on the given line
+    """
+    points = []
+    for i in range(num_points + 1):
+        t = i / num_points
+        x = x1 * (1 - t) + x2 * t
+        y = y1 * (1 - t) + y2 * t
+        points.append((x, y))
+    return points
+
+
+def detect_lines(
+    image: np.ndarray,
+    max_depiction_size: Tuple[int, int],
+    segmentation_mask: np.ndarray
+) -> np.ndarray:
+    """
+    This function takes an image and returns a binary mask that labels the pixels that
+    are part of lines that are not part of chemical structures (like arrays, tables).
+
+    Args:
+        image (np.ndarray): binarised image (np.array; type bool) as it is returned by
+            binary_erosion() in complete_structure_mask()
+        max_depiction_size (Tuple[int, int]): height, width; used for thresholds
+        segmentation_mask (np.ndarray): Indicates whether or not a pixel is part of a
+            chemical structure depiction (shape: (height, width))
+    Returns:
+        np.ndarray: Exclusion mask that contains indices of pixels that are part of
+            horizontal or vertical lines
+    """
+    image = ~image * 255
+    image = image.astype("uint8")
+    # Detect lines using the Hough Transform
+    lines = cv2.HoughLinesP(image,
+                            1,
+                            np.pi / 180,
+                            threshold=5,
+                            minLineLength=int(max(max_depiction_size)/4),
+                            maxLineGap=10)
+    # Generate exclusion mask based on detected lines
+    exclusion_mask = np.zeros_like(image)
+    if lines is None:
+        return exclusion_mask
+    for line in lines:
+        x1, y1, x2, y2 = line[0]
+        # Check if any of the lines is in a chemical structure depiction
+        points = find_equidistant_points(x1, y1, x2, y2, num_points=7)
+        points_in_structure = False
+        for x, y in points[1:-1]:
+            if segmentation_mask[int(y), int(x)]:
+                points_in_structure = True
+                break
+        if points_in_structure:
+            continue
+        cv2.line(exclusion_mask, (x1, y1), (x2, y2), 255, 2)
+    return exclusion_mask
+
+
 def expand_masks(
     image_array: np.array,
     seed_pixels: List[Tuple[int, int]],
     mask_array: np.array,
-    exclusion_mask: np.array,
-    contour_expansion=False,
 ) -> np.array:
     """
     This function generates a mask array where the given masks have been
@@ -419,27 +218,20 @@ def expand_masks(
         image_array (np.array): array that represents an image (float values)
         seed_pixels (List[Tuple[int, int]]): [(x, y), ...]
         mask_array (np.array): MRCNN output; shape: (y, x, mask_index)
-        exclusion_mask (np.array]: indicates whether or not a pixel is excluded from
-            expansion
-        contour_expansion (bool, optional): Indicates whether or not to expand
-                                            from contours. Defaults to False.
 
     Returns:
         np.array: Expanded masks
     """
-    if not contour_expansion:
-        mask_array = np.zeros(mask_array.shape)
+    image_array = np.invert(image_array)
+    labeled_array, _ = label(image_array)
+    mask_array = np.zeros_like(image_array)
     for seed_pixel in seed_pixels:
         x, y = seed_pixel
-        if exclusion_mask[y, x]:
+        if mask_array[y, x]:
             continue
-        neighbour_pixels = get_neighbour_pixels(seed_pixel, image_array.shape)
-        for neighbour_pixel in neighbour_pixels:
-            x, y = neighbour_pixel
-            if not mask_array[y, x]:
-                if not image_array[y, x]:
-                    mask_array[y, x] = True
-                    seed_pixels.append((x, y))
+        label_value = labeled_array[y, x]
+        if label_value > 0:
+            mask_array[labeled_array == label_value] = True
     return mask_array
 
 
@@ -451,45 +243,49 @@ def expansion_coordination(
     the mask expansion. It returns the expanded mask. The purpose of this function is
     wrapping up the expansion procedure in a map function.
     """
-    seed_pixels = get_seeds(image_array, mask_array)
-    if seed_pixels != []:
-        mask_array = expand_masks(image_array, seed_pixels, mask_array, exclusion_mask)
-    else:
-        # If the seed detection inside of the mask has failed for some reason,
-        # look for seeds on the contours of the mask and expand from there on.
-        # Turn masks into list of polygon bounding boxes
-        polygon = Polygons.from_mask(mask_array).points
-        # Delete unnecessary mask blobs
-        polygon = get_biggest_polygon(polygon)
-
-        seed_pixels = get_contour_seeds(
-            image_array=image_array, bounding_box=polygon[0]
-        )
-        mask_array = expand_masks(
-            image_array, seed_pixels, mask_array, exclusion_mask, contour_expansion=True
-        )
+    seed_pixels = get_seeds(image_array,
+                            mask_array,
+                            exclusion_mask)
+    mask_array = expand_masks(image_array, seed_pixels, mask_array)
     return mask_array
 
 
 def complete_structure_mask(
-    image_array: np.array, mask_array: np.array, debug=False
+    image_array: np.array,
+    mask_array: np.array,
+    max_depiction_size: Tuple[int, int],
+    debug=False,
 ) -> np.array:
     """
-    This funtion takes an image (array) and an array containing the masks (shape:
+    This funtion takes an image (np.array) and an array containing the masks (shape:
     x,y,n where n is the amount of masks and x and y are the pixel coordinates).
+    Additionally, it takes the maximal depiction size of the structures in the image
+    which is used to define the kernel size for the vertical and horizontal line
+    detection for the exclusion masks. The exclusion mask is used to exclude pixels
+    from the mask expansion to avoid including whole tables.
     It detects objects on the contours of the mask and expands it until it frames the
-    complete object in the image. It returns the expanded mask array"""
+    complete object in the image. It returns the expanded mask array
+
+    Args:
+        image_array (np.array): input image
+        mask_array (np.array): shape: y, x, n where n is the amount of masks
+        max_depiction_size (Tuple[int, int]): height, width
+        debug (bool, optional): You get visualisations in a Jupyter Notebook if True.
+            Defaults to False.
+
+    Returns:
+        np.array: expanded mask array
+    """
 
     if mask_array.size != 0:
         # Binarization of input image
-        binarized_image_array = binarize_image(image_array, threshold=0.85)
+        binarized_image_array = binarize_image(image_array, threshold=0.72)
+        if debug:
+            plot_it(binarized_image_array)
         # Apply dilation with a resolution-dependent kernel to the image
         blur_factor = (
             int(image_array.shape[1] / 185) if image_array.shape[1] / 185 >= 2 else 2
         )
-        if debug:
-            plot_it(binarized_image_array)
-        # Define kernel and apply
         kernel = np.ones((blur_factor, blur_factor))
         blurred_image_array = binary_erosion(binarized_image_array, footprint=kernel)
         if debug:
@@ -498,20 +294,61 @@ def complete_structure_mask(
         split_mask_arrays = np.array(
             [mask_array[:, :, index] for index in range(mask_array.shape[2])]
         )
-        exclusion_mask = detect_horizontal_and_vertical_lines(blurred_image_array)
-        # Run expansion the expansion
-        image_repeat = itertools.repeat(blurred_image_array, mask_array.shape[2])
-        exclusion_mask_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])
+        # Detect horizontal and vertical lines
+        horizontal_vertical_lines = detect_horizontal_and_vertical_lines(
+            blurred_image_array, max_depiction_size
+        )
+
+        hough_lines = detect_lines(
+            binarized_image_array,
+            max_depiction_size,
+            segmentation_mask=np.any(mask_array, axis=2).astype(np.bool)
+        )
+        hough_lines = binary_dilation(hough_lines, footprint=kernel)
+        exclusion_mask = horizontal_vertical_lines + hough_lines
+        image_with_exclusion = np.invert(
+            np.invert(blurred_image_array) * np.invert(exclusion_mask)
+        )
+        if debug:
+            plot_it(horizontal_vertical_lines)
+            plot_it(hough_lines)
+            plot_it(exclusion_mask)
+            plot_it(image_with_exclusion)
+        # Run expansion
+        image_repeat = itertools.repeat(image_with_exclusion, mask_array.shape[2])
+        exclusion_repeat = itertools.repeat(exclusion_mask, mask_array.shape[2])
         # Faster with map function
         expanded_split_mask_arrays = map(
             expansion_coordination,
             split_mask_arrays,
             image_repeat,
-            exclusion_mask_repeat,
+            exclusion_repeat,
         )
-        # Stack mask arrays to give the desired output format
+        # Filter duplicates and stack mask arrays to give the desired output format
+        expanded_split_mask_arrays = filter_duplicate_masks(expanded_split_mask_arrays)
         mask_array = np.stack(expanded_split_mask_arrays, -1)
         return mask_array
     else:
         print("No masks found.")
         return mask_array
+
+
+def filter_duplicate_masks(array_list: List[np.array]) -> List[np.array]:
+    """
+    This function takes a list of arrays and returns a list of unique arrays.
+
+    Args:
+        array_list (List[np.array]): Masks
+
+    Returns:
+        List[np.array]: Unique masks
+    """
+    seen = set()
+    unique_list = []
+    for arr in array_list:
+        # Convert the array to a hashable tuple
+        arr_tuple = tuple(arr.ravel())
+        if arr_tuple not in seen:
+            seen.add(arr_tuple)
+            unique_list.append(arr)
+    return unique_list
