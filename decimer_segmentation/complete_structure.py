@@ -302,7 +302,7 @@ def complete_structure_mask(
         hough_lines = detect_lines(
             binarized_image_array,
             max_depiction_size,
-            segmentation_mask=np.any(mask_array, axis=2).astype(np.bool)
+            segmentation_mask=np.any(mask_array, axis=2).astype(np.bool_)
         )
         hough_lines = binary_dilation(hough_lines, footprint=kernel)
         exclusion_mask = horizontal_vertical_lines + hough_lines
