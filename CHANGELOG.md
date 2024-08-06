@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.4.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.3.0...v1.4.0) (2024-02-15)
+
+
+### Features
+
+* duplicate mask removal ([a86c01f](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/a86c01fb7a3e63d3cc15be62dfab5564d7053256))
+* duplicate mask removal ([52d566a](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/52d566ac8fceb64b2a9fe3660f9149da48281159))
+* improved line detection ([8143111](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/814311111c0daa410ebc0ff92dfb84ff96f8bbb7))
+
+
+### Bug Fixes
+
+* broken final exclusion mask ([1f6a8d9](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1f6a8d988a7f6eafbcac4afb253c6fecbf82ee11))
+* decimer-segmentation improved model ([7bd9601](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/7bd9601ce55a7cf6a6506362d5d804fdb1a8e78b))
+* exclusion mask output, remove visualisations usedfor debugging ([7206849](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/7206849aa39b07f5851fce5a54bfc48984467d66))
+* modify line detection minimal length ([411d663](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/411d663c2b4528ebfc51412b63068205817b4123))
+* remove unnecessary import ([10a0b58](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/10a0b585c36cd7223c5abecd8f8d71f421e32147))
+* test mask expansion ([832f3bb](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/832f3bb171d052d8acf621da0f86937d7f9ff48e))
+
 ## [1.3.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.2.5...v1.3.0) (2023-11-20)
 
 

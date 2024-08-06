@@ -149,3 +149,6 @@ tags
 .mypy_cache
 
 ./Validation/*
+
+# Model files
+*.h5
