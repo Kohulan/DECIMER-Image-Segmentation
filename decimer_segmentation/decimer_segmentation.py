@@ -81,7 +81,8 @@ def segment_chemical_structures(
     image: np.array,
     expand: bool = True,
     visualization: bool = False,
-) -> List[np.array]:
+    return_bboxes: bool = False,
+) -> List[np.array] or Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
     """
     This function runs the segmentation model as well as the mask expansion
     -> returns a List of segmented chemical structure depictions (np.array)
@@ -91,10 +92,13 @@ def segment_chemical_structures(
         expand (bool): indicates whether or not to use mask expansion
         visualization (bool): indicates whether or not to visualize the
                                 results (only works in Jupyter notebook)
+        return_bboxes (bool): indicates whether to return bounding boxes along with segments
 
     Returns:
-        List[np.array]: expanded segments sorted in top->bottom, left->right order with
-        a certain tolerance for grouping into "lines"(shape: (h, w, num_masks))
+        If return_bboxes is False:
+            List[np.array]: expanded segments sorted in top->bottom, left->right order
+        If return_bboxes is True:
+            Tuple[List[np.array], List[Tuple]]: segments and bounding boxes
     """
     if not expand:
         masks, bboxes, _ = get_mrcnn_results(image)
@@ -119,7 +123,10 @@ def segment_chemical_structures(
                 if segment.shape[0] > 0
                 if segment.shape[1] > 0]
 
-    return segments
+    if return_bboxes:
+        return segments, bboxes
+    else:
+        return segments
 
 
 def determine_depiction_size_with_buffer(
@@ -270,11 +277,11 @@ def get_mrcnn_results(
     return masks, bboxes, scores
 
 
-def apply_masks(image: np.array, masks: np.array) -> List[np.array]:
+def apply_masks(image: np.array, masks: np.array) -> Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
     """
     This function takes an image and the masks for this image
     (shape: (h, w, num_structures)) and returns a list of segmented
-    chemical structure depictions (np.array)
+    chemical structure depictions (np.array) and their bounding boxes
 
     Args:
         image (np.array): image of a page from a scientific publication
@@ -282,6 +289,7 @@ def apply_masks(image: np.array, masks: np.array) -> List[np.array]:
 
     Returns:
         List[np.array]: segmented chemical structure depictions
+        List[Tuple[int, int, int, int]]: bounding boxes for each segment (y0, x0, y1, x1)
     """
     masks = [masks[:, :, i] for i in range(masks.shape[2])]
     if len(masks) == 0:
@@ -291,10 +299,10 @@ def apply_masks(image: np.array, masks: np.array) -> List[np.array]:
     return segmented_images, bboxes
 
 
-def apply_mask(image: np.array, mask: np.array) -> np.array:
+def apply_mask(image: np.array, mask: np.array) -> Tuple[np.array, Tuple[int, int, int, int]]:
     """
     This function takes an image and a mask for this image (shape: (h, w))
-    and returns a segmented chemical structure depictions (np.array)
+    and returns a segmented chemical structure depiction (np.array)
 
     Args:
         image (np.array): image of a page from a scientific publication
@@ -323,7 +331,7 @@ def apply_mask(image: np.array, mask: np.array) -> np.array:
     return background, (y, x, y + h, x + w)
 
 
-def get_masked_image(image: np.array, mask: np.array) -> np.array:
+def get_masked_image(image: np.array, mask: np.array) -> Tuple[np.array, Tuple[int, int, int, int]]:
     """
     This function takes an image and a masks for this image
     (shape: (h, w)) and returns the masked image where only the
