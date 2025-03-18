@@ -29,7 +29,7 @@ import tensorflow.keras.models as KM
 from . import utils
 from distutils.version import LooseVersion
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 gpus = tf.config.experimental.list_physical_devices("GPU")
 for gpu in gpus:
