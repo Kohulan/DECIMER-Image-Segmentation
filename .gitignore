@@ -152,3 +152,6 @@ tags
 
 # Model files
 *.h5
+
+# test folder
+delete/

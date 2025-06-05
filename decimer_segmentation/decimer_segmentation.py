@@ -4,6 +4,7 @@
  * Written by ©Kohulan Rajan 2020
 """
 import os
+import io
 import requests
 import cv2
 import argparse
@@ -12,17 +13,13 @@ import numpy as np
 from copy import deepcopy
 from itertools import cycle
 from multiprocessing import Pool
-from pdf2image import convert_from_path
-from pdf2image.exceptions import PDFInfoNotInstalledError
-from typing import List, Tuple
+import fitz  # PyMuPDF
+from typing import List, Tuple, Union
 from PIL import Image
 from .complete_structure import complete_structure_mask
 from .mrcnn import model as modellib
 from .mrcnn import visualize
 from .mrcnn import moldetect
-
-
-warnings.filterwarnings("ignore")
 
 # Root directory of the project
 ROOT_DIR = os.path.dirname(os.path.dirname(os.getcwd()))
@@ -41,8 +38,7 @@ class InferenceConfig(moldetect.MolDetectConfig):
 
 def segment_chemical_structures_from_file(
     file_path: str,
-    expand: bool = True,
-    poppler_path=None,
+    expand: bool = True
 ) -> List[np.array]:
     """
     This function runs the segmentation model as well as the mask expansion
@@ -52,19 +48,24 @@ def segment_chemical_structures_from_file(
     Args:
         file_path (str): image of a page from a scientific publication
         expand (bool): indicates whether or not to use mask expansion
-        poppler_path: Windows users need to specify the path of their
-                        Poppler installation
+        poppler_path: Deprecated parameter - no longer needed with PyMuPDF
 
     Returns:
         List[np.array]: expanded segments (shape: (h, w, num_masks))
     """
     if file_path[-3:].lower() == "pdf":
-        try:
-            images = convert_from_path(file_path, 300, poppler_path=poppler_path)
-        except PDFInfoNotInstalledError:
-            poppler_path = "C:\\Program Files (x86)\\poppler-0.68.0\\bin"
-            images = convert_from_path(file_path, 300, poppler_path=poppler_path)
-        images = [np.array(image) for image in images]
+        # Convert PDF to images using PyMuPDF
+        pdf_document = fitz.open(file_path)
+        images = []
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document[page_num]
+            # Render page to image with 300 DPI
+            pix = page.get_pixmap(matrix=fitz.Matrix(300/72, 300/72))
+            img_data = pix.tobytes("ppm")
+            # Convert to PIL Image and then to numpy array
+            img = Image.open(io.BytesIO(img_data))
+            images.append(np.array(img))
+        pdf_document.close()
     else:
         images = [cv2.imread(file_path)]
     if len(images) > 1:
@@ -82,7 +83,7 @@ def segment_chemical_structures(
     expand: bool = True,
     visualization: bool = False,
     return_bboxes: bool = False,
-) -> List[np.array] or Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
+) -> Union[List[np.array], Tuple[List[np.array], List[Tuple[int, int, int, int]]]]:
     """
     This function runs the segmentation model as well as the mask expansion
     -> returns a List of segmented chemical structure depictions (np.array)
@@ -420,7 +421,7 @@ def get_square_image(image: np.array, desired_size: int) -> np.array:
     if old_size[0] or old_size[1] != desired_size:
         ratio = float(desired_size) / max(old_size)
         new_size = tuple([int(x * ratio) for x in old_size])
-        grayscale_image = grayscale_image.resize(new_size, Image.ANTIALIAS)
+        grayscale_image = grayscale_image.resize(new_size, Image.Resampling.LANCZOS)
     else:
         new_size = old_size
     resized_image = Image.new("L", (desired_size, desired_size), "white")

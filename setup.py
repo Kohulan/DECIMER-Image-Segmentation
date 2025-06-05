@@ -34,7 +34,7 @@ setuptools.setup(
         "opencv-python",
         "matplotlib",
         "IPython",
-        "pdf2image",
+        "PyMuPDF",
         "scipy",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
