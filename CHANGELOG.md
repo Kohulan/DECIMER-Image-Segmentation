@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.4.0...v1.5.0) (2025-06-05)
+
+
+### Features
+
+* get bbox decimer_segmentation.py ([95802ab](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/95802abaf52c96cd16b1beba0ebe9b5ca8bbfdb0))
+
+
+### Bug Fixes
+
+* map_fn tensorflow ([5009caa](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/5009caaa3edf1672058ec898a28c34f664114f2d))
+* release please ([ea10e6e](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/ea10e6e89b176c81f1d60d87ae47c6728821ff53))
+* run on GPU model.py ([1d1f66d](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1d1f66d011bf25dfe09f603851163c17c3228608))
+
 ## [1.4.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.3.0...v1.4.0) (2024-02-15)
 
 
