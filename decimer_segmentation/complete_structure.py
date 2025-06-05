@@ -130,11 +130,7 @@ def detect_horizontal_and_vertical_lines(
 
 
 def find_equidistant_points(
-    x1: int,
-    y1: int,
-    x2: int,
-    y2: int,
-    num_points: int = 5
+    x1: int, y1: int, x2: int, y2: int, num_points: int = 5
 ) -> List[Tuple[int, int]]:
     """
     Finds equidistant points between two points.
@@ -161,7 +157,7 @@ def find_equidistant_points(
 def detect_lines(
     image: np.ndarray,
     max_depiction_size: Tuple[int, int],
-    segmentation_mask: np.ndarray
+    segmentation_mask: np.ndarray,
 ) -> np.ndarray:
     """
     This function takes an image and returns a binary mask that labels the pixels that
@@ -180,12 +176,14 @@ def detect_lines(
     image = ~image * 255
     image = image.astype("uint8")
     # Detect lines using the Hough Transform
-    lines = cv2.HoughLinesP(image,
-                            1,
-                            np.pi / 180,
-                            threshold=5,
-                            minLineLength=int(max(max_depiction_size)/4),
-                            maxLineGap=10)
+    lines = cv2.HoughLinesP(
+        image,
+        1,
+        np.pi / 180,
+        threshold=5,
+        minLineLength=int(max(max_depiction_size) / 4),
+        maxLineGap=10,
+    )
     # Generate exclusion mask based on detected lines
     exclusion_mask = np.zeros_like(image)
     if lines is None:
@@ -243,9 +241,7 @@ def expansion_coordination(
     the mask expansion. It returns the expanded mask. The purpose of this function is
     wrapping up the expansion procedure in a map function.
     """
-    seed_pixels = get_seeds(image_array,
-                            mask_array,
-                            exclusion_mask)
+    seed_pixels = get_seeds(image_array, mask_array, exclusion_mask)
     mask_array = expand_masks(image_array, seed_pixels, mask_array)
     return mask_array
 
@@ -302,7 +298,7 @@ def complete_structure_mask(
         hough_lines = detect_lines(
             binarized_image_array,
             max_depiction_size,
-            segmentation_mask=np.any(mask_array, axis=2).astype(np.bool_)
+            segmentation_mask=np.any(mask_array, axis=2).astype(np.bool_),
         )
         hough_lines = binary_dilation(hough_lines, footprint=kernel)
         exclusion_mask = horizontal_vertical_lines + hough_lines

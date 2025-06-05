@@ -119,9 +119,9 @@ def segment_chemical_structures(
     if len(segments) > 0:
         segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
-    segments = [segment for segment in segments
-                if segment.shape[0] > 0
-                if segment.shape[1] > 0]
+    segments = [
+        segment for segment in segments if segment.shape[0] > 0 if segment.shape[1] > 0
+    ]
 
     if return_bboxes:
         return segments, bboxes
@@ -212,7 +212,9 @@ def load_model() -> modellib.MaskRCNN:
     # Download trained weights if needed
     if not os.path.exists(model_path):
         print("Downloading model weights...")
-        url = "https://zenodo.org/record/10663579/files/mask_rcnn_molecule.h5?download=1"
+        url = (
+            "https://zenodo.org/record/10663579/files/mask_rcnn_molecule.h5?download=1"
+        )
         req = requests.get(url, allow_redirects=True)
         with open(model_path, "wb") as model_file:
             model_file.write(req.content)
@@ -244,10 +246,7 @@ def get_expanded_masks(image: np.array) -> np.array:
     size = determine_depiction_size_with_buffer(bboxes)
     # Mask expansion
     expanded_masks = complete_structure_mask(
-        image_array=image,
-        mask_array=masks,
-        max_depiction_size=size,
-        debug=False
+        image_array=image, mask_array=masks, max_depiction_size=size, debug=False
     )
     return expanded_masks
 
@@ -277,7 +276,9 @@ def get_mrcnn_results(
     return masks, bboxes, scores
 
 
-def apply_masks(image: np.array, masks: np.array) -> Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
+def apply_masks(
+    image: np.array, masks: np.array
+) -> Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
     """
     This function takes an image and the masks for this image
     (shape: (h, w, num_structures)) and returns a list of segmented
@@ -299,7 +300,9 @@ def apply_masks(image: np.array, masks: np.array) -> Tuple[List[np.array], List[
     return segmented_images, bboxes
 
 
-def apply_mask(image: np.array, mask: np.array) -> Tuple[np.array, Tuple[int, int, int, int]]:
+def apply_mask(
+    image: np.array, mask: np.array
+) -> Tuple[np.array, Tuple[int, int, int, int]]:
     """
     This function takes an image and a mask for this image (shape: (h, w))
     and returns a segmented chemical structure depiction (np.array)
@@ -331,7 +334,9 @@ def apply_mask(image: np.array, mask: np.array) -> Tuple[np.array, Tuple[int, in
     return background, (y, x, y + h, x + w)
 
 
-def get_masked_image(image: np.array, mask: np.array) -> Tuple[np.array, Tuple[int, int, int, int]]:
+def get_masked_image(
+    image: np.array, mask: np.array
+) -> Tuple[np.array, Tuple[int, int, int, int]]:
     """
     This function takes an image and a masks for this image
     (shape: (h, w)) and returns the masked image where only the

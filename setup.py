@@ -35,7 +35,7 @@ setuptools.setup(
         "matplotlib",
         "IPython",
         "pdf2image",
-        "scipy"
+        "scipy",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[

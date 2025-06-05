@@ -8,21 +8,24 @@ from decimer_segmentation.complete_structure import (
     detect_horizontal_and_vertical_lines,
 )
 
+
 def test_binarize_image():
-    test_image_array = np.array([[255, 255, 255],[0, 0, 0],[255, 255, 255]])
+    test_image_array = np.array([[255, 255, 255], [0, 0, 0], [255, 255, 255]])
     test_threshold = "otsu"
     expected_result = np.array([True, False, True])
     actual_result = binarize_image(test_image_array, test_threshold)
     assert np.array_equal(expected_result, actual_result)
 
+
 def test_get_seeds():
-    test_image_array = np.array([[0, 1, 0],[1, 0, 1],[0, 1, 0]])
+    test_image_array = np.array([[0, 1, 0], [1, 0, 1], [0, 1, 0]])
     test_mask_array = np.ones(test_image_array.shape)
     exclusion_mask = np.zeros(test_image_array.shape)
     expected_result = []
     actual_result = get_seeds(test_image_array, test_mask_array, exclusion_mask)
     for index in range(len(expected_result)):
         assert expected_result[index] == actual_result[index]
+
 
 def test_expand_masks():
     test_image_array = np.array([(False, False, True, True, True)])
