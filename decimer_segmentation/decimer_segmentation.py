@@ -6,14 +6,10 @@
 """
 
 import os
-import io
 import requests
 import cv2
 import argparse
-import warnings
 import numpy as np
-from copy import deepcopy
-from itertools import cycle
 from multiprocessing import Pool
 import fitz  # PyMuPDF
 from typing import List, Tuple, Union, Optional
@@ -408,9 +404,6 @@ def get_masked_image_optimized(
     """
     Optimized version of get_masked_image using vectorized operations
     """
-    # Create masked image using broadcasting
-    masked = image * mask[:, :, np.newaxis]
-
     # Find bounding box more efficiently
     rows = np.any(mask, axis=1)
     cols = np.any(mask, axis=0)

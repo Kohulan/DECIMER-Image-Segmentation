@@ -35,7 +35,9 @@ setuptools.setup(
         "matplotlib",
         "IPython",
         "PyMuPDF",
+        "numba",
         "scipy",
+        "requests",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[

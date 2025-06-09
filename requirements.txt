@@ -18,8 +18,8 @@ PyMuPDF
 IPython
 
 # Additional scientific computing (commonly used with the above packages)
-pandas
 requests
+numba
 
 # Development and testing dependencies (optional)
 pytest
