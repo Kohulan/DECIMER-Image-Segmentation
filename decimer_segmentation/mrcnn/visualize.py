@@ -425,9 +425,7 @@ def plot_overlaps(
         color = (
             "white"
             if overlaps[i, j] > thresh
-            else "black"
-            if overlaps[i, j] > 0
-            else "grey"
+            else "black" if overlaps[i, j] > 0 else "grey"
         )
         plt.text(
             j,
