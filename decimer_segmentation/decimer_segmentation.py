@@ -12,7 +12,7 @@ import argparse
 import numpy as np
 from multiprocessing import Pool
 import fitz  # PyMuPDF
-from typing import List, Tuple, Union, Optional
+from typing import List, Tuple, Union
 from PIL import Image
 from functools import lru_cache
 from concurrent.futures import ThreadPoolExecutor
