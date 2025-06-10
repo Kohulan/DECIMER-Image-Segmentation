@@ -34,8 +34,10 @@ setuptools.setup(
         "opencv-python",
         "matplotlib",
         "IPython",
-        "pdf2image",
+        "PyMuPDF",
+        "numba",
         "scipy",
+        "requests",
     ],
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[

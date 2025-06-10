@@ -1,0 +1,31 @@
+# DECIMER Image Segmentation Dependencies
+
+# Core machine learning and deep learning frameworks
+tensorflow>=2.12.0,<=2.15.1
+numpy>=1.2.0
+scipy
+
+# Image processing libraries
+scikit-image>=0.2.0
+pillow
+opencv-python
+matplotlib
+
+# PDF processing
+PyMuPDF
+
+# Interactive computing
+IPython
+
+# Additional scientific computing (commonly used with the above packages)
+requests
+numba
+
+# Development and testing dependencies (optional)
+pytest
+black
+flake8
+
+# Documentation dependencies (optional)
+jupyter
+notebook

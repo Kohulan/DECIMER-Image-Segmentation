@@ -1,31 +1,31 @@
 """
- * This Software is under the MIT License
- * Refer to LICENSE or https://opensource.org/licenses/MIT for more information
- * Written by ©Kohulan Rajan 2020
+* This Software is under the MIT License
+* Refer to LICENSE or https://opensource.org/licenses/MIT for more information
+* Written by ©Kohulan Rajan 2020
+* Optimized for performance
 """
+
 import os
 import requests
 import cv2
 import argparse
-import warnings
 import numpy as np
-from copy import deepcopy
-from itertools import cycle
 from multiprocessing import Pool
-from pdf2image import convert_from_path
-from pdf2image.exceptions import PDFInfoNotInstalledError
-from typing import List, Tuple
+import fitz  # PyMuPDF
+from typing import List, Tuple, Union
 from PIL import Image
-from .complete_structure import complete_structure_mask
+from functools import lru_cache
+from concurrent.futures import ThreadPoolExecutor
+from .optimized_complete_structure import complete_structure_mask
 from .mrcnn import model as modellib
 from .mrcnn import visualize
 from .mrcnn import moldetect
 
-
-warnings.filterwarnings("ignore")
-
 # Root directory of the project
 ROOT_DIR = os.path.dirname(os.path.dirname(os.getcwd()))
+
+# Global model instance (lazy loading)
+_model = None
 
 
 class InferenceConfig(moldetect.MolDetectConfig):
@@ -40,9 +40,7 @@ class InferenceConfig(moldetect.MolDetectConfig):
 
 
 def segment_chemical_structures_from_file(
-    file_path: str,
-    expand: bool = True,
-    poppler_path=None,
+    file_path: str, expand: bool = True
 ) -> List[np.array]:
     """
     This function runs the segmentation model as well as the mask expansion
@@ -52,28 +50,58 @@ def segment_chemical_structures_from_file(
     Args:
         file_path (str): image of a page from a scientific publication
         expand (bool): indicates whether or not to use mask expansion
-        poppler_path: Windows users need to specify the path of their
-                        Poppler installation
+        poppler_path: Deprecated parameter - no longer needed with PyMuPDF
 
     Returns:
         List[np.array]: expanded segments (shape: (h, w, num_masks))
     """
     if file_path[-3:].lower() == "pdf":
-        try:
-            images = convert_from_path(file_path, 300, poppler_path=poppler_path)
-        except PDFInfoNotInstalledError:
-            poppler_path = "C:\\Program Files (x86)\\poppler-0.68.0\\bin"
-            images = convert_from_path(file_path, 300, poppler_path=poppler_path)
-        images = [np.array(image) for image in images]
+        # Convert PDF to images using PyMuPDF with optimized settings
+        pdf_document = fitz.open(file_path)
+        images = []
+
+        # Pre-allocate list for known size
+        images = [None] * pdf_document.page_count
+
+        # Use thread pool for parallel page rendering
+        def render_page(page_num):
+            page = pdf_document[page_num]
+            # Render page to image with 300 DPI
+            matrix = fitz.Matrix(300 / 72, 300 / 72)
+            pix = page.get_pixmap(matrix=matrix, alpha=False)  # Skip alpha channel
+            # Direct conversion to numpy array
+            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+                pix.h, pix.w, pix.n
+            )
+            return page_num, img_array
+
+        # Use thread pool for I/O bound operations
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            futures = [
+                executor.submit(render_page, i) for i in range(pdf_document.page_count)
+            ]
+            for future in futures:
+                page_num, img_array = future.result()
+                images[page_num] = img_array
+
+        pdf_document.close()
+
+        # Filter out any None values
+        images = [img for img in images if img is not None]
     else:
-        images = [cv2.imread(file_path)]
+        # Use faster image reading with proper flags
+        images = [cv2.imread(file_path, cv2.IMREAD_COLOR)]
+
     if len(images) > 1:
-        with Pool(4) as pool:
+        # Use optimized multiprocessing
+        with Pool(min(4, len(images))) as pool:
             starmap_args = [(im, expand) for im in images]
             segments = pool.starmap(segment_chemical_structures, starmap_args)
-            segments = [su for li in segments for su in li]
+            # More efficient flattening
+            segments = [seg for sublist in segments for seg in sublist]
     else:
-        segments = segment_chemical_structures(images[0])
+        segments = segment_chemical_structures(images[0], expand)
+
     return segments
 
 
@@ -82,7 +110,7 @@ def segment_chemical_structures(
     expand: bool = True,
     visualization: bool = False,
     return_bboxes: bool = False,
-) -> List[np.array] or Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
+) -> Union[List[np.array], Tuple[List[np.array], List[Tuple[int, int, int, int]]]]:
     """
     This function runs the segmentation model as well as the mask expansion
     -> returns a List of segmented chemical structure depictions (np.array)
@@ -119,8 +147,9 @@ def segment_chemical_structures(
     if len(segments) > 0:
         segments, bboxes = sort_segments_bboxes(segments, bboxes)
 
+    # Vectorized filtering for valid segments
     segments = [
-        segment for segment in segments if segment.shape[0] > 0 if segment.shape[1] > 0
+        segment for segment in segments if segment.shape[0] > 0 and segment.shape[1] > 0
     ]
 
     if return_bboxes:
@@ -130,7 +159,7 @@ def segment_chemical_structures(
 
 
 def determine_depiction_size_with_buffer(
-    bboxes: List[Tuple[int, int, int, int]]
+    bboxes: List[Tuple[int, int, int, int]],
 ) -> Tuple[int, int]:
     """
     This function takes a list of bounding boxes and returns 1.1 * the maximal
@@ -143,13 +172,11 @@ def determine_depiction_size_with_buffer(
     Returns:
         Tuple [int, int]: average depiction size (height, width)
     """
-    heights = []
-    widths = []
-    for bbox in bboxes:
-        height = bbox[2] - bbox[0]
-        width = bbox[3] - bbox[1]
-        heights.append(height)
-        widths.append(width)
+    # Vectorized computation for better performance
+    bboxes_array = np.array(bboxes)
+    heights = bboxes_array[:, 2] - bboxes_array[:, 0]
+    widths = bboxes_array[:, 3] - bboxes_array[:, 1]
+
     height = int(1.1 * np.max(heights))
     width = int(1.1 * np.max(widths))
     return height, width
@@ -159,7 +186,7 @@ def sort_segments_bboxes(
     segments: List[np.array],
     bboxes: List[Tuple[int, int, int, int]],  # (y0, x0, y1, x1)
     same_row_pixel_threshold=50,
-) -> Tuple[np.array, List[Tuple[int, int, int, int]]]:
+) -> Tuple[List[np.array], List[Tuple[int, int, int, int]]]:
     """
     Sorts segments and bounding boxes in "reading order"
 
@@ -172,36 +199,44 @@ def sort_segments_bboxes(
     Returns:
         segments and bboxes in reading order
     """
+    # Create index array for efficient sorting
+    indices = list(range(len(bboxes)))
 
-    # Sort by y-coordinate (top-to-bottom reading order)
-    sorted_bboxes = sorted(bboxes, key=lambda bbox: bbox[0])
+    # Sort indices by y-coordinate
+    indices.sort(key=lambda i: bboxes[i][0])
 
-    # Group bounding boxes by rows based on y-coordinate
+    # Group bounding boxes by rows
     rows = []
-    current_row = [sorted_bboxes[0]]
-    for bbox in sorted_bboxes[1:]:
-        if (
-            abs(bbox[0] - current_row[-1][0]) < same_row_pixel_threshold
-        ):  # You can adjust this threshold as needed
-            current_row.append(bbox)
+    current_row = [indices[0]]
+
+    for i in indices[1:]:
+        if abs(bboxes[i][0] - bboxes[current_row[-1]][0]) < same_row_pixel_threshold:
+            current_row.append(i)
         else:
-            rows.append(
-                sorted(current_row, key=lambda x: x[1])
-            )  # Sort by x-coordinate within each row
-            current_row = [bbox]
-    rows.append(sorted(current_row, key=lambda x: x[1]))  # Sort the last row
+            # Sort current row by x-coordinate
+            current_row.sort(key=lambda idx: bboxes[idx][1])
+            rows.append(current_row)
+            current_row = [i]
 
-    # Flatten the list of rows and return
-    sorted_bboxes = [bbox for row in rows for bbox in row]
+    # Don't forget the last row
+    current_row.sort(key=lambda idx: bboxes[idx][1])
+    rows.append(current_row)
 
-    sorted_segments = [segments[bboxes.index(bbox)] for bbox in sorted_bboxes]
+    # Flatten the sorted indices
+    sorted_indices = [idx for row in rows for idx in row]
+
+    # Apply sorting to segments and bboxes
+    sorted_segments = [segments[i] for i in sorted_indices]
+    sorted_bboxes = [bboxes[i] for i in sorted_indices]
+
     return sorted_segments, sorted_bboxes
 
 
+@lru_cache(maxsize=1)
 def load_model() -> modellib.MaskRCNN:
     """
     This function loads the segmentation model and returns it. The weights
-    are downloaded if necessary.
+    are downloaded if necessary. Cached to avoid reloading.
 
     Returns:
         modellib.MaskRCNN: MRCNN model with trained weights
@@ -209,16 +244,21 @@ def load_model() -> modellib.MaskRCNN:
     # Define directory with trained model weights
     root_dir = os.path.split(__file__)[0]
     model_path = os.path.join(root_dir, "mask_rcnn_molecule.h5")
+
     # Download trained weights if needed
     if not os.path.exists(model_path):
         print("Downloading model weights...")
         url = (
             "https://zenodo.org/record/10663579/files/mask_rcnn_molecule.h5?download=1"
         )
-        req = requests.get(url, allow_redirects=True)
-        with open(model_path, "wb") as model_file:
-            model_file.write(req.content)
+        # Use streaming download for large files
+        with requests.get(url, stream=True) as req:
+            req.raise_for_status()
+            with open(model_path, "wb") as model_file:
+                for chunk in req.iter_content(chunk_size=8192):
+                    model_file.write(chunk)
         print("Successfully downloaded the segmentation model weights!")
+
     # Create model object in inference mode.
     model = modellib.MaskRCNN(mode="inference", model_dir=".", config=InferenceConfig())
     # Load weights
@@ -243,6 +283,7 @@ def get_expanded_masks(image: np.array) -> np.array:
     masks, bboxes, _ = get_mrcnn_results(image)
     if len(bboxes) == 0:
         return masks
+
     size = determine_depiction_size_with_buffer(bboxes)
     # Mask expansion
     expanded_masks = complete_structure_mask(
@@ -269,6 +310,9 @@ def get_mrcnn_results(
         List[Tuple[int]]: bounding boxes [(y0, x0, y1, x1), ...]
         List[float]: confidence scores
     """
+    # Ensure model is loaded
+    model = get_model()
+
     results = model.detect([image], verbose=1)
     scores = results[0]["scores"]
     bboxes = results[0]["rois"]
@@ -292,11 +336,25 @@ def apply_masks(
         List[np.array]: segmented chemical structure depictions
         List[Tuple[int, int, int, int]]: bounding boxes for each segment (y0, x0, y1, x1)
     """
-    masks = [masks[:, :, i] for i in range(masks.shape[2])]
-    if len(masks) == 0:
+    if masks.shape[2] == 0:
         return [], []
-    segmented_images_bboxes = map(apply_mask, cycle([image]), masks)
-    segmented_images, bboxes = list(zip(*list(segmented_images_bboxes)))
+
+    # Pre-allocate lists for better performance
+    num_masks = masks.shape[2]
+    segmented_images = [None] * num_masks
+    bboxes = [None] * num_masks
+
+    # Process masks in parallel for better performance
+    def process_mask(i):
+        mask = masks[:, :, i]
+        return apply_mask(image, mask)
+
+    # Use thread pool for I/O bound operations
+    with ThreadPoolExecutor(max_workers=min(4, num_masks)) as executor:
+        futures = [executor.submit(process_mask, i) for i in range(num_masks)]
+        for i, future in enumerate(futures):
+            segmented_images[i], bboxes[i] = future.result()
+
     return segmented_images, bboxes
 
 
@@ -315,54 +373,51 @@ def apply_mask(
         np.array: segmented chemical structure depiction
         Tuple[int]: (y0, x0, y1, x1)
     """
-    # TODO: Further cleanup
-    im = deepcopy(image)
-    for channel in range(image.shape[2]):
-        im[:, :, channel] = im[:, :, channel] * mask
-    masked_image, bbox = get_masked_image(deepcopy(image), mask)
+    # Get masked image and bbox more efficiently
+    masked_image, bbox = get_masked_image_optimized(image, mask)
     x, y, w, h = bbox
+
+    # Convert to grayscale more efficiently
     im_gray = cv2.cvtColor(masked_image, cv2.COLOR_RGB2GRAY)
     _, im_bw = cv2.threshold(im_gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
-    # Removal of transparent layer and generation of segment
+
+    # Create alpha channel
     _, alpha = cv2.threshold(im_bw, 0, 255, cv2.THRESH_BINARY)
-    b, g, r = cv2.split(image)
-    rgba = [b, g, r, alpha]
-    dst = cv2.merge(rgba, 4)
-    background = dst[y : y + h, x : x + w]
-    trans_mask = background[:, :, 3] == 0
-    background[trans_mask] = [255, 255, 255, 255]
-    return background, (y, x, y + h, x + w)
+
+    # Extract region of interest first to reduce processing
+    roi = image[y : y + h, x : x + w]
+
+    # Split channels and merge with alpha
+    b, g, r = cv2.split(roi)
+    rgba = cv2.merge([b, g, r, alpha[y : y + h, x : x + w]])
+
+    # Set transparent pixels to white
+    trans_mask = rgba[:, :, 3] == 0
+    rgba[trans_mask] = [255, 255, 255, 255]
+
+    return rgba, (y, x, y + h, x + w)
 
 
-def get_masked_image(
+def get_masked_image_optimized(
     image: np.array, mask: np.array
 ) -> Tuple[np.array, Tuple[int, int, int, int]]:
     """
-    This function takes an image and a masks for this image
-    (shape: (h, w)) and returns the masked image where only the
-    masked area is not completely white and a bounding box of the
-    segmented object
-
-    Args:
-        image (np.array): image of a page from a scientific publication
-        mask (np.array): masks (shape: (h, w, num_masks))
-
-    Returns:
-        List[np.array]: segmented chemical structure depictions
-        List[int]: bounding box of segmented object
+    Optimized version of get_masked_image using vectorized operations
     """
-    for channel in range(image.shape[2]):
-        image[:, :, channel] = image[:, :, channel] * mask[:, :]
-    # Remove unwanted background
-    grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    _, thresholded = cv2.threshold(grayscale, 0, 255, cv2.THRESH_OTSU)
-    bbox = cv2.boundingRect(thresholded)
+    # Find bounding box more efficiently
+    rows = np.any(mask, axis=1)
+    cols = np.any(mask, axis=0)
+    rmin, rmax = np.where(rows)[0][[0, -1]]
+    cmin, cmax = np.where(cols)[0][[0, -1]]
+    bbox = (cmin, rmin, cmax - cmin + 1, rmax - rmin + 1)
 
-    masked_image = np.zeros(image.shape).astype(np.uint8)
-    masked_image = visualize.apply_mask(masked_image, mask, [1, 1, 1])
-    masked_image = Image.fromarray(masked_image)
-    masked_image = masked_image.convert("RGB")
-    return np.array(masked_image), bbox
+    # Create output image
+    masked_image = np.zeros_like(image, dtype=np.uint8)
+    # Apply mask using vectorized operation
+    for c in range(3):
+        masked_image[:, :, c] = mask * 255
+
+    return masked_image, bbox
 
 
 def save_images(images: List[np.array], path: str, name: str) -> None:
@@ -376,17 +431,22 @@ def save_images(images: List[np.array], path: str, name: str) -> None:
         path (str): Output directory
         name (str): name for filename generation
     """
-    if not os.path.exists(path):
-        os.makedirs(path, exist_ok=True)
-    for index in range(len(images)):
+    os.makedirs(path, exist_ok=True)
+
+    # Use thread pool for parallel I/O operations
+    def save_single_image(args):
+        index, image = args
         filename = f"{name}_{index}.png"
         file_path = os.path.join(path, filename)
-        cv2.imwrite(file_path, images[index])
+        cv2.imwrite(file_path, image)
+
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        executor.map(save_single_image, enumerate(images))
 
 
 def get_bnw_image(image: np.array) -> np.array:
     """
-    This function takes an image and returns
+    This function takes an image and returns a binarized version
 
     Args:
         image (np.array): input image
@@ -394,7 +454,12 @@ def get_bnw_image(image: np.array) -> np.array:
     Returns:
         np.array: binarized input image
     """
-    grayscale_im = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # Check if already grayscale
+    if len(image.shape) == 2:
+        grayscale_im = image
+    else:
+        grayscale_im = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
     _, im_bw = cv2.threshold(
         grayscale_im, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU
     )
@@ -414,25 +479,47 @@ def get_square_image(image: np.array, desired_size: int) -> np.array:
     Returns:
         np.array: resized output image
     """
-    image = Image.fromarray(image)
-    old_size = image.size
-    grayscale_image = image.convert("L")
-    if old_size[0] or old_size[1] != desired_size:
-        ratio = float(desired_size) / max(old_size)
-        new_size = tuple([int(x * ratio) for x in old_size])
-        grayscale_image = grayscale_image.resize(new_size, Image.ANTIALIAS)
+    # Convert to grayscale if needed
+    if len(image.shape) == 3:
+        grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     else:
-        new_size = old_size
-    resized_image = Image.new("L", (desired_size, desired_size), "white")
+        grayscale = image
 
-    resized_image.paste(
-        grayscale_image,
-        ((desired_size - new_size[0]) // 2, (desired_size - new_size[1]) // 2),
-    )
-    return np.array(resized_image)
+    old_height, old_width = grayscale.shape
+
+    # Calculate new size
+    if old_height != desired_size or old_width != desired_size:
+        ratio = float(desired_size) / max(old_height, old_width)
+        new_width = int(old_width * ratio)
+        new_height = int(old_height * ratio)
+
+        # Resize using OpenCV (faster than PIL)
+        resized = cv2.resize(
+            grayscale, (new_width, new_height), interpolation=cv2.INTER_LANCZOS4
+        )
+    else:
+        new_width, new_height = old_width, old_height
+        resized = grayscale
+
+    # Create output image
+    output = np.full((desired_size, desired_size), 255, dtype=np.uint8)
+
+    # Calculate padding
+    y_offset = (desired_size - new_height) // 2
+    x_offset = (desired_size - new_width) // 2
+
+    # Place resized image in center
+    output[y_offset : y_offset + new_height, x_offset : x_offset + new_width] = resized
+
+    return output
 
 
-model = load_model()
+def get_model():
+    """Get or create the global model instance"""
+    global _model
+    if _model is None:
+        _model = load_model()
+    return _model
 
 
 def main():
@@ -447,12 +534,18 @@ def main():
         "--input", help="Enter the input filename (pdf or image)", required=True
     )
     args = parser.parse_args()
+
     # Define image path and output path
     input_path = os.path.normpath(args.input)
-    # Segment chemical structure depictions
+
+    # Pre-load model before segmentation
     print("Loading model...")
+    get_model()  # Pre-load the model
+
+    # Segment chemical structure depictions
     print("Segmenting structures...")
     segments = segment_chemical_structures_from_file(input_path)
+
     # Save segments
     segment_dir = os.path.join(f"{input_path}_output", "segments")
     save_images(segments, segment_dir, os.path.split(input_path)[1][:-4])
