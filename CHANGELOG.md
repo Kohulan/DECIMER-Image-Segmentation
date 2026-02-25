@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.6.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.5.0...v1.6.0) (2026-02-25)
+
+
+### Features
+
+* optimize code for mask expansion and model loading ([1457bc3](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1457bc3e81770b5108b12cb8d1a4bd295129f791))
+
+
+### Bug Fixes
+
+* COCO_MODEL_URL to new download link ([6314ade](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/6314ade540b667f87cd995f63986d34c91c78ea6))
+* default model download location ([d215c41](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/d215c4190a8ea7d630ad683ed750d5748f071f19))
+* linting ([c175225](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/c175225675851ae1e6ca3fff1ac69d650a47878e))
+* load model when startup ([a26cb05](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/a26cb0576ee38e38e34f418ba176d68ac5d75958))
+* load model when startup ([80a281b](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/80a281ba7b2c60fab519ebae5b537d01c4795b27))
+* load model when startup with pystow ([b6b130f](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/b6b130f94adfc9e2a33edcb4f330250efe50c558))
+* path issues in pystow ([fea47e7](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/fea47e77e2b4fbb93dd8cc147afb4c27fb22e2ab))
+* remove unused imports ([d259150](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/d25915081c9d647f1e316e76bafb1cd2431da258))
+* Revise README for clarity and improved presentation ([94927fe](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/94927fea13cb7f121dcfbb277fbe3ac688031dfe))
+* Zenodo model download ([12c011c](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/12c011ce893aa5270649613631c8eac80e5512cd))
+
 ## [1.5.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.4.0...v1.5.0) (2025-07-17)
 
 
