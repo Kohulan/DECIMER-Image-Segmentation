@@ -16,6 +16,8 @@ import cv2
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from tests.helpers import create_test_pdf
+
 
 class TestImageProcessing:
     """Tests for image processing functions."""
@@ -541,32 +543,79 @@ class TestIntegration:
             # Expected if model not available
             pass
 
-    def test_segment_from_file_with_return_bboxes(self):
-        """Test segment_chemical_structures_from_file returns bboxes when return_bboxes=True."""
+    def test_segment_from_file_with_return_bboxes(self, mock_model_detection):
+        """
+        Test segment_chemical_structures_from_file returns bboxes
+        when return_bboxes=True.
+        """
         from decimer_segmentation import segment_chemical_structures_from_file
 
-        image = np.ones((500, 500, 3), dtype=np.uint8) * 255
-        cv2.rectangle(image, (50, 50), (150, 150), (0, 0, 0), -1)
+        pdf_path = create_test_pdf(num_pages=1)
+        try:
+            result = segment_chemical_structures_from_file(
+                pdf_path, expand=False, return_bboxes=True
+            )
+            assert isinstance(result, tuple)
+            assert len(result) == 2
+            segments, bboxes = result
+            assert isinstance(segments, list)
+            assert isinstance(bboxes, list)
+            assert len(segments) == len(bboxes)
+            assert len(segments) == 2, "Mocked model should return 2 detections"
+            for bbox in bboxes:
+                assert len(bbox) == 4
+        finally:
+            os.unlink(pdf_path)
 
-        with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
-            cv2.imwrite(f.name, image)
-            try:
-                result = segment_chemical_structures_from_file(
-                    f.name, expand=False, return_bboxes=True
-                )
-                assert isinstance(result, tuple)
-                assert len(result) == 2
-                segments, bboxes = result
-                assert isinstance(segments, list)
-                assert isinstance(bboxes, list)
-                assert len(segments) == len(bboxes)
-                for bbox in bboxes:
-                    assert len(bbox) == 4
-            except Exception:
-                # Expected if model not available
-                pass
-            finally:
-                os.unlink(f.name)
+    def test_segment_multipage_pdf_with_page_numbers(self, mock_model_detection):
+        """
+        Test segment_chemical_structures_from_file returns page numbers
+        for multi-page PDFs.
+        """
+        from decimer_segmentation import segment_chemical_structures_from_file
+
+        pdf_path = create_test_pdf(num_pages=3)
+        try:
+            result = segment_chemical_structures_from_file(
+                pdf_path, expand=False, return_page_numbers=True
+            )
+            segments, page_numbers = result
+
+            # Mock returns 2 detections per page: pages should be [1, 1, 2, 2, 3, 3]
+            assert page_numbers == [1, 1, 2, 2, 3, 3], (
+                f"Expected page numbers [1, 1, 2, 2, 3, 3], got {page_numbers}"
+            )
+
+            # Verify we got 6 valid segments
+            assert len(segments) == 6
+            for i, seg in enumerate(segments):
+                assert isinstance(seg, np.ndarray), f"Segment {i} should be numpy array"
+                assert seg.size > 0, f"Segment {i} should not be empty"
+        finally:
+            os.unlink(pdf_path)
+
+    def test_segment_pdf_with_bboxes_and_page_numbers(self, mock_model_detection):
+        """
+        Test segment_chemical_structures_from_file returns both bboxes
+        and page numbers.
+        """
+        from decimer_segmentation import segment_chemical_structures_from_file
+
+        pdf_path = create_test_pdf(num_pages=1)
+        try:
+            result = segment_chemical_structures_from_file(
+                pdf_path, expand=False, return_bboxes=True, return_page_numbers=True
+            )
+            segments, bboxes, page_numbers = result
+
+            # Mock returns exact known values
+            assert page_numbers == [1, 1]
+            assert bboxes == [(50, 50, 150, 150), (200, 200, 300, 300)]
+            assert len(segments) == 2
+            for seg in segments:
+                assert isinstance(seg, np.ndarray) and seg.size > 0
+        finally:
+            os.unlink(pdf_path)
 
 
 # Benchmark tests (optional, for performance monitoring)
