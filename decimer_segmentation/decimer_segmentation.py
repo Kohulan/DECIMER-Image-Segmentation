@@ -268,11 +268,19 @@ def _load_pdf_pages(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
     Returns:
         List of (image, page_number) tuples. Page numbers are 1-indexed.
     """
-    pdf_document = pymupdf.open(pdf_path)
-    page_count = pdf_document.page_count
+    # Quick check for page count to determine strategy
+    with pymupdf.open(pdf_path) as doc:
+        page_count = doc.page_count
 
     if page_count == 1:
-        # Single page - no threading overhead
+        return _load_pdf_single_page(pdf_path)
+    else:
+        return _load_pdf_multipage(pdf_path, page_count)
+
+
+def _load_pdf_single_page(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
+    """Load a single-page PDF without threading overhead."""
+    with pymupdf.open(pdf_path) as pdf_document:
         page = pdf_document[0]
         matrix = pymupdf.Matrix(300 / 72, 300 / 72)
         pix = page.get_pixmap(matrix=matrix, alpha=False)
@@ -281,30 +289,31 @@ def _load_pdf_pages(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
         )
         if pix.n == 3:
             img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-        pdf_document.close()
         return [(img_array.copy(), 1)]
 
-    # Multiple pages - use threading for I/O
+
+def _load_pdf_multipage(pdf_path: str, page_count: int) -> List[Tuple[np.ndarray, int]]:
+    """Load multi-page PDF using threading with separate document handles per thread."""
     images = [None] * page_count
 
     def render_page(page_num: int) -> Tuple[int, np.ndarray]:
-        page = pdf_document[page_num]
-        matrix = pymupdf.Matrix(300 / 72, 300 / 72)
-        pix = page.get_pixmap(matrix=matrix, alpha=False)
-        img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
-            pix.h, pix.w, pix.n
-        )
-        if pix.n == 3:
-            img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-        return page_num, img_array.copy()
+        # Each thread opens its own document handle for thread safety
+        with pymupdf.open(pdf_path) as doc:
+            page = doc[page_num]
+            matrix = pymupdf.Matrix(300 / 72, 300 / 72)
+            pix = page.get_pixmap(matrix=matrix, alpha=False)
+            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+                pix.h, pix.w, pix.n
+            )
+            if pix.n == 3:
+                img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
+            return page_num, img_array.copy()
 
     with ThreadPoolExecutor(max_workers=min(4, page_count)) as executor:
         futures = [executor.submit(render_page, i) for i in range(page_count)]
         for future in futures:
             page_num, img_array = future.result()
             images[page_num] = img_array
-
-    pdf_document.close()
 
     # Convert to (image, page_number) tuples with 1-indexed page numbers
     result = []
