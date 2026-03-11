@@ -127,8 +127,8 @@ def _load_model_internal() -> modellib.MaskRCNN:
         logger.debug(f"Some optimizer options not available: {e}")
 
     model_path = pystow.join("DECIMER-Segmentation_model")
-    print(model_path)
-    if not os.path.exists(str(model_path) + "/" + MODEL_FILENAME):
+    logger.debug("Model path: %s", model_path)
+    if not os.path.exists(os.path.join(model_path, MODEL_FILENAME)):
         logger.info("Downloading model weights...")
         download_trained_weights(MODEL_DOWNLOAD_URL, str(model_path))
         logger.info("Successfully downloaded the segmentation model weights!")
@@ -184,8 +184,14 @@ def segment_chemical_structures_from_file(
     file_path: str,
     expand: bool = True,
     return_bboxes: bool = False,
+    return_page_numbers: bool = False,
     **kwargs,
-) -> Union[List[np.ndarray], Tuple[List[np.ndarray], List[Tuple[int, int, int, int]]]]:
+) -> Union[
+    List[np.ndarray],
+    Tuple[List[np.ndarray], List[Tuple[int, int, int, int]]],
+    Tuple[List[np.ndarray], List[int]],
+    Tuple[List[np.ndarray], List[Tuple[int, int, int, int]], List[int]],
+]:
     """
     Segment chemical structures from a PDF or image file.
 
@@ -193,10 +199,13 @@ def segment_chemical_structures_from_file(
         file_path: Path to input file (PDF or image)
         expand: Whether to expand masks to capture complete structures
         return_bboxes: Whether to return bounding boxes along with segments
+        return_page_numbers: Whether to return 1-indexed page numbers per segment
 
     Returns:
         List of segmented chemical structure images as numpy arrays.
         If return_bboxes is True, returns a tuple of (segments, bboxes).
+        If return_page_numbers is True, returns (segments, page_numbers).
+        If both are True, returns (segments, bboxes, page_numbers).
     """
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Input file not found: {file_path}")
@@ -204,40 +213,74 @@ def segment_chemical_structures_from_file(
     if "poppler_path" in kwargs:
         logger.warning("poppler_path parameter is deprecated and ignored")
 
-    images = _load_images_from_file(file_path)
+    images_with_pages = _load_images_from_file(file_path)
 
-    if not images:
+    if not images_with_pages:
         logger.warning(f"No images could be extracted from {file_path}")
-        return ([], []) if return_bboxes else []
+        if return_bboxes and return_page_numbers:
+            return ([], [], [])
+        elif return_bboxes:
+            return ([], [])
+        elif return_page_numbers:
+            return ([], [])
+        else:
+            return []
 
     # Process all images sequentially (model can't parallelize)
     all_segments = []
     all_bboxes = []
-    for image in images:
+    all_page_numbers = []
+    for image, page_number in images_with_pages:
         segments, bboxes = segment_chemical_structures(
             image, expand, return_bboxes=True
         )
         all_segments.extend(segments)
         all_bboxes.extend(bboxes)
+        all_page_numbers.extend([page_number] * len(segments))
 
-    return (all_segments, all_bboxes) if return_bboxes else all_segments
+    if return_bboxes and return_page_numbers:
+        return (all_segments, all_bboxes, all_page_numbers)
+    elif return_bboxes:
+        return (all_segments, all_bboxes)
+    elif return_page_numbers:
+        return (all_segments, all_page_numbers)
+    else:
+        return all_segments
 
 
-def _load_images_from_file(file_path: str) -> List[np.ndarray]:
-    """Load images from PDF or image file."""
+def _load_images_from_file(
+    file_path: str,
+) -> List[Tuple[np.ndarray, int]]:
+    """Load images from PDF or image file.
+
+    Returns:
+        List of (image, page_number) tuples. Page numbers are 1-indexed.
+    """
     if file_path.lower().endswith(".pdf"):
         return _load_pdf_pages(file_path)
     else:
-        return _load_single_image(file_path)
+        return [(img, 1) for img in _load_single_image(file_path)]
 
 
-def _load_pdf_pages(pdf_path: str) -> List[np.ndarray]:
-    """Load all pages from a PDF as images using PyMuPDF."""
-    pdf_document = pymupdf.open(pdf_path)
-    page_count = pdf_document.page_count
+def _load_pdf_pages(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
+    """Load all pages from a PDF as images using PyMuPDF.
+
+    Returns:
+        List of (image, page_number) tuples. Page numbers are 1-indexed.
+    """
+    # Quick check for page count to determine strategy
+    with pymupdf.open(pdf_path) as doc:
+        page_count = doc.page_count
 
     if page_count == 1:
-        # Single page - no threading overhead
+        return _load_pdf_single_page(pdf_path)
+    else:
+        return _load_pdf_multipage(pdf_path, page_count)
+
+
+def _load_pdf_single_page(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
+    """Load a single-page PDF without threading overhead."""
+    with pymupdf.open(pdf_path) as pdf_document:
         page = pdf_document[0]
         matrix = pymupdf.Matrix(300 / 72, 300 / 72)
         pix = page.get_pixmap(matrix=matrix, alpha=False)
@@ -246,22 +289,25 @@ def _load_pdf_pages(pdf_path: str) -> List[np.ndarray]:
         )
         if pix.n == 3:
             img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-        pdf_document.close()
-        return [img_array.copy()]
+        return [(img_array.copy(), 1)]
 
-    # Multiple pages - use threading for I/O
+
+def _load_pdf_multipage(pdf_path: str, page_count: int) -> List[Tuple[np.ndarray, int]]:
+    """Load multi-page PDF using threading with separate document handles per thread."""
     images = [None] * page_count
 
     def render_page(page_num: int) -> Tuple[int, np.ndarray]:
-        page = pdf_document[page_num]
-        matrix = pymupdf.Matrix(300 / 72, 300 / 72)
-        pix = page.get_pixmap(matrix=matrix, alpha=False)
-        img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
-            pix.h, pix.w, pix.n
-        )
-        if pix.n == 3:
-            img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-        return page_num, img_array.copy()
+        # Each thread opens its own document handle for thread safety
+        with pymupdf.open(pdf_path) as doc:
+            page = doc[page_num]
+            matrix = pymupdf.Matrix(300 / 72, 300 / 72)
+            pix = page.get_pixmap(matrix=matrix, alpha=False)
+            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+                pix.h, pix.w, pix.n
+            )
+            if pix.n == 3:
+                img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
+            return page_num, img_array.copy()
 
     with ThreadPoolExecutor(max_workers=min(4, page_count)) as executor:
         futures = [executor.submit(render_page, i) for i in range(page_count)]
@@ -269,8 +315,12 @@ def _load_pdf_pages(pdf_path: str) -> List[np.ndarray]:
             page_num, img_array = future.result()
             images[page_num] = img_array
 
-    pdf_document.close()
-    return [img for img in images if img is not None]
+    # Convert to (image, page_number) tuples with 1-indexed page numbers
+    result = []
+    for page_num, img in enumerate(images):
+        if img is not None:
+            result.append((img, page_num + 1))
+    return result
 
 
 def _load_single_image(image_path: str) -> List[np.ndarray]:

@@ -9,6 +9,7 @@ import sys
 import warnings
 import pytest
 import numpy as np
+import pystow
 import tempfile
 
 # Suppress SWIG-related deprecation warnings from third-party libraries (e.g., OpenCV)
@@ -91,14 +92,40 @@ def temp_image_file(sample_image):
         os.unlink(f.name)
 
 
+@pytest.fixture
+def mock_model_detection(monkeypatch):
+    """
+    Mock the model detection to return fake results without running the actual model.
+    Returns 2 fake detections per image for testing.
+    """
+
+    def mock_get_mrcnn_results(image):
+        """Return fake detection results."""
+        h, w = image.shape[:2]
+        # Create 2 fake masks
+        masks = np.zeros((h, w, 2), dtype=bool)
+        masks[50:150, 50:150, 0] = True
+        masks[200:300, 200:300, 1] = True
+
+        # Fake bounding boxes (y0, x0, y1, x1)
+        bboxes = [(50, 50, 150, 150), (200, 200, 300, 300)]
+
+        # Fake confidence scores
+        scores = [0.95, 0.92]
+
+        return masks, bboxes, scores
+
+    # Patch the get_mrcnn_results function
+    import decimer_segmentation.decimer_segmentation as ds
+
+    monkeypatch.setattr(ds, "get_mrcnn_results", mock_get_mrcnn_results)
+
+
 @pytest.fixture(scope="session")
 def model_available():
     """Check if the model weights are available."""
-    import os
-
-    model_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     model_path = os.path.join(
-        model_dir, "decimer_segmentation", "mask_rcnn_molecule.h5"
+        str(pystow.join("DECIMER-Segmentation_model")), "mask_rcnn_molecule.h5"
     )
     return os.path.exists(model_path)
 
@@ -118,11 +145,8 @@ def pytest_configure(config):
 # Skip model-dependent tests if model not available
 def pytest_collection_modifyitems(config, items):
     """Modify test collection based on available resources."""
-    import os
-
-    model_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     model_path = os.path.join(
-        model_dir, "decimer_segmentation", "mask_rcnn_molecule.h5"
+        str(pystow.join("DECIMER-Segmentation_model")), "mask_rcnn_molecule.h5"
     )
     model_available = os.path.exists(model_path)
 
