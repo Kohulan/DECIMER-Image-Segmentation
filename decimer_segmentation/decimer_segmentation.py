@@ -128,7 +128,7 @@ def _load_model_internal() -> modellib.MaskRCNN:
 
     model_path = pystow.join("DECIMER-Segmentation_model")
     logger.debug("Model path: %s", model_path)
-    if not os.path.exists(str(model_path) + "/" + MODEL_FILENAME):
+    if not os.path.exists(os.path.join(model_path, MODEL_FILENAME)):
         logger.info("Downloading model weights...")
         download_trained_weights(MODEL_DOWNLOAD_URL, str(model_path))
         logger.info("Successfully downloaded the segmentation model weights!")
