@@ -11,6 +11,10 @@ Performance Optimizations Applied:
 - Reduced proposal counts (POST_NMS_ROIS: 1000→500, DETECTION_MAX: 100→50)
 - cuDNN autotuning for GPU operations
 - TensorFlow graph optimizations
+
+Importing this module does not download or load the model. get_model() does that
+the first time it is needed (the first segmentation, or an explicit call to
+get_model()), and keeps the model for later calls.
 """
 
 from __future__ import annotations
@@ -177,7 +181,16 @@ def download_trained_weights(model_url: str, model_path: str, verbose=1):
         print("... done downloading trained model!")
 
 
-segmentation_model = get_model()
+def __getattr__(name: str):
+    """Load the model when ``segmentation_model`` is accessed.
+
+    Up to version 1.5.1 ``segmentation_model`` was a module-level variable that was
+    set (the weights downloaded and loaded) when this module was imported. It now
+    resolves to ``get_model()`` the first time it is read.
+    """
+    if name == "segmentation_model":
+        return get_model()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 def segment_chemical_structures_from_file(
@@ -360,7 +373,7 @@ def get_mrcnn_results(
     Returns:
         Tuple of (masks, bounding_boxes, confidence_scores)
     """
-    model = segmentation_model
+    model = get_model()  # downloads and loads the model on the first call
     results = model.detect([image], verbose=0)
 
     return (

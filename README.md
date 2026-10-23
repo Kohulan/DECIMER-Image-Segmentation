@@ -212,6 +212,13 @@ conda install -c conda-forge poppler
 
 </details>
 
+#### 📥 The model is downloaded on first use
+
+Importing `decimer_segmentation` does not download or load anything. The first segmentation (or an explicit call to
+`decimer_segmentation.get_model()`) downloads the Mask R-CNN weights (about 270 MB) if they are missing, loads the
+model and keeps it for later calls. The weights live in `$PYSTOW_HOME/DECIMER-Segmentation_model/`
+(`~/.data/DECIMER-Segmentation_model/` by default); weights that are already there are used without network access.
+
 ### 🖥️ Hardware Requirements
 
 - **CPU Mode**: Works on any modern CPU

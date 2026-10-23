@@ -18,3 +18,12 @@ __all__ = [
 
 from .decimer_segmentation import *
 from .complete_structure import *
+
+
+def __getattr__(name):
+    """Keep ``decimer_segmentation.segmentation_model`` working without loading it on import."""
+    if name == "segmentation_model":
+        from .decimer_segmentation import get_model
+
+        return get_model()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
