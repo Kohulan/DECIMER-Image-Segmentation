@@ -189,8 +189,8 @@ python -m pip install -U pip
 # Install DECIMER-Segmentation
 pip install .
 
-# Install Poppler (required for PDF processing)
-conda install -c conda-forge poppler
+# Optional: support for PDF files (installs PyMuPDF, licensed under the AGPL-3.0)
+pip install ".[pdf]"
 ```
 
 </details>
@@ -206,11 +206,18 @@ conda activate DECIMER_IMGSEG
 # Install from PyPI
 pip install decimer-segmentation
 
-# Install Poppler (required for PDF processing)
-conda install -c conda-forge poppler
+# Optional: support for PDF files (installs PyMuPDF, licensed under the AGPL-3.0)
+pip install "decimer-segmentation[pdf]"
 ```
 
 </details>
+
+#### 📄 PDF support is optional
+
+Reading PDF files needs [PyMuPDF](https://pymupdf.readthedocs.io/), which is licensed under the AGPL-3.0 while this
+package is MIT-licensed. It is therefore not installed with `decimer-segmentation` itself; install the `pdf` extra
+(`pip install "decimer-segmentation[pdf]"`) to read PDFs. Images (PNG, JPEG, ...) and numpy arrays need no PyMuPDF.
+Passing a PDF without it installed raises an `ImportError` that tells you this.
 
 #### 📥 The model is downloaded on first use
 
@@ -352,24 +359,14 @@ For more comprehensive examples and interactive demonstrations, check out our **
 #### 1️⃣ Use Anaconda PowerShell Prompt
 Run all commands in the **Anaconda PowerShell Prompt** (not regular Command Prompt or PowerShell).
 
-#### 2️⃣ Install Poppler for PDF Support
+#### 2️⃣ PDF Support
 
-PDF processing on Windows requires Poppler. Follow these steps:
+PDF files are read with PyMuPDF, which needs no extra program on Windows (Poppler is no longer used, and the
+`poppler_path` argument is ignored). Install it with the `pdf` extra:
 
-1. **Download Poppler**
-   - Visit [Poppler for Windows](http://blog.alivate.com.au/poppler-windows/)
-   - Download and extract to a location like `C:\Program Files\poppler`
-
-2. **Specify Poppler Path in Code**
-   ```python
-   from decimer_segmentation import segment_chemical_structures_from_file
-   
-   segments = segment_chemical_structures_from_file(
-       "document.pdf",
-       expand=True,
-       poppler_path=r"C:\Program Files\poppler\Library\bin"
-   )
-   ```
+```bash
+pip install "decimer-segmentation[pdf]"
+```
 
 #### 3️⃣ GPU Support on Windows
 Ensure you have:

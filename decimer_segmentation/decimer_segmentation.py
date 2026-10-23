@@ -36,7 +36,6 @@ import threading
 import argparse
 import cv2
 import numpy as np
-import pymupdf
 import pystow
 import tensorflow as tf
 
@@ -244,8 +243,29 @@ def _load_images_from_file(file_path: str) -> List[np.ndarray]:
         return _load_single_image(file_path)
 
 
+def _import_pymupdf():
+    """Import PyMuPDF, which is only needed to read PDF files.
+
+    PyMuPDF is an optional dependency (``pip install "decimer-segmentation[pdf]"``)
+    because it is licensed under the AGPL, unlike this package. It is imported here,
+    when a PDF is read, and not when this module is imported.
+    """
+    try:
+        import pymupdf
+    except ImportError as error:
+        raise ImportError(
+            "Reading PDF files needs PyMuPDF, an optional dependency of "
+            "decimer-segmentation that is not installed (it is licensed under the "
+            "AGPL-3.0, so it is not installed by default). Install it with: "
+            'pip install "decimer-segmentation[pdf]". '
+            "Images and numpy arrays do not need it."
+        ) from error
+    return pymupdf
+
+
 def _load_pdf_pages(pdf_path: str) -> List[np.ndarray]:
     """Load all pages from a PDF as images using PyMuPDF."""
+    pymupdf = _import_pymupdf()
     pdf_document = pymupdf.open(pdf_path)
     page_count = pdf_document.page_count
 

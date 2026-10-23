@@ -34,12 +34,16 @@ setuptools.setup(
         "opencv-python",
         "matplotlib",
         "IPython",
-        "PyMuPDF",
         "numba",
         "scipy",
         "requests",
         "pystow",
     ],
+    extras_require={
+        # Reading PDF files. PyMuPDF is licensed under the AGPL-3.0, so it is not
+        # installed unless asked for: pip install "decimer-segmentation[pdf]"
+        "pdf": ["PyMuPDF"],
+    },
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
         "Programming Language :: Python :: 3",
