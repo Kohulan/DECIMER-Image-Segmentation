@@ -216,10 +216,9 @@ pip install "decimer-segmentation[pdf]"
 
 Reading PDF files needs [PyMuPDF](https://pymupdf.readthedocs.io/), which is licensed under the AGPL-3.0 while this
 package is MIT-licensed. It is therefore not installed with `decimer-segmentation` itself; install the `pdf` extra
-(`pip install "decimer-segmentation[pdf]"`) to read PDFs. Images (PNG, JPEG, ...) and numpy arrays need no PyMuPDF.
+(`pip install "decimer-segmentation[pdf]"`) to read PDFs. Images (PNG, JPEG, ...) and numpy arrays need no PyMuPDF. Passing a PDF without it installed raises an `ImportError` that tells you this.
 
 **Changed in 1.6.0:** the model is downloaded and loaded on first use instead of at import, so `set_inference_config()` and the command-line `--fast` flag now take effect (before, the model was already loaded when they ran). With `--fast`, `DETECTION_MIN_CONFIDENCE` is 0.7 instead of 0.75; the default mode is unchanged.
-Passing a PDF without it installed raises an `ImportError` that tells you this.
 
 #### 📥 The model is downloaded on first use
 
