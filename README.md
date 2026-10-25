@@ -313,6 +313,31 @@ segments = segment_chemical_structures_from_file(
 print(f"🎉 Extracted {len(segments)} chemical structures!")
 ```
 
+To find out where each structure was found, ask for the bounding boxes and the page numbers:
+
+```python
+segments, bboxes, page_numbers = segment_chemical_structures_from_file(
+    "path/to/document.pdf",
+    expand=True,
+    return_bboxes=True,         # (y0, x0, y1, x1) in pixels of the page image
+    return_page_numbers=True,   # the page of the PDF, counted from 1
+)
+
+for segment, bbox, page_number in zip(segments, bboxes, page_numbers):
+    print(f"Page {page_number}: structure at {bbox}")
+```
+
+There is one bounding box and one page number per segment, in the order of the segments. The pages of a PDF are
+rendered at 300 DPI, and the bounding boxes are in pixels of these page images. Every segment of an image file is on
+page 1. Which values are returned depends on the two options:
+
+| `return_bboxes` | `return_page_numbers` | Returns |
+|---|---|---|
+| `False` (default) | `False` (default) | `segments` |
+| `True` | `False` | `(segments, bboxes)` |
+| `False` | `True` | `(segments, page_numbers)` |
+| `True` | `True` | `(segments, bboxes, page_numbers)` |
+
 #### 🔧 **Example 3: Batch Processing**
 
 ```python
