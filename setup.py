@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="decimer_segmentation",
-    version="1.5.1",
+    version="1.6.0",
     author="Kohulan Rajan",
     author_email="kohulan.rajan@uni-jena.de",
     maintainer="Kohulan Rajan",
@@ -34,12 +34,19 @@ setuptools.setup(
         "opencv-python",
         "matplotlib",
         "IPython",
-        "PyMuPDF",
         "numba",
         "scipy",
         "requests",
         "pystow",
+        # Reads PDF files (Apache-2.0 / BSD-3-Clause); 4.30 to 5.x are tested.
+        "pypdfium2>=4.30.0,<6",
     ],
+    extras_require={
+        # PyMuPDF, an alternative PDF reader (pdf_backend="pymupdf"). It is licensed
+        # under the AGPL-3.0, so it is not installed unless asked for:
+        # pip install "decimer-segmentation[pdf]"
+        "pdf": ["PyMuPDF"],
+    },
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
     classifiers=[
         "Programming Language :: Python :: 3",

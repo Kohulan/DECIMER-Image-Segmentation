@@ -13,7 +13,10 @@ opencv-python
 matplotlib
 
 # PDF processing
-PyMuPDF
+pypdfium2>=4.30.0,<6
+# Optional alternative PDF reader, AGPL-3.0 (pdf_backend="pymupdf"), not installed
+# by default; to install it: pip install "decimer-segmentation[pdf]"
+# PyMuPDF
 
 # Interactive computing
 IPython

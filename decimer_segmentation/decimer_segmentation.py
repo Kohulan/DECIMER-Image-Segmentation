@@ -11,6 +11,10 @@ Performance Optimizations Applied:
 - Reduced proposal counts (POST_NMS_ROIS: 1000→500, DETECTION_MAX: 100→50)
 - cuDNN autotuning for GPU operations
 - TensorFlow graph optimizations
+
+Importing this module does not download or load the model. get_model() does that
+the first time it is needed (the first segmentation, or an explicit call to
+get_model()), and keeps the model for later calls.
 """
 
 from __future__ import annotations
@@ -24,15 +28,14 @@ os.environ["TF_CUDNN_USE_AUTOTUNE"] = "1"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "1"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
+import contextlib
 import logging
 from typing import List, Tuple, Union, Optional
-from concurrent.futures import ThreadPoolExecutor
 import threading
 
 import argparse
 import cv2
 import numpy as np
-import pymupdf
 import pystow
 import tensorflow as tf
 
@@ -51,10 +54,18 @@ MODEL_DOWNLOAD_URL = (
 )
 MODEL_FILENAME = "mask_rcnn_molecule.h5"
 
+# PDF pages are rendered at this resolution, by one of these libraries (pdf_backend).
+PDF_RENDER_DPI = 300
+PDF_BACKENDS = ("pdfium", "pymupdf")
+DEFAULT_PDF_BACKEND = "pdfium"
+
 # Global model instance with thread-safe lazy loading
 _model: Optional[modellib.MaskRCNN] = None
 _model_lock = threading.Lock()
 _model_warmed_up: bool = False
+
+# Neither PDFium nor PyMuPDF is thread-safe: one PDF is rendered at a time per process.
+_pdf_lock = threading.Lock()
 
 
 class InferenceConfig(moldetect.MolDetectConfig):
@@ -177,7 +188,16 @@ def download_trained_weights(model_url: str, model_path: str, verbose=1):
         print("... done downloading trained model!")
 
 
-segmentation_model = get_model()
+def __getattr__(name: str):
+    """Load the model when ``segmentation_model`` is accessed.
+
+    Up to version 1.5.1 ``segmentation_model`` was a module-level variable that was
+    set (the weights downloaded and loaded) when this module was imported. It now
+    resolves to ``get_model()`` the first time it is read.
+    """
+    if name == "segmentation_model":
+        return get_model()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 def segment_chemical_structures_from_file(
@@ -185,6 +205,8 @@ def segment_chemical_structures_from_file(
     expand: bool = True,
     return_bboxes: bool = False,
     return_page_numbers: bool = False,
+    *,
+    pdf_backend: str = DEFAULT_PDF_BACKEND,
     **kwargs,
 ) -> Union[
     List[np.ndarray],
@@ -200,20 +222,30 @@ def segment_chemical_structures_from_file(
         expand: Whether to expand masks to capture complete structures
         return_bboxes: Whether to return bounding boxes along with segments
         return_page_numbers: Whether to return 1-indexed page numbers per segment
+        pdf_backend: The library that renders the pages of a PDF (ignored for
+            images): "pdfium" (the default; pypdfium2, Apache-2.0 / BSD-3-Clause)
+            or "pymupdf" (PyMuPDF, AGPL-3.0, which is not installed by default:
+            pip install "decimer-segmentation[pdf]").
 
     Returns:
         List of segmented chemical structure images as numpy arrays.
         If return_bboxes is True, returns a tuple of (segments, bboxes).
         If return_page_numbers is True, returns (segments, page_numbers).
         If both are True, returns (segments, bboxes, page_numbers).
+
+    Raises:
+        ValueError: pdf_backend is not one of PDF_BACKENDS.
+        ImportError: pdf_backend="pymupdf" for a PDF, and PyMuPDF is not installed.
     """
+    _check_pdf_backend(pdf_backend)
+
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Input file not found: {file_path}")
 
     if "poppler_path" in kwargs:
         logger.warning("poppler_path parameter is deprecated and ignored")
 
-    images_with_pages = _load_images_from_file(file_path)
+    images_with_pages = _load_images_from_file(file_path, pdf_backend)
 
     if not images_with_pages:
         logger.warning(f"No images could be extracted from {file_path}")
@@ -249,7 +281,7 @@ def segment_chemical_structures_from_file(
 
 
 def _load_images_from_file(
-    file_path: str,
+    file_path: str, pdf_backend: str = DEFAULT_PDF_BACKEND
 ) -> List[Tuple[np.ndarray, int]]:
     """Load images from PDF or image file.
 
@@ -257,70 +289,103 @@ def _load_images_from_file(
         List of (image, page_number) tuples. Page numbers are 1-indexed.
     """
     if file_path.lower().endswith(".pdf"):
-        return _load_pdf_pages(file_path)
+        return _load_pdf_pages(file_path, pdf_backend)
     else:
         return [(img, 1) for img in _load_single_image(file_path)]
 
 
-def _load_pdf_pages(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
-    """Load all pages from a PDF as images using PyMuPDF.
+def _check_pdf_backend(pdf_backend: str) -> None:
+    if pdf_backend not in PDF_BACKENDS:
+        raise ValueError(
+            f"Unknown pdf_backend {pdf_backend!r}: use one of "
+            + ", ".join(repr(name) for name in PDF_BACKENDS)
+        )
+
+
+def _import_pymupdf():
+    """Import PyMuPDF, which is only needed by the "pymupdf" PDF backend.
+
+    PyMuPDF is an optional dependency (``pip install "decimer-segmentation[pdf]"``)
+    because it is licensed under the AGPL, unlike this package. It is imported here,
+    when the "pymupdf" backend reads a PDF, and not when this module is imported.
+    """
+    try:
+        import pymupdf
+    except ImportError as error:
+        raise ImportError(
+            'pdf_backend="pymupdf" needs PyMuPDF, an optional dependency of '
+            "decimer-segmentation that is not installed (it is licensed under the "
+            "AGPL-3.0, so it is not installed by default). Install it with: "
+            'pip install "decimer-segmentation[pdf]". '
+            "PDFs are read with pypdfium2 by default, which is always installed; "
+            "images and numpy arrays need neither."
+        ) from error
+    return pymupdf
+
+
+def _open_pdf_pdfium(pdf_path: str):
+    """Open a PDF with pypdfium2 (Apache-2.0 / BSD-3-Clause), the default backend."""
+    import pypdfium2
+
+    document = pypdfium2.PdfDocument(pdf_path)
+    try:
+        # Without a form environment (which has to exist before any page is loaded,
+        # and is closed with the document) pdfium draws no form fields: a filled-in
+        # form would come out blank, where PyMuPDF draws the fields.
+        document.init_forms()
+    except BaseException:
+        document.close()
+        raise
+    return document
+
+
+def _render_page_pdfium(document, index: int) -> np.ndarray:
+    # pypdfium2 sizes the bitmap as math.ceil(points * scale), and 792 * (300 / 72) is
+    # 3300.0000000000005, so a US Letter page would get 3301 rows instead of the 3300
+    # that 300 DPI means (and PyMuPDF gives). A scale lower by a part in a billion
+    # (0.00003 px on the largest page) gives the exact size and changes nothing else.
+    scale = PDF_RENDER_DPI / 72 * (1 - 1e-9)
+    with contextlib.closing(document[index]) as page:
+        with contextlib.closing(page.render(scale=scale)) as bitmap:
+            # White background, no alpha channel, 3 channels in BGR order: what OpenCV
+            # and this package use, so no colour conversion. The array is a view of
+            # the bitmap's buffer, which goes with the bitmap, hence the copy.
+            return bitmap.to_numpy().copy()
+
+
+def _open_pdf_pymupdf(pdf_path: str):
+    """Open a PDF with PyMuPDF (AGPL-3.0), the optional backend."""
+    return _import_pymupdf().open(pdf_path)
+
+
+def _render_page_pymupdf(document, index: int) -> np.ndarray:
+    pix = document[index].get_pixmap(dpi=PDF_RENDER_DPI, alpha=False)
+    rgb = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.h, pix.w, pix.n)
+    return cv2.cvtColor(rgb, cv2.COLOR_RGB2BGR)
+
+
+def _load_pdf_pages(
+    pdf_path: str, pdf_backend: str = DEFAULT_PDF_BACKEND
+) -> List[Tuple[np.ndarray, int]]:
+    """Render all pages of a PDF, in page order, at 300 DPI as BGR uint8 arrays.
+
+    The pages are rendered one after the other from one open document, which is
+    closed afterwards: neither PDFium nor PyMuPDF is thread-safe, and a plain loop
+    was also the fastest way to render a long PDF with PyMuPDF.
 
     Returns:
         List of (image, page_number) tuples. Page numbers are 1-indexed.
     """
-    # Quick check for page count to determine strategy
-    with pymupdf.open(pdf_path) as doc:
-        page_count = doc.page_count
-
-    if page_count == 1:
-        return _load_pdf_single_page(pdf_path)
+    _check_pdf_backend(pdf_backend)
+    if pdf_backend == "pymupdf":
+        open_pdf, render_page = _open_pdf_pymupdf, _render_page_pymupdf
     else:
-        return _load_pdf_multipage(pdf_path, page_count)
+        open_pdf, render_page = _open_pdf_pdfium, _render_page_pdfium
 
-
-def _load_pdf_single_page(pdf_path: str) -> List[Tuple[np.ndarray, int]]:
-    """Load a single-page PDF without threading overhead."""
-    with pymupdf.open(pdf_path) as pdf_document:
-        page = pdf_document[0]
-        matrix = pymupdf.Matrix(300 / 72, 300 / 72)
-        pix = page.get_pixmap(matrix=matrix, alpha=False)
-        img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
-            pix.h, pix.w, pix.n
-        )
-        if pix.n == 3:
-            img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-        return [(img_array.copy(), 1)]
-
-
-def _load_pdf_multipage(pdf_path: str, page_count: int) -> List[Tuple[np.ndarray, int]]:
-    """Load multi-page PDF using threading with separate document handles per thread."""
-    images = [None] * page_count
-
-    def render_page(page_num: int) -> Tuple[int, np.ndarray]:
-        # Each thread opens its own document handle for thread safety
-        with pymupdf.open(pdf_path) as doc:
-            page = doc[page_num]
-            matrix = pymupdf.Matrix(300 / 72, 300 / 72)
-            pix = page.get_pixmap(matrix=matrix, alpha=False)
-            img_array = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
-                pix.h, pix.w, pix.n
-            )
-            if pix.n == 3:
-                img_array = cv2.cvtColor(img_array, cv2.COLOR_RGB2BGR)
-            return page_num, img_array.copy()
-
-    with ThreadPoolExecutor(max_workers=min(4, page_count)) as executor:
-        futures = [executor.submit(render_page, i) for i in range(page_count)]
-        for future in futures:
-            page_num, img_array = future.result()
-            images[page_num] = img_array
-
-    # Convert to (image, page_number) tuples with 1-indexed page numbers
-    result = []
-    for page_num, img in enumerate(images):
-        if img is not None:
-            result.append((img, page_num + 1))
-    return result
+    with _pdf_lock, contextlib.closing(open_pdf(pdf_path)) as document:
+        return [
+            (render_page(document, index), index + 1) for index in range(len(document))
+        ]
 
 
 def _load_single_image(image_path: str) -> List[np.ndarray]:
@@ -410,7 +475,7 @@ def get_mrcnn_results(
     Returns:
         Tuple of (masks, bounding_boxes, confidence_scores)
     """
-    model = segmentation_model
+    model = get_model()  # downloads and loads the model on the first call
     results = model.detect([image], verbose=0)
 
     return (
@@ -657,6 +722,15 @@ def main():
     parser.add_argument(
         "--fast", action="store_true", help="Use faster settings (fewer proposals)"
     )
+    parser.add_argument(
+        "--pdf-backend",
+        "--pdf_backend",
+        dest="pdf_backend",
+        choices=PDF_BACKENDS,
+        default=DEFAULT_PDF_BACKEND,
+        help="Library that renders PDF pages (default: %(default)s; pymupdf is "
+        "AGPL-3.0 and needs: pip install 'decimer-segmentation[pdf]')",
+    )
 
     args = parser.parse_args()
 
@@ -671,7 +745,7 @@ def main():
 
     logger.info(f"Processing: {args.input}")
     segments = segment_chemical_structures_from_file(
-        args.input, expand=not args.no_expand
+        args.input, expand=not args.no_expand, pdf_backend=args.pdf_backend
     )
 
     if not segments:
