@@ -8,7 +8,8 @@ Written by Waleed Abdulla
 Modified for DECIMER Segmentation 2024
 - Removed unused imports
 - Optimized inference path
-- Direct model call instead of predict()
+- predict_on_batch() on numpy arrays instead of predict() (lower overhead), and not a direct
+  eager call of the model, which leaks memory on every call under TF 2.15 (see detect())
 """
 
 from __future__ import annotations
@@ -1269,7 +1270,12 @@ class MaskRCNN:
         """
         Run detection on images.
 
-        OPTIMIZATION: Uses direct model call instead of predict() for lower overhead.
+        OPTIMIZATION: runs the forward pass with predict_on_batch() on numpy arrays, which has
+        less overhead than predict() (no data pipeline, no callbacks). Do not replace it with a
+        direct eager call of the model, self.keras_model(tensors, training=False): under TF 2.15
+        on CPU that leaks about 3.5 MB per call (200 calls on 3 images grew the process from
+        1.79 to 2.49 GB, linearly). predict_on_batch() stays flat (1.77 to 1.73 GB over 200
+        calls), is about 30 % faster, and returns the same detections.
         """
         assert self.mode == "inference", "Model must be in inference mode"
         assert len(images) == self.config.BATCH_SIZE
@@ -1280,20 +1286,18 @@ class MaskRCNN:
         anchors = self.get_anchors(image_shape)
         anchors = np.broadcast_to(anchors, (self.config.BATCH_SIZE,) + anchors.shape)
 
-        # OPTIMIZATION: Direct call is faster than predict() - avoids callback overhead
-        # Convert to tensors for direct call
+        # float32 numpy arrays in, as the tf.constant(..., dtype=tf.float32) inputs were before
         inputs = [
-            tf.constant(molded_images, dtype=tf.float32),
-            tf.constant(image_metas, dtype=tf.float32),
-            tf.constant(anchors, dtype=tf.float32),
+            np.asarray(molded_images, dtype=np.float32),
+            np.asarray(image_metas, dtype=np.float32),
+            np.asarray(anchors, dtype=np.float32),
         ]
 
-        # Direct model call with training=False
-        outputs = self.keras_model(inputs, training=False)
+        # numpy arrays out, in the order of the model definition
+        outputs = self.keras_model.predict_on_batch(inputs)
 
-        # Extract outputs (same order as model definition)
-        detections = outputs[0].numpy()
-        mrcnn_mask = outputs[3].numpy()
+        detections = outputs[0]
+        mrcnn_mask = outputs[3]
 
         results = []
         for i, image in enumerate(images):
