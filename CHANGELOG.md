@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.6.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.5.0...v1.6.0) (2026-10-25)
+
+
+### Features
+
+* add return_page_numbers parameter to segment_chemical_structures_from_file ([428cc2a](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/428cc2a01a10d536a60c92a880672660a2f18952))
+* optimize code for mask expansion and model loading ([1457bc3](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/1457bc3e81770b5108b12cb8d1a4bd295129f791))
+* read PDFs with pypdfium2 by default, PyMuPDF (AGPL-3.0) as an optional backend ([8c90680](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/8c906803f3c4a10cc8a956067b920383e23a39bd))
+
+
+### Bug Fixes
+
+* COCO_MODEL_URL to new download link ([6314ade](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/6314ade540b667f87cd995f63986d34c91c78ea6))
+* default model download location ([d215c41](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/d215c4190a8ea7d630ad683ed750d5748f071f19))
+* download and load the model on first use, not on import ([37da1cc](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/37da1cc56748c03371d86e911283aa9eabeae00a))
+* draw PDF form fields with pypdfium2, close pages and bitmaps, accept both CLI spellings ([a7ec7ad](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/a7ec7ada6e3e375019e8946a193c97d0735241ec))
+* improve thread safety in PDF loading by using separate document handles per thread ([44c7fe5](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/44c7fe5a6a81cdc002c2ff9eee54519febbfba72))
+* linting ([c175225](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/c175225675851ae1e6ca3fff1ac69d650a47878e))
+* load model when startup ([a26cb05](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/a26cb0576ee38e38e34f418ba176d68ac5d75958))
+* load model when startup ([80a281b](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/80a281ba7b2c60fab519ebae5b537d01c4795b27))
+* load model when startup with pystow ([b6b130f](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/b6b130f94adfc9e2a33edcb4f330250efe50c558))
+* make PyMuPDF (AGPL-3.0) an optional dependency, imported only for PDFs ([6575a46](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/6575a46894859483a61d9b152a697f620ee51359))
+* path issues in pystow ([fea47e7](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/fea47e77e2b4fbb93dd8cc147afb4c27fb22e2ab))
+* remove unused imports ([d259150](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/d25915081c9d647f1e316e76bafb1cd2431da258))
+* Revise README for clarity and improved presentation ([94927fe](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/94927fea13cb7f121dcfbb277fbe3ac688031dfe))
+* stop MaskRCNN.detect() leaking memory on every call (predict_on_batch) ([39efb51](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/39efb518b98a114a53047e02fb98ae33668d5ef2))
+* Zenodo model download ([12c011c](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/12c011ce893aa5270649613631c8eac80e5512cd))
+
+
+### Documentation
+
+* document return_page_numbers in the README ([5364a51](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/5364a51963f818aa1cc61c711170c3b6c7a8378c))
+* README sentence about the missing PyMuPDF ImportError back in its paragraph ([3b44ce6](https://github.com/Kohulan/DECIMER-Image-Segmentation/commit/3b44ce626a2e3acdc38994f0e885f87165029084))
+
 ## [1.5.0](https://github.com/Kohulan/DECIMER-Image-Segmentation/compare/v1.4.0...v1.5.0) (2025-07-17)
 
 
