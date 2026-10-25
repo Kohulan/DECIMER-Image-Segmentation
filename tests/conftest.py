@@ -121,6 +121,13 @@ def mock_model_detection(monkeypatch):
     monkeypatch.setattr(ds, "get_mrcnn_results", mock_get_mrcnn_results)
 
 
+@pytest.fixture
+def without_pymupdf(monkeypatch):
+    """Make `import pymupdf` fail, as it does where PyMuPDF is not installed."""
+    monkeypatch.setitem(sys.modules, "pymupdf", None)
+    monkeypatch.setitem(sys.modules, "fitz", None)
+
+
 @pytest.fixture(scope="session")
 def model_available():
     """Check if the model weights are available."""

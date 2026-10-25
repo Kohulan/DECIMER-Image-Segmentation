@@ -582,9 +582,8 @@ class TestIntegration:
             segments, page_numbers = result
 
             # Mock returns 2 detections per page: pages should be [1, 1, 2, 2, 3, 3]
-            assert page_numbers == [1, 1, 2, 2, 3, 3], (
-                f"Expected page numbers [1, 1, 2, 2, 3, 3], got {page_numbers}"
-            )
+            expected = [1, 1, 2, 2, 3, 3]
+            assert page_numbers == expected, f"Expected {expected}, got {page_numbers}"
 
             # Verify we got 6 valid segments
             assert len(segments) == 6

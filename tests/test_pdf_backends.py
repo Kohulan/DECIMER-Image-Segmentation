@@ -4,13 +4,12 @@ pypdfium2 (Apache-2.0 / BSD-3-Clause) is a dependency of the package, so the def
 everywhere, with PyMuPDF made absent. The tests of the "pymupdf" backend that need PyMuPDF are skipped
 where it is not installed (install it with the `pdf` extra); the ones that simulate it missing run anywhere.
 
-The PDFs are written by hand (see make_pdf), so that no PDF library is needed to build them.
+The PDFs are written by hand (see make_pdf in tests/helpers.py), so that no PDF library is needed to build them.
 """
 
 from __future__ import annotations
 
 import contextlib
-import importlib.util
 import os
 import runpy
 import subprocess
@@ -27,14 +26,9 @@ import setuptools
 from packaging.requirements import Requirement
 
 from decimer_segmentation import decimer_segmentation as ds
+from tests.helpers import BACKENDS, make_pdf
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-
-needs_pymupdf = pytest.mark.skipif(
-    importlib.util.find_spec("pymupdf") is None,
-    reason='PyMuPDF is not installed (pip install "decimer-segmentation[pdf]")',
-)
-BACKENDS = ["pdfium", pytest.param("pymupdf", marks=needs_pymupdf)]
 
 
 class FakeModel:
@@ -68,47 +62,6 @@ def fresh_pdf_lock(monkeypatch):
     monkeypatch.setattr(ds, "_pdf_lock", threading.Lock())
 
 
-@pytest.fixture
-def without_pymupdf(monkeypatch):
-    """Make `import pymupdf` fail, as it does where PyMuPDF is not installed."""
-    monkeypatch.setitem(sys.modules, "pymupdf", None)
-    monkeypatch.setitem(sys.modules, "fitz", None)
-
-
-def make_pdf(path: Path, pages: int, size=(595, 842)) -> None:
-    """A white PDF whose page i has a red 50 x 50 pt square 100 pt from the top and 100 + 100 * i from the left."""
-    width, height = size
-    kids = " ".join(f"{3 + 2 * index} 0 R" for index in range(pages))
-    objects = [
-        b"<< /Type /Catalog /Pages 2 0 R >>",
-        f"<< /Type /Pages /Kids [{kids}] /Count {pages} >>".encode(),
-    ]
-    for index in range(pages):
-        content = f"1 0 0 rg {100 + 100 * index} {height - 150} 50 50 re f".encode()
-        objects.append(
-            f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {width} {height}] "
-            f"/Contents {4 + 2 * index} 0 R >>".encode()
-        )
-        objects.append(
-            b"<< /Length %d >>\nstream\n" % len(content) + content + b"\nendstream"
-        )
-
-    document = bytearray(b"%PDF-1.4\n")
-    offsets = []
-    for number, body in enumerate(objects, start=1):
-        offsets.append(len(document))
-        document += b"%d 0 obj\n" % number + body + b"\nendobj\n"
-    xref_offset = len(document)
-    document += b"xref\n0 %d\n0000000000 65535 f \n" % (len(objects) + 1)
-    for offset in offsets:
-        document += b"%010d 00000 n \n" % offset
-    document += b"trailer\n<< /Size %d /Root 1 0 R >>\nstartxref\n%d\n%%%%EOF\n" % (
-        len(objects) + 1,
-        xref_offset,
-    )
-    path.write_bytes(bytes(document))
-
-
 def make_form_pdf(path: Path) -> None:
     """A white A4 page with a filled-in text field whose appearance is a blue 50 x 50 pt square, 100 pt from the top and left."""
     height = 842
@@ -140,8 +93,13 @@ def make_form_pdf(path: Path) -> None:
     path.write_bytes(bytes(document))
 
 
-def assert_pages_in_order_in_bgr(images, pages):
-    """The red square of every page is where it is expected, in that page only: in order, BGR."""
+def assert_pages_in_order_in_bgr(rendered, pages):
+    """The red square of every page is where it is expected, in that page only: in order, BGR.
+
+    rendered is what _load_pdf_pages returns: (image, page number) pairs, the numbers from 1.
+    """
+    assert [number for _, number in rendered] == list(range(1, pages + 1))
+    images = [image for image, _ in rendered]
     assert len(images) == pages
     row = int(125 * 300 / 72)
     for index, image in enumerate(images):
@@ -245,8 +203,8 @@ def test_pdf_files_work_by_default_without_pymupdf(
     path = tmp_path / name
     make_pdf(path, pages)
 
-    images = ds._load_pdf_pages(str(path))
-    assert_pages_in_order_in_bgr(images, pages)
+    rendered = ds._load_pdf_pages(str(path))
+    assert_pages_in_order_in_bgr(rendered, pages)
 
     assert ds.segment_chemical_structures_from_file(
         str(path), expand=False, return_bboxes=True
@@ -285,7 +243,7 @@ def test_pages_are_exactly_300_dpi(tmp_path, backend, size, shape):
     path = tmp_path / "paper.pdf"
     make_pdf(path, 1, size)
 
-    (image,) = ds._load_pdf_pages(str(path), backend)
+    ((image, _),) = ds._load_pdf_pages(str(path), backend)
 
     assert image.shape == shape
 
@@ -296,9 +254,9 @@ def test_pages_own_their_pixels(tmp_path, backend):
     path = tmp_path / "paper.pdf"
     make_pdf(path, 2)
 
-    images = ds._load_pdf_pages(str(path), backend)
+    rendered = ds._load_pdf_pages(str(path), backend)
 
-    for image in images:
+    for image, _ in rendered:
         assert image.flags.owndata and image.flags.c_contiguous
         assert image.flags.writeable
 
@@ -309,7 +267,7 @@ def test_filled_in_form_fields_are_drawn(tmp_path, backend):
     path = tmp_path / "form.pdf"
     make_form_pdf(path)
 
-    (image,) = ds._load_pdf_pages(str(path), backend)
+    ((image, _),) = ds._load_pdf_pages(str(path), backend)
 
     row = column = int(125 * 300 / 72)
     assert image[row, column].tolist() == [255, 0, 0]  # the field's blue, in BGR
