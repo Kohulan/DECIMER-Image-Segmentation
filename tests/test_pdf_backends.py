@@ -9,6 +9,7 @@ The PDFs are written by hand (see make_pdf), so that no PDF library is needed to
 
 from __future__ import annotations
 
+import contextlib
 import importlib.util
 import os
 import runpy
@@ -92,6 +93,37 @@ def make_pdf(path: Path, pages: int, size=(595, 842)) -> None:
             b"<< /Length %d >>\nstream\n" % len(content) + content + b"\nendstream"
         )
 
+    document = bytearray(b"%PDF-1.4\n")
+    offsets = []
+    for number, body in enumerate(objects, start=1):
+        offsets.append(len(document))
+        document += b"%d 0 obj\n" % number + body + b"\nendobj\n"
+    xref_offset = len(document)
+    document += b"xref\n0 %d\n0000000000 65535 f \n" % (len(objects) + 1)
+    for offset in offsets:
+        document += b"%010d 00000 n \n" % offset
+    document += b"trailer\n<< /Size %d /Root 1 0 R >>\nstartxref\n%d\n%%%%EOF\n" % (
+        len(objects) + 1,
+        xref_offset,
+    )
+    path.write_bytes(bytes(document))
+
+
+def make_form_pdf(path: Path) -> None:
+    """A white A4 page with a filled-in text field whose appearance is a blue 50 x 50 pt square, 100 pt from the top and left."""
+    height = 842
+    appearance = b"0 0 1 rg 0 0 50 50 re f"
+    objects = [
+        b"<< /Type /Catalog /Pages 2 0 R /AcroForm << /Fields [4 0 R] >> >>",
+        b"<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 {height}] /Annots [4 0 R] >>".encode(),
+        f"<< /Type /Annot /Subtype /Widget /FT /Tx /T (name) /V (filled in) /F 4 "
+        f"/Rect [100 {height - 150} 150 {height - 100}] /AP << /N 5 0 R >> >>".encode(),
+        b"<< /Type /XObject /Subtype /Form /BBox [0 0 50 50] /Length %d >>\nstream\n"
+        % len(appearance)
+        + appearance
+        + b"\nendstream",
+    ]
     document = bytearray(b"%PDF-1.4\n")
     offsets = []
     for number, body in enumerate(objects, start=1):
@@ -271,14 +303,92 @@ def test_pages_own_their_pixels(tmp_path, backend):
         assert image.flags.writeable
 
 
+@pytest.mark.parametrize("backend", BACKENDS)
+def test_filled_in_form_fields_are_drawn(tmp_path, backend):
+    """pdfium draws form fields only with a form environment (init_forms); without it they come out blank."""
+    path = tmp_path / "form.pdf"
+    make_form_pdf(path)
+
+    (image,) = ds._load_pdf_pages(str(path), backend)
+
+    row = column = int(125 * 300 / 72)
+    assert image[row, column].tolist() == [255, 0, 0]  # the field's blue, in BGR
+    assert image[row, column + 400].tolist() == [255, 255, 255]
+
+
+def test_a_document_whose_form_environment_fails_is_closed(monkeypatch, tmp_path):
+    import pypdfium2
+
+    closed = []
+    real_close = pypdfium2.PdfDocument.close
+
+    def close(self):
+        closed.append(self)
+        real_close(self)
+
+    def init_forms(self, *args, **kwargs):
+        raise RuntimeError("no form environment")
+
+    monkeypatch.setattr(pypdfium2.PdfDocument, "close", close)
+    monkeypatch.setattr(pypdfium2.PdfDocument, "init_forms", init_forms)
+    path = tmp_path / "paper.pdf"
+    make_pdf(path, 1)
+
+    with pytest.raises(RuntimeError, match="no form environment"):
+        ds._load_pdf_pages(str(path))
+
+    assert len(closed) == 1
+    assert not ds._pdf_lock.locked()
+
+
 @pytest.fixture
 def spy_on_backend(monkeypatch):
-    """Record how a backend is used: documents opened, pages rendered (thread, index), documents closed."""
+    """Record how a backend is used: documents opened, pages rendered (thread, index), documents closed.
+
+    For pdfium also the pages and bitmaps opened and closed, and a page whose rendering can be made to fail
+    (PyMuPDF pages and pixmaps need no closing).
+    """
 
     def install(backend):
-        record = SimpleNamespace(opened=0, rendered=[], closed=0)
+        record = SimpleNamespace(
+            opened=0,
+            rendered=[],
+            closed=0,
+            pages_opened=0,
+            pages_closed=0,
+            bitmaps_opened=0,
+            bitmaps_closed=0,
+            fail_rendering_page=None,
+        )
         real_open = getattr(ds, f"_open_pdf_{backend}")
         real_render = getattr(ds, f"_render_page_{backend}")
+
+        class Bitmap:
+            def __init__(self, bitmap):
+                self._bitmap = bitmap
+                record.bitmaps_opened += 1
+
+            def to_numpy(self):
+                return self._bitmap.to_numpy()
+
+            def close(self):
+                record.bitmaps_closed += 1
+                self._bitmap.close()
+
+        class Page:
+            def __init__(self, page, index):
+                self._page = page
+                self._index = index
+                record.pages_opened += 1
+
+            def render(self, *args, **kwargs):
+                if record.fail_rendering_page == self._index:
+                    raise RuntimeError(f"cannot render page {self._index + 1}")
+                return Bitmap(self._page.render(*args, **kwargs))
+
+            def close(self):
+                record.pages_closed += 1
+                self._page.close()
 
         class Document:
             def __init__(self, document):
@@ -288,6 +398,8 @@ def spy_on_backend(monkeypatch):
                 return len(self._document)
 
             def __getitem__(self, index):
+                if backend == "pdfium":
+                    return Page(self._document[index], index)
                 return self._document[index]
 
             def close(self):
@@ -350,27 +462,66 @@ def test_the_document_is_closed_and_the_lock_released_when_a_page_fails(
     assert not ds._pdf_lock.locked()
 
 
-def test_concurrent_callers_render_one_pdf_at_a_time(monkeypatch):
-    """The pdf libraries are not thread-safe, so two threads must never be inside them together."""
+def test_every_pdfium_page_and_bitmap_is_closed(spy_on_backend, tmp_path):
+    path = tmp_path / "paper.pdf"
+    make_pdf(path, 3)
+    record = spy_on_backend("pdfium")
+
+    ds._load_pdf_pages(str(path), "pdfium")
+
+    assert (record.pages_opened, record.pages_closed) == (3, 3)
+    assert (record.bitmaps_opened, record.bitmaps_closed) == (3, 3)
+
+
+def test_pdfium_pages_and_bitmaps_are_closed_when_rendering_a_page_fails(
+    spy_on_backend, tmp_path
+):
+    path = tmp_path / "paper.pdf"
+    make_pdf(path, 3)
+    record = spy_on_backend("pdfium")
+    record.fail_rendering_page = 1
+
+    with pytest.raises(RuntimeError, match="cannot render page 2"):
+        ds._load_pdf_pages(str(path), "pdfium")
+
+    assert (record.pages_opened, record.pages_closed) == (2, 2)
+    assert (record.bitmaps_opened, record.bitmaps_closed) == (1, 1)
+    assert (record.opened, record.closed) == (1, 1)
+
+
+def test_concurrent_callers_use_the_pdf_library_one_at_a_time(monkeypatch):
+    """Not thread-safe: two threads must never be inside the library together, opening, rendering or closing."""
     state = SimpleNamespace(active=0, peak=0, guard=threading.Lock())
+
+    @contextlib.contextmanager
+    def inside_the_library():
+        with state.guard:
+            state.active += 1
+            state.peak = max(state.peak, state.active)
+        try:
+            time.sleep(0.02)
+            yield
+        finally:
+            with state.guard:
+                state.active -= 1
 
     class FakeDocument:
         def __len__(self):
             return 3
 
         def close(self):
-            pass
+            with inside_the_library():
+                pass
+
+    def open_pdf(path):
+        with inside_the_library():
+            return FakeDocument()
 
     def render_page(document, index):
-        with state.guard:
-            state.active += 1
-            state.peak = max(state.peak, state.active)
-        time.sleep(0.02)
-        with state.guard:
-            state.active -= 1
-        return np.zeros((2, 2, 3), dtype=np.uint8)
+        with inside_the_library():
+            return np.zeros((2, 2, 3), dtype=np.uint8)
 
-    monkeypatch.setattr(ds, "_open_pdf_pdfium", lambda path: FakeDocument())
+    monkeypatch.setattr(ds, "_open_pdf_pdfium", open_pdf)
     monkeypatch.setattr(ds, "_render_page_pdfium", render_page)
 
     threads = [
@@ -472,7 +623,12 @@ def recorded_calls(monkeypatch):
 
 @pytest.mark.parametrize(
     "arguments, expected",
-    [([], "pdfium"), (["--pdf-backend", "pymupdf"], "pymupdf")],
+    [
+        ([], "pdfium"),
+        (["--pdf-backend", "pymupdf"], "pymupdf"),
+        (["--pdf_backend", "pymupdf"], "pymupdf"),
+        (["--pdf_backend=pdfium"], "pdfium"),
+    ],
 )
 def test_the_command_line_chooses_the_backend(
     monkeypatch, recorded_calls, arguments, expected
@@ -486,9 +642,12 @@ def test_the_command_line_chooses_the_backend(
     assert [call["pdf_backend"] for call in recorded_calls] == [expected]
 
 
-def test_the_command_line_rejects_an_unknown_backend(monkeypatch, recorded_calls):
+@pytest.mark.parametrize("option", ["--pdf-backend", "--pdf_backend"])
+def test_the_command_line_rejects_an_unknown_backend(
+    monkeypatch, recorded_calls, option
+):
     monkeypatch.setattr(
-        sys, "argv", ["decimer-segmentation", "-i", "x.pdf", "--pdf-backend", "poppler"]
+        sys, "argv", ["decimer-segmentation", "-i", "x.pdf", option, "poppler"]
     )
 
     with pytest.raises(SystemExit) as raised:
@@ -500,7 +659,12 @@ def test_the_command_line_rejects_an_unknown_backend(monkeypatch, recorded_calls
 
 @pytest.mark.parametrize(
     "arguments, expected",
-    [([], "pdfium"), (["--pdf_backend", "pymupdf"], "pymupdf")],
+    [
+        ([], "pdfium"),
+        (["--pdf-backend", "pymupdf"], "pymupdf"),
+        (["--pdf_backend", "pymupdf"], "pymupdf"),
+        (["--pdf-backend=pdfium"], "pdfium"),
+    ],
 )
 def test_the_document_script_chooses_the_backend(
     monkeypatch, tmp_path, arguments, expected
@@ -541,9 +705,10 @@ def test_setup_py_needs_pypdfium2_and_makes_pymupdf_an_optional_extra(monkeypatc
     }
     assert "pymupdf" not in required
     assert "pymupdf" in extra
-    # The default reader is always installed, with a lower bound that has been tested
-    # (older 4.x releases work too, but 4.30.0 is the last 4.x feature release).
+    # The default reader is always installed, for the 4.x and 5.x releases that are tested
+    # (4.30.0 is the last 4.x feature release, 5.14.0 the one the new service pins).
     assert "pypdfium2" in required
     assert "pypdfium2" not in extra
-    assert "4.30.0" in required["pypdfium2"].specifier
-    assert "3.0.0" not in required["pypdfium2"].specifier
+    specifier = required["pypdfium2"].specifier
+    assert "4.30.0" in specifier and "5.14.0" in specifier
+    assert "3.0.0" not in specifier and "6.0.0" not in specifier

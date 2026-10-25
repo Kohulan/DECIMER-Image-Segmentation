@@ -38,8 +38,8 @@ setuptools.setup(
         "scipy",
         "requests",
         "pystow",
-        # Reads PDF files (Apache-2.0 / BSD-3-Clause).
-        "pypdfium2>=4.30.0",
+        # Reads PDF files (Apache-2.0 / BSD-3-Clause); 4.30 to 5.x are tested.
+        "pypdfium2>=4.30.0,<6",
     ],
     extras_require={
         # PyMuPDF, an alternative PDF reader (pdf_backend="pymupdf"). It is licensed

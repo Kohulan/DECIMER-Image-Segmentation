@@ -24,7 +24,9 @@ def main():
     parser.add_argument("input_path", help="Path to the input document (PDF or image)")
     parser.add_argument("--output_dir", help="Custom output directory (optional)")
     parser.add_argument(
+        "--pdf-backend",
         "--pdf_backend",
+        dest="pdf_backend",
         choices=PDF_BACKENDS,
         default=DEFAULT_PDF_BACKEND,
         help="Library that renders PDF pages (default: %(default)s; pymupdf is "

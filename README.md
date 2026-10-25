@@ -229,7 +229,7 @@ pip install "decimer-segmentation[pdf]"
 segments = segment_chemical_structures_from_file("document.pdf", pdf_backend="pymupdf")  # default: "pdfium"
 ```
 
-On the command line: `python3 segment_structures_in_document.py document.pdf --pdf_backend pymupdf`. Without PyMuPDF
+On the command line: `python3 segment_structures_in_document.py document.pdf --pdf-backend pymupdf` (`--pdf_backend` works too). Without PyMuPDF
 installed, `pdf_backend="pymupdf"` raises an `ImportError` that tells you how to install it. Images (PNG, JPEG, ...) and
 numpy arrays need neither reader.
 

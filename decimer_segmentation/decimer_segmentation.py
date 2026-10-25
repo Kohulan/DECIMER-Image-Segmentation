@@ -298,23 +298,30 @@ def _open_pdf_pdfium(pdf_path: str):
     """Open a PDF with pypdfium2 (Apache-2.0 / BSD-3-Clause), the default backend."""
     import pypdfium2
 
-    return pypdfium2.PdfDocument(pdf_path)
+    document = pypdfium2.PdfDocument(pdf_path)
+    try:
+        # Without a form environment (which has to exist before any page is loaded,
+        # and is closed with the document) pdfium draws no form fields: a filled-in
+        # form would come out blank, where PyMuPDF draws the fields.
+        document.init_forms()
+    except BaseException:
+        document.close()
+        raise
+    return document
 
 
 def _render_page_pdfium(document, index: int) -> np.ndarray:
-    # pdfium sizes a page as ceil(points * scale), and 792 * (300 / 72) is
+    # pypdfium2 sizes the bitmap as math.ceil(points * scale), and 792 * (300 / 72) is
     # 3300.0000000000005, so a US Letter page would get 3301 rows instead of the 3300
     # that 300 DPI means (and PyMuPDF gives). A scale lower by a part in a billion
     # (0.00003 px on the largest page) gives the exact size and changes nothing else.
     scale = PDF_RENDER_DPI / 72 * (1 - 1e-9)
-    page = document[index]
-    try:
-        # White background, no alpha channel, 3 channels in BGR order: what OpenCV and
-        # this package use, so no colour conversion. The array is a view of the
-        # bitmap's buffer (with padded rows), hence the copy.
-        return page.render(scale=scale).to_numpy().copy()
-    finally:
-        page.close()
+    with contextlib.closing(document[index]) as page:
+        with contextlib.closing(page.render(scale=scale)) as bitmap:
+            # White background, no alpha channel, 3 channels in BGR order: what OpenCV
+            # and this package use, so no colour conversion. The array is a view of
+            # the bitmap's buffer, which goes with the bitmap, hence the copy.
+            return bitmap.to_numpy().copy()
 
 
 def _open_pdf_pymupdf(pdf_path: str):
@@ -683,6 +690,8 @@ def main():
     )
     parser.add_argument(
         "--pdf-backend",
+        "--pdf_backend",
+        dest="pdf_backend",
         choices=PDF_BACKENDS,
         default=DEFAULT_PDF_BACKEND,
         help="Library that renders PDF pages (default: %(default)s; pymupdf is "
