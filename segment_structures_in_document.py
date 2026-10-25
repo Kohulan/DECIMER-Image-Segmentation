@@ -8,6 +8,7 @@ import sys
 import os
 import argparse
 from decimer_segmentation import segment_chemical_structures_from_file
+from decimer_segmentation import PDF_BACKENDS, DEFAULT_PDF_BACKEND
 from decimer_segmentation import save_images, get_bnw_image, get_square_image
 
 
@@ -22,6 +23,13 @@ def main():
     )
     parser.add_argument("input_path", help="Path to the input document (PDF or image)")
     parser.add_argument("--output_dir", help="Custom output directory (optional)")
+    parser.add_argument(
+        "--pdf_backend",
+        choices=PDF_BACKENDS,
+        default=DEFAULT_PDF_BACKEND,
+        help="Library that renders PDF pages (default: %(default)s; pymupdf is "
+        "AGPL-3.0 and needs: pip install 'decimer-segmentation[pdf]')",
+    )
 
     # If no arguments provided, show help
     if len(sys.argv) == 1:
@@ -38,7 +46,9 @@ def main():
     try:
         # Extract chemical structure depictions and save them
         print(f"Processing: {args.input_path}")
-        raw_segments = segment_chemical_structures_from_file(args.input_path)
+        raw_segments = segment_chemical_structures_from_file(
+            args.input_path, pdf_backend=args.pdf_backend
+        )
 
         if not raw_segments:
             print("No chemical structures found in the document.")

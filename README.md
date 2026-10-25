@@ -189,7 +189,7 @@ python -m pip install -U pip
 # Install DECIMER-Segmentation
 pip install .
 
-# Optional: support for PDF files (installs PyMuPDF, licensed under the AGPL-3.0)
+# Optional: PyMuPDF as an alternative PDF reader (licensed under the AGPL-3.0)
 pip install ".[pdf]"
 ```
 
@@ -206,19 +206,42 @@ conda activate DECIMER_IMGSEG
 # Install from PyPI
 pip install decimer-segmentation
 
-# Optional: support for PDF files (installs PyMuPDF, licensed under the AGPL-3.0)
+# Optional: PyMuPDF as an alternative PDF reader (licensed under the AGPL-3.0)
 pip install "decimer-segmentation[pdf]"
 ```
 
 </details>
 
-#### 📄 PDF support is optional
+#### 📄 Reading PDFs
 
-Reading PDF files needs [PyMuPDF](https://pymupdf.readthedocs.io/), which is licensed under the AGPL-3.0 while this
-package is MIT-licensed. It is therefore not installed with `decimer-segmentation` itself; install the `pdf` extra
-(`pip install "decimer-segmentation[pdf]"`) to read PDFs. Images (PNG, JPEG, ...) and numpy arrays need no PyMuPDF. Passing a PDF without it installed raises an `ImportError` that tells you this.
+PDF pages are rendered at 300 DPI with [pypdfium2](https://github.com/pypdfium2-team/pypdfium2) (Apache-2.0 /
+BSD-3-Clause), which is installed with `decimer-segmentation`, so a plain `pip install decimer-segmentation` reads PDFs.
+No extra program is needed (Poppler is no longer used, and the `poppler_path` argument is ignored).
 
-**Changed in 1.6.0:** the model is downloaded and loaded on first use instead of at import, so `set_inference_config()` and the command-line `--fast` flag now take effect (before, the model was already loaded when they ran). With `--fast`, `DETECTION_MIN_CONFIDENCE` is 0.7 instead of 0.75; the default mode is unchanged.
+[PyMuPDF](https://pymupdf.readthedocs.io/) can be used instead. It is licensed under the AGPL-3.0 while this package is
+MIT-licensed, so it is an optional extra that is never imported unless you ask for it:
+
+```bash
+pip install "decimer-segmentation[pdf]"
+```
+
+```python
+segments = segment_chemical_structures_from_file("document.pdf", pdf_backend="pymupdf")  # default: "pdfium"
+```
+
+On the command line: `python3 segment_structures_in_document.py document.pdf --pdf_backend pymupdf`. Without PyMuPDF
+installed, `pdf_backend="pymupdf"` raises an `ImportError` that tells you how to install it. Images (PNG, JPEG, ...) and
+numpy arrays need neither reader.
+
+**Changed in 1.6.0:**
+
+- PDFs are read with pypdfium2 instead of PyMuPDF, which is no longer installed with the package. The two readers draw the
+  same pages with slightly different anti-aliasing, so a few bounding boxes can differ by some pixels, or include a dashed
+  frame that the other reader leaves out; `pdf_backend="pymupdf"` renders the pages as 1.5.x did. Pages are rendered one
+  after the other, because neither reader is thread-safe.
+- The model is downloaded and loaded on first use instead of at import, so `set_inference_config()` and the command-line
+  `--fast` flag now take effect (before, the model was already loaded when they ran). With `--fast`,
+  `DETECTION_MIN_CONFIDENCE` is 0.7 instead of 0.75; the default mode is unchanged.
 
 #### 📥 The model is downloaded on first use
 
@@ -362,12 +385,8 @@ Run all commands in the **Anaconda PowerShell Prompt** (not regular Command Prom
 
 #### 2️⃣ PDF Support
 
-PDF files are read with PyMuPDF, which needs no extra program on Windows (Poppler is no longer used, and the
-`poppler_path` argument is ignored). Install it with the `pdf` extra:
-
-```bash
-pip install "decimer-segmentation[pdf]"
-```
+PDF files are read with pypdfium2, which is installed with the package and needs no extra program on Windows
+(Poppler is no longer used, and the `poppler_path` argument is ignored).
 
 #### 3️⃣ GPU Support on Windows
 Ensure you have:

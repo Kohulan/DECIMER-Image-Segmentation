@@ -12,7 +12,10 @@ pillow
 opencv-python
 matplotlib
 
-# PDF processing (optional, AGPL-3.0: pip install "decimer-segmentation[pdf]")
+# PDF processing
+pypdfium2>=4.30.0
+# Optional alternative PDF reader, AGPL-3.0 (pdf_backend="pymupdf"):
+# pip install "decimer-segmentation[pdf]"
 PyMuPDF
 
 # Interactive computing

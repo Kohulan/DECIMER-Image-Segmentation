@@ -38,10 +38,13 @@ setuptools.setup(
         "scipy",
         "requests",
         "pystow",
+        # Reads PDF files (Apache-2.0 / BSD-3-Clause).
+        "pypdfium2>=4.30.0",
     ],
     extras_require={
-        # Reading PDF files. PyMuPDF is licensed under the AGPL-3.0, so it is not
-        # installed unless asked for: pip install "decimer-segmentation[pdf]"
+        # PyMuPDF, an alternative PDF reader (pdf_backend="pymupdf"). It is licensed
+        # under the AGPL-3.0, so it is not installed unless asked for:
+        # pip install "decimer-segmentation[pdf]"
         "pdf": ["PyMuPDF"],
     },
     package_data={"decimer_segmentation": ["mrcnn/*.*"]},
