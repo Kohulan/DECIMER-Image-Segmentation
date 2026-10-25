@@ -138,8 +138,8 @@ def _load_model_internal() -> modellib.MaskRCNN:
         logger.debug(f"Some optimizer options not available: {e}")
 
     model_path = pystow.join("DECIMER-Segmentation_model")
-    print(model_path)
-    if not os.path.exists(str(model_path) + "/" + MODEL_FILENAME):
+    logger.debug("Model path: %s", model_path)
+    if not os.path.exists(os.path.join(model_path, MODEL_FILENAME)):
         logger.info("Downloading model weights...")
         download_trained_weights(MODEL_DOWNLOAD_URL, str(model_path))
         logger.info("Successfully downloaded the segmentation model weights!")
@@ -204,10 +204,16 @@ def segment_chemical_structures_from_file(
     file_path: str,
     expand: bool = True,
     return_bboxes: bool = False,
+    return_page_numbers: bool = False,
     *,
     pdf_backend: str = DEFAULT_PDF_BACKEND,
     **kwargs,
-) -> Union[List[np.ndarray], Tuple[List[np.ndarray], List[Tuple[int, int, int, int]]]]:
+) -> Union[
+    List[np.ndarray],
+    Tuple[List[np.ndarray], List[Tuple[int, int, int, int]]],
+    Tuple[List[np.ndarray], List[int]],
+    Tuple[List[np.ndarray], List[Tuple[int, int, int, int]], List[int]],
+]:
     """
     Segment chemical structures from a PDF or image file.
 
@@ -215,6 +221,7 @@ def segment_chemical_structures_from_file(
         file_path: Path to input file (PDF or image)
         expand: Whether to expand masks to capture complete structures
         return_bboxes: Whether to return bounding boxes along with segments
+        return_page_numbers: Whether to return 1-indexed page numbers per segment
         pdf_backend: The library that renders the pages of a PDF (ignored for
             images): "pdfium" (the default; pypdfium2, Apache-2.0 / BSD-3-Clause)
             or "pymupdf" (PyMuPDF, AGPL-3.0, which is not installed by default:
@@ -223,6 +230,11 @@ def segment_chemical_structures_from_file(
     Returns:
         List of segmented chemical structure images as numpy arrays.
         If return_bboxes is True, returns a tuple of (segments, bboxes).
+        If return_page_numbers is True, returns (segments, page_numbers).
+        If both are True, returns (segments, bboxes, page_numbers).
+        There is one page number per segment, in the order of the segments: the
+        page of the PDF the segment was found on, counted from 1 (every segment of
+        an image file is on page 1).
 
     Raises:
         ValueError: pdf_backend is not one of PDF_BACKENDS.
@@ -236,33 +248,45 @@ def segment_chemical_structures_from_file(
     if "poppler_path" in kwargs:
         logger.warning("poppler_path parameter is deprecated and ignored")
 
-    images = _load_images_from_file(file_path, pdf_backend)
+    images_with_pages = _load_images_from_file(file_path, pdf_backend)
 
-    if not images:
+    if not images_with_pages:
         logger.warning(f"No images could be extracted from {file_path}")
-        return ([], []) if return_bboxes else []
 
     # Process all images sequentially (model can't parallelize)
     all_segments = []
     all_bboxes = []
-    for image in images:
+    all_page_numbers = []
+    for image, page_number in images_with_pages:
         segments, bboxes = segment_chemical_structures(
             image, expand, return_bboxes=True
         )
         all_segments.extend(segments)
         all_bboxes.extend(bboxes)
+        all_page_numbers.extend([page_number] * len(segments))
 
-    return (all_segments, all_bboxes) if return_bboxes else all_segments
+    if not (return_bboxes or return_page_numbers):
+        return all_segments
+    result = (all_segments,)
+    if return_bboxes:
+        result += (all_bboxes,)
+    if return_page_numbers:
+        result += (all_page_numbers,)
+    return result
 
 
 def _load_images_from_file(
     file_path: str, pdf_backend: str = DEFAULT_PDF_BACKEND
-) -> List[np.ndarray]:
-    """Load images from PDF or image file."""
+) -> List[Tuple[np.ndarray, int]]:
+    """Load images from PDF or image file.
+
+    Returns:
+        List of (image, page_number) tuples. Page numbers are 1-indexed.
+    """
     if file_path.lower().endswith(".pdf"):
         return _load_pdf_pages(file_path, pdf_backend)
     else:
-        return _load_single_image(file_path)
+        return [(img, 1) for img in _load_single_image(file_path)]
 
 
 def _check_pdf_backend(pdf_backend: str) -> None:
@@ -337,12 +361,15 @@ def _render_page_pymupdf(document, index: int) -> np.ndarray:
 
 def _load_pdf_pages(
     pdf_path: str, pdf_backend: str = DEFAULT_PDF_BACKEND
-) -> List[np.ndarray]:
+) -> List[Tuple[np.ndarray, int]]:
     """Render all pages of a PDF, in page order, at 300 DPI as BGR uint8 arrays.
 
     The pages are rendered one after the other from one open document, which is
     closed afterwards: neither PDFium nor PyMuPDF is thread-safe, and a plain loop
     was also the fastest way to render a long PDF with PyMuPDF.
+
+    Returns:
+        List of (image, page_number) tuples. Page numbers are 1-indexed.
     """
     _check_pdf_backend(pdf_backend)
     if pdf_backend == "pymupdf":
@@ -351,7 +378,9 @@ def _load_pdf_pages(
         open_pdf, render_page = _open_pdf_pdfium, _render_page_pdfium
 
     with _pdf_lock, contextlib.closing(open_pdf(pdf_path)) as document:
-        return [render_page(document, index) for index in range(len(document))]
+        return [
+            (render_page(document, index), index + 1) for index in range(len(document))
+        ]
 
 
 def _load_single_image(image_path: str) -> List[np.ndarray]:
