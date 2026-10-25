@@ -232,6 +232,9 @@ def segment_chemical_structures_from_file(
         If return_bboxes is True, returns a tuple of (segments, bboxes).
         If return_page_numbers is True, returns (segments, page_numbers).
         If both are True, returns (segments, bboxes, page_numbers).
+        There is one page number per segment, in the order of the segments: the
+        page of the PDF the segment was found on, counted from 1 (every segment of
+        an image file is on page 1).
 
     Raises:
         ValueError: pdf_backend is not one of PDF_BACKENDS.
@@ -249,14 +252,6 @@ def segment_chemical_structures_from_file(
 
     if not images_with_pages:
         logger.warning(f"No images could be extracted from {file_path}")
-        if return_bboxes and return_page_numbers:
-            return ([], [], [])
-        elif return_bboxes:
-            return ([], [])
-        elif return_page_numbers:
-            return ([], [])
-        else:
-            return []
 
     # Process all images sequentially (model can't parallelize)
     all_segments = []
@@ -270,14 +265,14 @@ def segment_chemical_structures_from_file(
         all_bboxes.extend(bboxes)
         all_page_numbers.extend([page_number] * len(segments))
 
-    if return_bboxes and return_page_numbers:
-        return (all_segments, all_bboxes, all_page_numbers)
-    elif return_bboxes:
-        return (all_segments, all_bboxes)
-    elif return_page_numbers:
-        return (all_segments, all_page_numbers)
-    else:
+    if not (return_bboxes or return_page_numbers):
         return all_segments
+    result = (all_segments,)
+    if return_bboxes:
+        result += (all_bboxes,)
+    if return_page_numbers:
+        result += (all_page_numbers,)
+    return result
 
 
 def _load_images_from_file(
