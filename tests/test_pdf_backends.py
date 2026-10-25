@@ -706,7 +706,7 @@ def test_setup_py_needs_pypdfium2_and_makes_pymupdf_an_optional_extra(monkeypatc
     assert "pymupdf" not in required
     assert "pymupdf" in extra
     # The default reader is always installed, for the 4.x and 5.x releases that are tested
-    # (4.30.0 is the last 4.x feature release, 5.14.0 the one the new service pins).
+    # (4.30.0 is the last 4.x feature release, 5.14.0 the newest release tested).
     assert "pypdfium2" in required
     assert "pypdfium2" not in extra
     specifier = required["pypdfium2"].specifier
